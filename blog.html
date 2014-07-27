@@ -1,0 +1,22 @@
+---
+layout: default
+title: Aravind Udayashankara's Blog
+permalink: /blog/
+---
+
+<div class="row">
+    <div id="container" class="transitions-enabled large-centered clearfix">
+        {% for post in site.posts %}
+        <div class="box">
+            <a href="{{ post.url }}" title="{{ post.title }}" class="feed-link">
+            <img src="{{ post.thumbImage }}"/>
+            <div class="blog-panel">
+                <h5>{{ post.title }}</h5>
+            </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!--/container -->
+</div>
