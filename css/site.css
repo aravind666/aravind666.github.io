@@ -6,7 +6,6 @@
     background: #f2f2f2;
 }
 
-
 .feed-link {
     opacity: 1.0;
     transition: opacity 1s ease-in-out;
@@ -22,11 +21,11 @@
 }
 
 #container {
-    float:none;
+    float: none;
     background: #ffffff;
     padding: 0;
-    margin:0 auto;
-    margin-bottom:30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     /* optional */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -36,9 +35,9 @@
        of the container it counts incorrectly and the result
        images running to the edge of the container on the right
        and bottom sides. Only apply content-box to the container. */
-    -webkit-box-sizing:content-box;
-    -moz-box-sizing:content-box;
-    box-sizing:content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .box {
@@ -49,19 +48,55 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-.box img, { display: block; width: 100%; }
+
+.box img, {
+    display: block;
+    width: 100%;
+}
 
 /* unfortunately masonry needs hard pxs for images */
-.col1 { width: 80px; }
-.col2 { width: 180px; }
-.col3 { width: 280px; }
-.col4 { width: 380px; }
-.col5 { width: 480px; }
-.col1 img { max-width: 80px; }
-.col2 img { max-width: 180px; }
-.col3 img { max-width: 280px; }
-.col4 img { max-width: 380px; }
-.col5 img { max-width: 480px; }
+.col1 {
+    width: 80px;
+}
+
+.col2 {
+    width: 180px;
+}
+
+.col3 {
+    width: 280px;
+}
+
+.col4 {
+    width: 380px;
+}
+
+.col5 {
+    width: 480px;
+}
+
+.col1 img {
+    max-width: 80px;
+}
+
+.col2 img {
+    max-width: 180px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d7d7d7;
+}
+
+.col3 img {
+    max-width: 280px;
+}
+
+.col4 img {
+    max-width: 380px;
+}
+
+.col5 img {
+    max-width: 480px;
+}
 
 /* animations for the transition/reordering */
 .transitions-enabled.masonry,
@@ -72,6 +107,7 @@
     -o-transition-duration: 0.7s;
     transition-duration: 0.7s;
 }
+
 .transitions-enabled.masonry {
     -webkit-transition-property: height, width;
     -moz-transition-property: height, width;
@@ -79,7 +115,8 @@
     -o-transition-property: height, width;
     transition-property: height, width;
 }
-.transitions-enabled.masonry  .masonry-brick {
+
+.transitions-enabled.masonry .masonry-brick {
     -webkit-transition-property: left, right, top;
     -moz-transition-property: left, right, top;
     -ms-transition-property: left, right, top;
@@ -87,9 +124,23 @@
     transition-property: left, right, top;
 }
 
-
-
 /**** Clearfix ****/
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.fullWidth {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}

@@ -1,0 +1,258 @@
+---
+layout: post
+title:  "Angular JS Terminologies and fundamentals"
+date:   2014-08-02 21:47:19
+categories: "Javascript"
+thumbImage: "/img/angularjs.png"
+author: "Aravind H.U"
+tags : "Javascript,AngularJS,MVC,IIFE,Javascript-framework"
+---
+
+
+<p>Angular JS is yet another Javascript framework which is used to add dynamic behaviour to HTML. I could understand this framework by applying my OOP skills.</p>
+    <p>I also felt this approach to understand this framework is pretty easy and it helps a lot if you are comfortable in relative learning.</p>
+<p>If you have come to this page by already struggling to understand Angular JS framework, then this post might work as a capsule,
+    If you are starting to learn Angular JS please make sure you go through the documentation links which I have provided with in this post</p>
+<p>okay first things first, To understand and get introduced to this framework, we need to know its terminologies and its usage. </p>
+<p> let me list them down here </p>
+<ol>
+    <li>Directive</li>
+    <li>Expressions</li>
+    <li>Module</li>
+    <li>Controller</li>
+    <li>Services</li>
+</ol>
+
+
+<p>Before starting to explain these terminologies, let me explain the relationship between DOM and Javascript framework in general. </p>
+
+<p>
+    What ever framework you use in javascript, DOM is considered as a big huge parent object, which has lots of child
+    objects with various properties.
+
+    So any framework, it might be angular, knockoutJS or backboneJS or jquery just adds some behaviour to the main object
+    as well as child objects.
+</p>
+<p>
+    For eg . when we use Jquery and write some thing like this.
+</p>
+
+
+<div class="row">
+        <pre><code class="php">
+            $("#somedivid").click(function ()
+            {
+            alert("hey you clicked");
+            });
+        </code></pre>
+</div>
+
+<p>
+    Here you can observe that #somedivid is the id of some 'div' tag in DOM which is considered as a child of huge DOM
+    object,
+    and we are adding the behaviour to alert some text when clicked, to this child object.
+</p>
+
+<p>
+    So the conclusion is simple at the gross level javascript frameworks just allows us to add behaviour to DOM objects .
+</p>
+
+<p>
+    The behaviour can be any thing, it might add interactivity or it might add validation to input field or it might add
+    some animation when end user mouse over the object etc ....</p>
+<p>
+    I guess you are now clear on what is the basic advantage of using javascript framework.
+</p>
+
+<p> I think its time to define the each of Angualar JS terminologies which I listed. </p>
+
+<h4>Directive : -</h4>
+<p>
+    In angularJS a directive is a reference to a particular DOM object to add behaviours.
+</p>
+
+<p> for example, </p>
+
+<div class="row">
+    <pre><code class="xhtml">
+        &lt;div ng-controller=&quot;ExampleController&quot;&gt;
+            &lt;p&gt;some text&lt;/p&gt;
+            &lt;p&gt;some other text&lt;/p&gt;
+            &lt;p&gt;some more text &lt;/p&gt;
+        &lt;/div&gt;
+    </code></pre>
+</div>
+
+<p>
+    Now in our angular JS code we add behaviour to the div which has a built in directive reference called ng-controller
+    which is evaluated to ExampleController
+</p>
+<div class="row">
+    <code><pre class="html">
+    (function () {
+
+    // IIFE block
+
+    var app = angular.module('example', [])
+
+    app.controller('ExampleController', function() {
+
+    // do some thing
+    });
+
+    })();
+
+    </pre>
+    </code>
+</div>
+<p>
+    Angular also provides ways to define your own directive,
+    and use them in your DOM to express the behaviour.
+    you can learn a lot about it at at <a href="https://docs.angularjs.org/guide/directive" target="_blank">Angular JS
+    documentation</a>
+</p>
+
+<h4>Expressions</h4>
+<p>
+    Angular JS expressions allows you to express dynamic behaviour with in HTML
+</p>
+
+<p>
+    for example you can do some addition with in HTML like
+</p>
+
+<div class="row">
+    <code><pre class="html">
+    &lt;p&gt; my age is {{ "{{ 2014 - 1987 " }}}} &lt;/p&gt;
+    </pre>
+    </code>
+</div>
+<p>
+    Expressions also allows us to exhibit the behaviour defined by the directives.
+    For example you can inject dynamic values to your HTML by defining them in the controllers .
+
+</p>
+<p>
+    For example
+</p>
+<div class="row">
+    <code><pre class="js">
+    (function () {
+
+
+    var app = angular.module('example', [])
+
+    app.controller('ExampleController', function() {
+    this.variable1 = "myself"
+    this.variable2 = "yourself"
+
+    });
+
+    })();
+
+  </pre>
+    </code>
+</div>
+<p>So now we can write expressions to exhibit the above defined behaviours. some thing like this</p>
+<div class="row">
+    <code><pre class="html">
+    &lt;div ng-controller=&quot;ExampleController as example&quot;&gt;
+
+        &lt;p&gt;{{ "{{example.variable1" }}}}&lt;/p&gt;
+
+        &lt;p&gt;{{ &quot;{{example.variable2&quot; }}}}&lt;/p&gt;
+
+    &lt;/div&gt;
+  </pre>
+    </code>
+</div>
+<p> To know more about expressions please refer to <a href="https://docs.angularjs.org/guide/expression" target="_blank"> Angular JS documentation for Expressions</a></p>
+<h4>
+    Module
+</h4>
+<p>
+    Modules are just parts of application which are classified by considering code reusability and maintainability.
+    Modules normally define dependencies for your application. In angular your coding starts by defining a module, and
+    its dependencies, you cannot directly add behaviours to your DOM with defining atleast a single module.
+    Angular provides directives to define modules, its modules in the middle layer which adds behaviours( controllers )
+    ng-app is the directive which is used to define module.
+
+</p>
+<p>
+    To define a module, first use the ng-app directive to reference it in HTML
+</p>
+<div class="row">
+    <code><pre class="html">
+
+
+     &lt;body ng-app=&quot;example&quot;&gt;
+
+        // Your DOM
+     &lt;/body&gt;
+
+ </pre>
+    </code>
+</div>
+
+<p>
+    Now in angular JS code we can add behaviours to DOM like below
+</p>
+
+<div class="row">
+    <code><pre class="js">
+    (function () {
+
+
+    var app = angular.module('example', [])
+
+    app.controller('ExampleController', function() {
+    this.variable1 = "myself"
+    this.variable2 = "yourself"
+
+    });
+
+    })();
+  </pre>
+    </code>
+</div>
+<p>
+    To know more about defining a module and its dependencies please refer to the <a
+        href="https://docs.angularjs.org/guide/module" target="_blank">Angular JS documentation on modules</a>.
+</p>
+
+
+<h4>Controllers</h4>
+<p>
+    If you are from MVC background like me, you might have definately defined some actions and controllers in a module
+    especially if you have used frameworks like FuelPHP or Zendframework 2 or Rails.  A controller is just used to define the behaviour or we can say express the behaviour in angular JS code.
+</p>
+
+<h4>Services</h4>
+<p>
+    Services are like consumables for controller, remember only controller can consume services no one else :). lets
+    think as a generalist, why we as human beings consume services like telephone ? The answer is simple it enhances
+    our capability. In similar terms controllers can consume services to enhance its capability to define behaviours, the enhancement can
+    be, Calling an API in the server side, Filtering a list and many more .
+    Angular JS provides lot of built in Services, which can be directly consumed
+</p>
+
+<p>
+    To consume a service in a controller.
+</p>
+
+<div class="row">
+    <code><pre class="js">
+    app.controller('ExampleController',  ['$http', function($http) {
+    // Do some thing here using the service .
+    }]);
+  </pre>
+    </code>
+</div>
+
+<p>
+    Here you can observe, to consume a service we need to explicitly declare in the list and also pass that as an
+    argument. We can also define our own custom service, you can check that out in <a
+        href="https://docs.angularjs.org/guide/services" target="_blank">Angular JS documentation on services</a>.
+
+</p>
+
