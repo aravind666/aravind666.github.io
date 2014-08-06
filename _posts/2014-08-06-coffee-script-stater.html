@@ -1,0 +1,112 @@
+---
+layout: post
+title:  "Coffee Script Quick Start Learning"
+date:   2014-08-06 14:47:19
+categories: "Javascript"
+thumbImage: "/img/coffeescript.png"
+author: "Aravind H.U"
+tags : "Javascript,coffeescript,MVC,IIFE,framework"
+---
+<p>I was facing lot of difficulties in learning coffee script at last I could figure out the reason and started identifying the gray areas. </p>
+
+ <p><b>Here it goes</b></p>
+ <ol>
+     <li>
+         What is it ?
+     </li>
+     <li>
+         Why do we need to use it and what is its role ?
+     </li>
+     <li>
+         Grasping its syntax
+     </li>
+ </ol>
+
+<p>
+    I decided to share my understanding thinking it might help others who are also facing the same problem by trying to learn this soon. But to learn any technology relative thinking/learning is the key.
+</p>
+
+<p>Lets start turning these gray areas into green :) </p>
+
+ <h4>What is it ?</h4>
+<p>
+    I guess you have already seen this below statement in the home page of coffee script.org, It is the most important statement and has lots of inner meanings .
+</p>
+<blockquote>
+    CoffeeScript is a little language that compiles into JavaScript
+</blockquote>
+<p>
+I was lost initially lost when I read this statement  let me elaborate it so that you can get its insights . </p>
+<p>
+Some questions to raise here, why we need to compile to javascript?, Aha because browser understands only javascript nothing else, So coffee script compiler just tokenize the code written in coffee script language understands the business logic written there and outputs most efficient javascript which is consumed by web applications to add interactivity to HTML. </p>
+<p>
+So we have two things here, first one is coffee script compiler and 2nd one is coffee script language.</p>
+<p>
+Coffee script Compiler is a Node Package which could be installed via NPM command and it exposes several compiling modes and options for developers to easily use coffeescript to code javascript instead of coding Javscript directly.</p>
+<p>
+I feel its little out of scope to describe how to install coffee script compiler so please refer to the <a href="http://coffeescript.org/#installation" target="_blank">coffee script documentation on installation. </a>  </p>
+
+<h4> Why do we need to use it and what is its role ?</h4>
+ <p>
+     Javascript as a language it is awesome, and it has lots of great features its syntax is very easy to learn and code. Today most of the business logic is handled in client side and since javascript syntax exhibits its nature of <a href="http://en.wikipedia.org/wiki/Syntactic_sugar" target="_blank">syntactic sugar</a> makes it easy for any developer to write bad code.
+ </p>
+<p>
+     Since we write bad code it will be very hard to maintain, also due to syntactic sugar it is hard to write the efficient testable code.
+</p>
+<p>
+     So Coffee script solves most of these problems, it helps developers to write efficient testable code as a result of this it helps us to handle change requests from customers in a very healthy way by modifying the coffee script, test it, and just re compile it to javascript and deploy them to server.
+</p>
+<p>
+     Most of the times we keep multiple versions of javascript ( min and formatted ) so now we don't need to worry about this because we just keep coffee script in our version control and javascript out of version control. So no need to worry about maintaining JS.
+</p>
+<p>
+     With javascript we some times end up writing lot of code for small tasks, though its easy to code maintenance gets harder, but if we use coffeescript we can exploit its utilities and program constructs to write least possible testable and maintainable code.
+ </p>
+<h4>
+    Grasping coffee Script syntax
+</h4>
+ <p>
+     It was a hick up for anyone to suddenly start coding javascript using coffee script. As I said before relative learning is the key, lets relate with the language that we are already familiar with, i.e javascript and grasp its syntax .
+ </p>
+
+ <p>Before starting to grasp syntax, lets list down some <a href="http://coffeescript.org/"  target="_blank">coffee script</a> syntax commandments which helps to grab its syntax.</p>
+
+
+<ol>
+    <li>
+        No semicolons through out the code
+    </li>
+    <li>
+        No parenthesis for functions ( not mandatory )
+    </li>
+    <li>
+        No need to declare the variables.
+    </li>
+    <li>
+        No more named functions only function expressions/clojure/IIFE blocks
+    </li>
+    <li>
+        No need to use return statements
+    </li>
+    <li>
+        No need to check for undefined, exploit conditional operator.
+    </li>
+    <li>
+        Use splats instead of array of arguments
+    </li>
+    <li>
+        Use chained comparisons instead of having multiple conditions
+    </li>
+    <li>
+        Worry a lot about indentation because it matters a lot when you declare and use objects.
+    </li>
+</ol>
+<p>
+    And that's all, after grasping these commandments I was feeling more comfortable then before, I guess its the same for you people who are reading this article .
+</p>
+ <p>
+     To know about the syntax of <a href="http://coffeescript.org/"  target="_blank">coffee script</a>, please refer to <a href="http://coffeescript.org/#language" target="_blank">coffee script language reference</a>
+ </p>
+ <p>
+     You can also use an online tool called <a href="http://js2coffee.org/" target="_blank">js2Coffee</a> which converts javascript to <a href="http://coffeescript.org/"  target="_blank">coffee script</a>, which helps a lot to evaluate and relate your <a href="http://coffeescript.org/"  target="_blank">coffee script</a> and its equivalent javascript once coded in the initial stages of your learning.
+ </p>
