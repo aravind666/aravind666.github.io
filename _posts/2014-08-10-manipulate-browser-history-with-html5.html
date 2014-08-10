@@ -1,0 +1,142 @@
+---
+layout: post
+title:  "Manipulate Browser History Using HTML5 History API"
+date:   2014-08-06 14:47:19
+categories: "HTML5,History API"
+thumbImage: "/img/HTML5.png"
+author: "Aravind H.U"
+tags : "HTML5,History API,Session API"
+---
+<p>
+
+    HTML5 session history and navigation API basically inherits and extends the capabilities of the javascript history
+    object. Before Explaining session history and navigation API's let me describe what were the features which were
+    there in age old javascript history object.
+
+</p><p>
+    History object use to exhibit 3 behaviours, first one is the length() , which use to return the number of links in
+    the browser history stack.
+</p><p>
+    2nd one is forward() function which navigates to the next URL which was there in the browser if any, and last one is
+    the back() which just navigates to the previously visited page.
+</p><p>
+    HTML5 history and navigation API's adds some more behaviours,
+</p>
+<ol>
+    <li>
+        Add a URL to browser History stack.
+    </li>
+    <li>
+        Change the URL at the Top of the History stack.
+    </li>
+    <li>
+        Change the URL of the browser with out refreshing the page.
+    </li>
+    <li>
+        Allow access to catch the browser back button click event.
+    </li>
+</ol>
+
+<p>
+    From these behaviours we could observe, most of the issues that we were facing in the past when we build highly intractive AJAX based SPA ( single page application ) application are all solved .
+
+</p>
+<p>
+    We do not need to worry about having cool and complex URLs in AJAX applications, since we can manipulate the history API to load what ever URL that we want for every event .
+
+</p>
+<p>
+    Lets start experimenting some of the behaviours of new HTML5 history object .
+
+</p>
+<p>
+    The first most important method is pushState() method, It allows us to change the portion of the URL
+
+</p>
+<p>
+    Syntax ,
+</p>
+<div class="row">
+    <pre><code class="js">
+        history.pushState('restoreURL', 'page_title', 'yoururl_basename');
+
+    </code></pre>
+</div>
+ <p>
+     Example,
+ </p>
+<div class="row">
+    <pre><code class="js">
+        history.pushState(null, null, "newpage.html");
+    </code></pre>
+</div>
+
+<p>
+Here restortURL is the current URL of the webpage, and page_title is the page title of the URL that you want browser to show when the newpage.html is loaded.
+</p><p>
+Here the third argument is the most relevant and mandatory.
+</p>
+<p>
+The second most important event which is triggered is onPopState event, its an event which is triggered on javascript window object when back button is clicked .
+</p><p>
+The onPopState event is a javascript event which provides access to the current state of the browser stack, I meant If you imagine browser history as a stack it gives you the stack pointers location and its content.
+</p>
+        <p>
+            For example .
+        </p>
+
+<div class="row">
+    <pre><code class="js">
+
+        window.onpopstate = function(event) {
+
+        if(event.state != null)
+        {
+        // The browser has some thing in the stack and we have access to its current content
+
+        alert(event.state); // event.state is the top most URL in the browser history stack.
+
+        }
+
+        };
+    </code></pre>
+</div>
+<p>
+Third and most rearely used API is replaceState() method .
+</p><p>
+It can be used to change the state information of the current page with out adding the URL to the history Stack .
+</p><p>
+Syntax  .
+</p>
+<div class="row">
+    <pre><code class="js">
+        window.history.replaceState( 'restoreURL' , 'title_to_use', 'url_to_replace' );
+    </code></pre>
+</div>
+<p>
+
+Here restorURL is same as pushstate, but title which is the secound argument, is ignored by most of the browsers, though it is mentioned in the specification.
+
+</p>
+        <h4>
+            Browser compatibility
+        </h4>
+
+        <p>
+You can observe in some popular web applications like facebook and twitter, they switch back to hashbangs when browser is not supporting History API.
+        </p><p>
+So if your target audiance wants to access your application in IE8 and IE9 then its not advisable to use HTML5 history API's itself, to take decisions you can use an wonderful website called caniuse.com
+</p><p>
+You can load the below URL and see if this matches all your requirements .
+</p>
+  <p>
+      <a href="http://caniuse.com/history" target="_blank">http://caniuse.com/history</a>
+  </p>
+<p>
+    Alternatives to handle old browsers
+</p>
+
+<p>
+    There are some javascript libraries which handles history API issues or works as polyfills with old browsers, one such widely popular open source library is <a href="https://github.com/browserstate/history.js#aims" target="_blank">history.js you can clone it at github</a>
+</p>
+
