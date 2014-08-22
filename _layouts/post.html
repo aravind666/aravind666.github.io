@@ -9,14 +9,15 @@ layout: default
             <h6>Written by <a href="/aboutme">{{ page.author }}</a> on {{ page.date | date: "%b %-d, %Y" }}</h6>
                     {{ content }}
         </article>
-
-        <script type="IN/Share" data-url="{{page.url}}" data-counter="right"></script>
+        <script type="IN/Share" data-url="{{site.url}}{{page.url}}" data-counter="right"></script>
         <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+
 
     </div>
 
     {% include side_bar_blog.html %}
 </div>
+
 <script src="//platform.linkedin.com/in.js" type="text/javascript">
     lang: en_US
 </script>
