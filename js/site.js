@@ -10,6 +10,12 @@
 
 }(function($, window, document) {
 
+    $(window).load(function() {
+        
+	   $(".loader-gear").fadeOut("slow");
+    
+    })
+    
     $(function() {
 
         console.log('The DOM is ready and do things which you need to do');
