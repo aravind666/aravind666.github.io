@@ -1,0 +1,378 @@
+---
+layout: post
+title:  "Database Design Optimization"
+categories: "general"
+date:   2015-05-26 14:47:19
+thumbImage: "/img/dboptimization.png"
+author: "Aravind H.U"
+tags : "Database Design, Agile Database Design, First normal form, secound normal form, third normal form, 1nf, 2nf,3nf, functional dependency, Transitive dependency, Partial dependency, Fully functional Dependency"
+description: "When ever you are building a database driven web application, we first plan our entities, and its relationships by writing an ER diagram, Once done we implement our DB by creating necessary tables with necessary columns."
+---
+<p> When ever you are building a database driven web application, we first plan our entities, and its relationships by writing an ER diagram, Once done we implement our DB by creating necessary tables with necessary columns. </p>
+<p>
+Now before moving towards OOD we need to make sure that our database will contain   </p>
+
+<ol>
+
+<li> minimum of duplicate data. </li>
+<li> minimum of redundant data </li>
+<li> Data stored in this database is easy to fetch </li>
+<li> easy to edit </li>
+<li> easy to maintain. </li>
+
+</ol> 
+
+<blockquote>
+A database which has all these above listed features is actually called normalized database. 
+</blockquote>
+<p>
+So to normalize a database we apply a set of formal criteria of rules called Normal Forms, these are actually developed by a person called Edgar Codd in 1972, these rules defines series of tests on Database to certify whether it satisfies a certian normal form. 
+</p>
+<p>
+In this post I would like to share some of my understandings on normalizing a database and its advantages. 
+</p>
+
+<p>
+Process of normalization involves several levels or normal forms, again the level to which you need to optimize depends on your bussiness need. 
+</p>
+
+<p>
+
+Level 1 : - First normal form 
+</p>
+
+<p>
+Level 2 : - Secound Normal form 
+</p>
+
+<p>
+Level 3 : - Third Normal form 
+</p>
+
+<p>
+There are some more levels such as Fourth and Fifth Normal forms, there is also an another set of rules to optimize called BC normal form, usually in Agile projects we prefer taking it to max third normal form because we have changing bussiness requirements. 
+</p>
+
+<p>
+Let me elaborate by explaining each of those levels 
+</p>
+
+
+<h3> First Normal Form (1NF) </h3>
+
+<blockquote>
+First normal form says that each of your columns and each of your tables should contain one value just one value, and there should be no repeating groups.
+</blockquote>
+
+<p>
+For eg.. 
+</p>
+
+<p> 
+Lets say we are designing a database for library and we have a table called books, books table has columns book_id, author, author_name, category, year_of_publication. 
+</p>
+ 
+<p>
+Now we start inserting books data inside columns, and we realize that a book has multiple authors and multiple catogories. for eg.. books like " Search Inside Yourself " by chang meng comes under philosophy, management, personality development and many more , and also books lke " how google works " will have multiple authors . 
+</p>
+
+<p> 
+If we analyze our situation we have some more data for which this table is not sufficiant.
+</p>
+
+<p>To solve this problem we have two ways.  </p>
+
+<ol>
+  <li> Add multiple authors and categories into the table in CSV format  </li>
+  <li>  Identify or fix highest number of categories and authors a book can have, and add that many columns for eg. say you fix the max number of authors can be 4 and max number of categories can be 2 and add 4 + 2 columns to this table saying  category1 category2 or author1, author2 etc ...  </li>
+</ol>
+ 
+
+<p>
+Lets examine our first solution, in this you are adding multiple values in a single column, but still you can not fetch 
+them individually, and also it becomes very difficult to search for a particular author or category since it has 
+multiple values. 
+</p>
+
+
+<p>
+In the secound solution we add multiple columns, lets say we find a book which has more authors than what you fixed,  In that case you have to add new column to store that, calling it as author6 or author7, If we carefully observe both of our solutions are actually not a scalable solution, if the project for which we are building is an agile project, the continous change in the requirements will easily make our life hell. 
+</p>
+
+<p>
+To make our designs scalable, we have to apply first normal form rule to normalize this design, by some how avoiding the repeating group of data and multiple values. To achive this a technically feasible solution would be to have more tables, instead of having one table like this. 
+</p>
+
+<p>
+So to bring our design to first normal form we have to create two more related tables
+</p>
+
+<ol>
+ <li>book_has_authors  which stores book_id and author</li>
+ <li> book_has_categories which stores book_id and cateogory </li>
+</ol>
+
+<p>
+By doing so, you will be avoiding repeating group of data and also multi valued columns, Creating related tables to 
+optimize database design is one of the most common approach, there are several creative ideas that you can get if you are having control over the bussiness architecture of your system 
+</p>
+
+
+<p>
+Now our design is optimized to first normal form. 
+</p>
+
+<h3>
+    Secound Normal form ( 2nf ) </h3>
+
+<p>
+The secound normal form actually adds to first normal form, meaning you cannot directly optimize your design to 2nf to do so you should frst optimize to 1nf, so the rules are hierarchical and it cannot be changed. Before defining 2nf rule, let me explain something which is very much required to understand 2nf 
+
+</p>
+
+<h4>
+Functional Dependency
+</h4>
+<p>
+In simple terms, 
+</p> 
+<blockquote>
+A functional dependency describes the relationship between attributes in a given 
+relation R denoted as x -> Y. This means that the attribute Y is functionally dependent on the attribute X 
+</blockquote>
+
+<p>
+for example, 
+</p>
+
+<p>
+SSN --> Name 
+</p>
+
+<p>
+The meaning of the above notation is the attribute Name is functionally dependent on SSN. That means SSN uniquely 
+determines an attribute Name. 
+</p>
+
+<p> Another example </p>
+
+<p>
+department_no -> {dept_name, dept_location}
+</p>
+ 
+<p>
+Here both dept_name and dept_location are dependent on department_no, meaning department_no can be used to identify both dept_name as well as dept_location.
+</p>
+<p>
+A functional dependency can be either partial or full, 
+</p>
+
+<blockquote>
+
+In a functional dependency F, Y is fully functionally dependent on X if F implies X -> Y, but not  W-> Y where W is a 
+subset of X, meaning set of attributes in X contains at least one element which is not in the set of attributes W.
+
+</blockquote>
+
+<p>
+I know its really complex, let me give you an example.
+</p>
+ 
+<p>
+Lets denote a functional dependency like below 
+</p>
+
+<p>
+{date, exam} -> room_no
+</p>
+
+<p>
+So in the above functional dependency, left hand side has 2 attributes date and exam, and room_no is actually determined by date and exam, since room_no is functionally dependent on determinants date and exam.So now if we remove exam or date in the determinants list,  the dependency relation ship fails, reason is simple in our design there are multiple tuples which has same date and room_no and same exam and room_no.
+
+</p>
+ 
+<blockquote>
+In a functional dependency F, A is partially  functional dependent on X if X is a proper subset of some key K. 
+</blockquote>
+
+
+<p>
+Example
+</p>
+ 
+<p>
+{date, exam} -> room_no
+
+</p>
+ 
+
+<p>
+If lets say in the same example, if the dependency still holds good when we remove date or exam, attributes from LHS, then  the functional dependency described here is partial
+
+</p>
+
+<p> 
+So now its time to describe 2nf : - 
+</p>
+
+<blockquote> 
+Every non prime Attribute in a relational Schema, should be fully functionally dependent on primary key or every candidate key.
+
+</blockquote>
+
+
+ 
+<p>
+Lets say you have a table called employee_project_details with the columns  SSN, project_no, hours, emp_name, project_name, project_location
+</p>
+
+<p>
+The first step to optimize for 2nf is identify Functional dependencies .
+</p>
+
+<p>
+Here you can identify three dependencies 
+</p>
+
+<ol>
+<li>
+    SSN -> emp_name
+</li>
+<li>
+    project_no -> {project_name, project_location}
+    </li>
+    <li>
+    {SSN, project_no} -> hours
+    </li>
+</ol> 
+<p>
+Here If you properly observe that we have a composite key for the table, {SSN,project_no}. As per the 2nf definition every non prime should be fully functionally dependent on primary key or candidate key with in a  composite key. So now if I remove project_no I can still determine all the determinants of project as well as employee. So to optimize to 2nf we need to decompose the relationships to convert those partial dependencies  to fully functional dependencies . </p> 
+
+<p>
+So now we can convert our design with single table called employee_project_details as three different tables for three 
+dependencies identified 
+</p>
+
+<p> 
+employee table with attributes SSN, emp_name
+</p>
+<p>
+project table with attributes project_name, project_location
+</p>
+ 
+<p>
+employee_has_project with SSN, project_no, hours 
+</p>
+
+<p>
+I think the easiest way to design a DB optimized to 2nf is to keep creating tables for each Functional dependency that you identify and then redo the same recursively on those tables by asking yourself a question 
+</p>
+
+<blockquote>
+can I figure out any of the values in this row from just part of the composite key that I have in my table ? 
+</blockquote>
+<p>
+ stop when you dont get any answer.
+</p>
+ 
+<p>
+I am sure you got one billion dollor question, what is the problem in having partial functional dependencies 
+</p>
+
+<p>
+We design DB for an application layer, and if we have partial dependencies in the DB layer, we might end up storing wrong data since application layer might have some bug which might miss entering project data for an employee ( in the above example ) and DB layer treats it normally. Ensuring a bugfree application layer is really impractical but ensuring optimized DB makes our life easy to rectify those bugs easily.
+</p>
+ 
+
+<h3>
+Third Normal form  (3nf)
+</h3>
+
+<p>
+As I explianed before these rules are hierarchical, if you want to optimize to 3nf, you can do so only after optimizing 
+upto 2nf. Before defining Third normal form, let me explain to you another important term called transitive dependency.
+</p>
+ 
+<blockquote>
+ A Functional dependency X -> Y in a relation schema is a transitive dependency if there is a set of attributes Z that is not a subset of any key of R, and both X -> Z and Z->Y holds good. 
+</blockquote>
+
+<p>
+In simple terms, if there exists a chain of dependency between attributes like X -> z -> Y 
+</p>
+
+<p>
+So now let me define 3nf rule : - 
+</p>
+
+<p> 
+
+Non non prime attribute is transitively dependent on Primary Key. So in simple terms we can say, if we have a design with several tables, optimized to 2nf, then we should not be able to figure out any of the values in a tuple from any of the other values in the same tuple. Lets take a simple example table employee_department with columns 
+</p>
+
+<p>
+{ SSN, Name, dateofbirth, address, Dno, Dname, MgrSSN } 
+</p>
+
+<p>
+Lets identify functional dependencies before optimizing it to 3nf 
+</p>
+
+<p>
+SSN -> {Name, DOB, address, Dno, Dname, MgrSSN} 
+</p>
+<p>
+Dno -> {Dname, MgrSSN} 
+</p>
+
+<p>
+So now since we can see a transitive dependency here, SSN -> Dno -> {Dname, MGrSSN }. We need to decompose the table in to two different tables
+</p> 
+
+<p>
+Employees table : - SSN, Name , DOB, Addr, Dno
+</p>
+
+<p>
+Departments Table : - Dno, Dname, MgrSSN
+</p>
+
+<p>
+    So now I am sure we wont get the answer to the question Can we figure out any of the values in a tuple from any of the other values ? Before we were actually able to do so in the example, like we were able to figure out Dname from Dno </p>
+
+<p>
+Again a billion dollor question Why should avoid transitive relationship ? 
+</p>
+ 
+<p>
+
+Again its to avoid insert and update anamolies, lets say if we have transitive dependency and we are using the same table  employee_department, then in case if we need to create a new department with out any employee, then we need to have null values for employee related data. 
+
+</p>
+
+<p>
+In fact all these Normalization rules actually sugests us to maintain the semantics of the attributes, and avoid a 
+situation where system generates spurious tuples,  for example, the meaning of the employeee relation schema is that each  tuple represents an employee record. 
+</p>
+
+<p>
+So, we should always take our database design through the first, second, and third normal forms. There are more criteria available. As I have already stated before, there are fourth, fifth, and sixth normal forms. There's something called Boyce-Codd normal form. But taking it to third normal form is the usual expectation in an agile project.
+</p>
+
+<p>Some people might say " Normalization is not actually required since databases are highly efficiant and evolved and they are capable of storing millions of records " . To convince them I would say, Database is not only a collection of some data, it is a collection of meaningful and related data</p>
+
+<p> 
+Some people also say that Agile Methodology does not allow developers to normalize the database well, I totally disagree, if we properly understand normalization concepts It actually provides scalability for future changes 
+</p>
+
+<p>
+I hope you enjoyed reading my post, it is just an attempt to simplify those complex mathematical definitions of database concepts. 
+</p>
+
+
+
+
+
+
+
+
