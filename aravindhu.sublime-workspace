@@ -1,0 +1,1570 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"refreshGrid"
+			],
+			[
+				"i",
+				"i18nFilter"
+			],
+			[
+				"Iss",
+				"IssuesListPageService"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"se",
+				"setupAreaPath"
+			],
+			[
+				"di",
+				"div"
+			],
+			[
+				"toHa",
+				"toHaveBeenCalled"
+			],
+			[
+				"get",
+				"getIssues"
+			],
+			[
+				"page",
+				"pageSize"
+			],
+			[
+				"pag",
+				"pageSize"
+			],
+			[
+				"to",
+				"toBe"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"so",
+				"sortKey"
+			],
+			[
+				"lo",
+				"locationParams"
+			],
+			[
+				"sort",
+				"sortkey"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"is",
+				"isCollapsed"
+			],
+			[
+				"fil",
+				"filterCollapsed"
+			],
+			[
+				"fi",
+				"filterCollapsed"
+			],
+			[
+				"bind",
+				"bindedIssue"
+			],
+			[
+				"loca",
+				"locationDetail"
+			],
+			[
+				"b",
+				"bindedIssue"
+			],
+			[
+				"read",
+				"readOnlyIssueList"
+			],
+			[
+				"e",
+				"editableIssue"
+			],
+			[
+				"edit",
+				"editableIssueList"
+			],
+			[
+				"issue",
+				"issuesList"
+			],
+			[
+				"editable",
+				"editableIssuesList"
+			],
+			[
+				"ng",
+				"ng-switch-when"
+			],
+			[
+				"and",
+				"andReturn"
+			],
+			[
+				"loc",
+				"location"
+			],
+			[
+				"issues",
+				"issuesFilters"
+			],
+			[
+				"key",
+				"keyword"
+			],
+			[
+				"c",
+				"component"
+			],
+			[
+				"dis",
+				"displays"
+			],
+			[
+				"toBe",
+				"toBeTruthy"
+			],
+			[
+				"sta",
+				"stateParams"
+			],
+			[
+				"g",
+				"gridMode"
+			],
+			[
+				"ed",
+				"edit-grid"
+			],
+			[
+				"des",
+				"ddescribe"
+			],
+			[
+				"mock",
+				"mockState"
+			],
+			[
+				"ng-",
+				"ng-if"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"pre",
+				"preinitializeFilterSelections"
+			],
+			[
+				"par",
+				"parseDateRange"
+			],
+			[
+				"Da",
+				"DateService"
+			],
+			[
+				"pro",
+				"provide"
+			],
+			[
+				"assig",
+				"assigned_to"
+			],
+			[
+				"sele",
+				"selectedValues"
+			],
+			[
+				"filter",
+				"filterAppliedValues"
+			],
+			[
+				"d",
+				"dueBy"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"filt",
+				"filterAppliedValues"
+			],
+			[
+				"new",
+				"newfilters"
+			],
+			[
+				"on",
+				"onFiltersUpdate"
+			],
+			[
+				"issues-",
+				"issues-grid-filters"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"l",
+				"locationsDefer"
+			],
+			[
+				"Issu",
+				"IssueHelper"
+			],
+			[
+				"current",
+				"currentPage"
+			],
+			[
+				"tota",
+				"total_results"
+			],
+			[
+				"up",
+				"updateDescription"
+			],
+			[
+				"updat",
+				"updateDescription"
+			],
+			[
+				"mo",
+				"mockWindow"
+			],
+			[
+				"save",
+				"saveIssue"
+			],
+			[
+				"ex",
+				"expectedIssue"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"Is",
+				"IssuesGridRowController"
+			],
+			[
+				"pr",
+				"promise"
+			],
+			[
+				"tra",
+				"transformedDefer"
+			],
+			[
+				"iss",
+				"IssuesGridController"
+			],
+			[
+				"are",
+				"area"
+			],
+			[
+				"getSe",
+				"getSelectedAreasPath"
+			],
+			[
+				"Are",
+				"AreasPanelService"
+			],
+			[
+				"currentP",
+				"currentProject"
+			],
+			[
+				"isSea",
+				"isSearchInProgress"
+			],
+			[
+				"th",
+				"ThrobberService"
+			],
+			[
+				"area",
+				"areaId"
+			],
+			[
+				"co",
+				"columnDefs"
+			],
+			[
+				"ag",
+				"agGrid"
+			],
+			[
+				"bab",
+				"babylonUrlHandler"
+			],
+			[
+				"baby",
+				"BabylonUrlHandler"
+			],
+			[
+				"ac",
+				"acxFactory"
+			],
+			[
+				"w",
+				"windowObject"
+			],
+			[
+				"roo",
+				"rootScope"
+			],
+			[
+				"hand",
+				"handleProjectChange"
+			],
+			[
+				"in",
+				"inFrame"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"no",
+				"no-issues-pane"
+			],
+			[
+				"le",
+				"legacy-issues"
+			],
+			[
+				"checkl",
+				"checklistsCtrl"
+			],
+			[
+				"ref",
+				"refreshChecklistsAndTemplates"
+			],
+			[
+				"chec",
+				"checklistsCtrl"
+			],
+			[
+				"check",
+				"checklists"
+			],
+			[
+				"fetch",
+				"fetchTemplates"
+			],
+			[
+				"cre",
+				"createSpy"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Check",
+				"ChecklistsFiltersCtrl"
+			],
+			[
+				"be",
+				"beforeEach"
+			],
+			[
+				"s",
+				"styl"
+			],
+			[
+				"S",
+				"Spinner"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"che",
+				"checklists-sidepanel"
+			],
+			[
+				"app",
+				"apply"
+			],
+			[
+				"set",
+				"setHeadless"
+			],
+			[
+				"field",
+				"field-iframe"
+			],
+			[
+				"location",
+				"locationSearch"
+			],
+			[
+				"has",
+				"hasCLenabledConnectedOrgs"
+			],
+			[
+				"org",
+				"organizations"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"old",
+				"oldValue"
+			],
+			[
+				"or",
+				"organisationId"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"toB",
+				"toBe"
+			],
+			[
+				"aui",
+				"auiModal-dialog"
+			],
+			[
+				"ng-s",
+				"ng-switch-when"
+			],
+			[
+				"tob",
+				"toBeTruthy"
+			],
+			[
+				"disa",
+				"disabled"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"el",
+				"elToClick"
+			],
+			[
+				"toggle",
+				"toggleTemplateSelection"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"ng-c",
+				"ng-click"
+			],
+			[
+				"gr",
+				"groupedTemplates"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Git",
+				"Git: Blame"
+			],
+			[
+				"git ",
+				"Git: Blame"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Blame"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"blam",
+				"Git: Blame"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pl",
+				"Package Control: List Packages"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aravindhu/myblog/aravind666.github.io"
+	],
+	"file_history":
+	[
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-toolbar/issues-toolbar.component.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/main.styl",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-toolbar/index.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues.module.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-toolbar/issues-toolbar.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/admin/resources/scripts/controllers/ProjectSettingsCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issues.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-toolbar/issues-toolbar.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/IssueTypeViewAndSelectCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/common/pdf-form-template/add-pdf-form-template.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/_headless.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-search/index.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssues.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/ui/directives/issues/fmIssuesSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-toolbar/issues-toolbar.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/directives/pagination/pagination.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-filter/issues-filter.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/webpack.config.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/main.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/_edit-pdf-form.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/_notifications.styl",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/common/copy-share-tutorial/copy-share-tutorial.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/_pdf-form-fields.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid.component.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/common.module.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-search/issues-search.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/services/issues/IssuesListPageService.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssuesFiltersList.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/IssuesFiltersListCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/_issues-list-page.styl",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/templates-list/templates-list.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/_areas.styl",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/fmAreasPanel.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/checklists/checklistsMarketingContent.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/translations/translation_en.json",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-row.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-row.directive.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issues-list-page.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssuesListPage.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/scripts/services/Areas.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/services/AreasPanelService.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/views/fmViewSettingsLocations.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/services/Locations.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/IssuesListPageCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/services/issues/IssuesFilterService.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/ui/directives/issues/fmIssuesListItemSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-row.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-row.controller.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/directives/pagination/pagination.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/directives/pagination/pagination.tpl.html",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-filter/issues-filter.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/settings/YourOrganisationSettingsCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid.controller.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/views/fmViewSettingsYourOrganisation.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/settings/your-organisation.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-filter/issues-filter.controller.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-filter/issues-filter.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-filter/issues-filter.component.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-filter/issues-filter.component.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/scripts/directives/fmApp.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/scripts/directives/fmHeader.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/scripts/controllers/HeaderCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/checklists.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/templates-list/templates-list.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/common/copy-templates/copy-templates-from-project.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issues-list.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/scripts/directives/fmSelect.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/scripts/controllers/SelectCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssuesSortDropdown.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/IssuesSortByCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issues-sort-dropdown.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-actions/issues-actions.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-actions/index.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-actions/issues-actions.component.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-row.directive.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/common/filters/dateI18nSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/ui/controllers/issues/DateFieldCtrlSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/common/directives/fmEditableTextSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/DateFieldCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/IssueAssigneeSelectCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/ui/controllers/issues/IssueAssigneeSelectCtrlSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/checklists/ChecklistDetailsCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/ui/controllers/checklists/ChecklistDetailsCtrlSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/legacy/resources/scripts/filters/assignmentDisplayName.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/common/services/RolesSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/common/services/OrganisationLabelDecoratorSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/scripts/services/OrganisationLabelDecorator.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/templates-list/templates-list.controller.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/templates-list/templates-list.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssueTypeViewAndSelect.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issue-type-view-and-select.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssueEditField.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/ui/controllers/issues/IssueEditFieldCtrlSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/directives/drag-drop/draggable-item.directive.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issue-edit-field.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssueAssigneeViewAndSelect.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issue-assignee-view-and-select.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssueAssigneeSelect.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/views/issues/issue-assignee-select.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/IssueAssigneeViewAndSelectCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmDateField.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/test/spec/ui/directives/views/fmViewSettingsIssueTypesSpec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/issues/IssuesListItemCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/directives/issues/fmIssuesListItem.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/controllers/settings/IssueTypeConfigCtrl.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/common/pdf-form-template/option-values.html.pug",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/common/template-category/manage-category.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-search/issues-search.less",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid.component.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/index.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/resources/scripts/uiapp.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/routes.js",
+		"/Users/aravindhu/Desktop/number_of_issues_by_year_stats",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-filter/index.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-row.component.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-row.component.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/styles/_headless.styl",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-filter.directive.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid-filter.controller.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/components/search-input/search-input.component.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-search/issues-search.component.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/common/issues-search/issues-search.component.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists/common/copy-templates/copy-templates-from-project.component.spec.js",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/settings/settings.html.jade",
+		"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/issues/issues-grid/issues-grid.directive.spec.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui",
+			"",
+			"/Users/aravindhu/projects/field-management/ui/src/main",
+			"",
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/vendor/scripts/webviewer",
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/app/",
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui",
+			"/Users/aravindhu/projects/field-management/ui/src/main/*.s",
+			"/Users/aravindhu/projects/field-management/ui/src/main",
+			"",
+			"/Users/aravindhu/projects/field-management/ui/src/main,*.js",
+			"/Users/aravindhu/projects/field-management/ui/src/main",
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui",
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/app/common/resources/vendor/scripts",
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/app",
+			"/Users/aravindhu/projects/field-management/ui/src/main",
+			"",
+			"/Users/aravindhu/projects/field-management/ui/src/main",
+			"",
+			"/Users/aravindhu/projects/field-management/ui/src/main/js/app/ui/checklists",
+			"",
+			"throbber.html.jade",
+			"",
+			"e",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"url",
+			"this.scope",
+			"broadcast",
+			"bind(this)",
+			"refreshGrid",
+			"$scope.$broadcast",
+			"this.scope.$broadcast",
+			"};",
+			"getClass",
+			"this.getClass",
+			"IssuesListPageService",
+			"Session",
+			"$scope",
+			" = function ",
+			"this",
+			"IssuesCtrl",
+			".headless",
+			".svg",
+			"alert-icon.png",
+			"background-image",
+			"assignedToOrgs",
+			"issues?assignedToOrgs",
+			".issues-filters",
+			"issues-filters-list",
+			".headless",
+			"headless",
+			"background-image",
+			"marketing-checklists.png",
+			"$generateBreadcrumb",
+			"flattenAreaResponse",
+			"issue-tab-content-panel",
+			"fm-issue-location-value",
+			"hasAreasSetup",
+			"$state ",
+			"issues/count",
+			"count?areaId",
+			"count",
+			"onFiltersChange",
+			"IssuesFiltersListCtrl",
+			"IssuesCtrl",
+			"getDueDateValue",
+			"No Due Date",
+			"nottohavebeen",
+			"YourOrganisationSettingsCtrl",
+			"onPageChange",
+			"$ctrl.onPageChange",
+			"pageSize",
+			"init",
+			"onItemSizeChange",
+			"IssuesCtrl",
+			"issuesFilterDefer",
+			"[],\n",
+			"updateFiltersDisplayed",
+			"locationsDefer",
+			"IssuesListPageService",
+			"IssuesCtrl",
+			"issues.html.jade",
+			"issues.htm.jade",
+			"page-top-bar",
+			"auiToolbar-header",
+			"filters",
+			"ng-class",
+			"icons.less",
+			"ng-switch-when",
+			"getIssuesFilters",
+			"updateUrlWithParam",
+			"sortKey",
+			"maxIssuesOnPDFReport",
+			"IssuesListPageService",
+			"maxIssuesOnPDFReport",
+			"issuesFilters",
+			"filterAppliedValues",
+			"getExportUrl",
+			"handleExportIssues",
+			"maxIssuesOnXLSReport",
+			"maxIssuesOnPDFReport",
+			"isPDFExportEnabled",
+			"export",
+			"toggleCollapse",
+			"export",
+			"dateFilter",
+			"$filter('dateI18n')",
+			"this.$filter('dateI18n')",
+			"selectOptions",
+			"Translation",
+			"$filter",
+			"mock $filter",
+			"mock filter",
+			"andReturn",
+			".readonly-view.clearfix.text",
+			".zero-padding",
+			"i18nFilter",
+			"i18Filter",
+			"track by",
+			"this.issuesList",
+			"isEditable",
+			"issueList",
+			"addSelection",
+			"selectAll",
+			"IssuesGridFilterController",
+			".settings-side-bar.master ",
+			"page-specific-title",
+			"page-top-bar",
+			"location",
+			"spyOn",
+			"getIssues",
+			"categoriesListCtrl",
+			"this.issuesFilters",
+			"hideMenus",
+			"issuesFilter",
+			".keyword",
+			"getCommonFilterParams",
+			"getIssuesWithFilters",
+			"this.issuesFilters",
+			"keyword",
+			"getCommonFilterParams",
+			"getCapturedBy",
+			"updateUrlWithParam",
+			"search",
+			"getCommonFilterParams",
+			"getCapturedBy",
+			"updateURlWithParam",
+			"locationParams",
+			"keyword",
+			"isSearchInProgress",
+			"updateUrlWithParam",
+			"isSearchInProgress",
+			"search-input-wrapper"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"(",
+			"this.isSearchInProgress",
+			"this.currentProject",
+			"this.selectedAreaId",
+			"this.throbberService",
+			"this.dateService",
+			"this.potentialAssigneesService",
+			"this.PotentialAssignees",
+			"this.$location",
+			"this.areasPanelService",
+			"this.googleAnalytics",
+			"this.$uibModal",
+			"this.$rootScope",
+			"this.session",
+			"this.issuesListPageService",
+			"",
+			"(",
+			"this",
+			"checklist-not-selected",
+			"noOfTemplatesDisplayed",
+			"this.issueFactory",
+			"setupTemplateCount",
+			"setupCategoryDetails",
+			"/",
+			".js",
+			"js.js'),",
+			"path.resolve(__dirname, '",
+			"import $ from 'jquery';",
+			"DroppableItemCtrl",
+			"getTemplateCategoryListDeferred",
+			"loading-throbber__blade",
+			"loading-throbber",
+			"loading-throbber__blade",
+			"loader__blade",
+			"throbber__blade",
+			"throbber"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "aravindhu.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"issues-search",
+				"Field UI Project/js/app/ui/issues/common/issues-search/issues-search.html.pug"
+			],
+			[
+				"issues.htm",
+				"Field UI Project/js/app/ui/resources/views/issues/issues.html.jade"
+			],
+			[
+				"_add-pdf-form.less",
+				"Field UI Project/js/app/common/resources/styles/_add-pdf-form.less"
+			],
+			[
+				"_add-edit-pdf-form.less",
+				"Field UI Project/js/app/common/resources/styles/_add-edit-pdf-form.less"
+			],
+			[
+				"_pdf-form-fields.less",
+				"Field UI Project/js/app/common/resources/styles/_pdf-form-fields.less"
+			],
+			[
+				"main.less",
+				"Field UI Project/js/app/common/resources/styles/main.less"
+			],
+			[
+				"_head",
+				"Field UI Project/js/app/common/resources/styles/_headless.less"
+			],
+			[
+				"main.",
+				"Field UI Project/js/app/common/resources/styles/main.styl"
+			],
+			[
+				"issues.html",
+				"Field UI Project/js/app/ui/resources/views/issues/issues.html.jade"
+			],
+			[
+				"issues-grid",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.html.pug"
+			],
+			[
+				"main.sy",
+				"Field UI Project/js/app/common/resources/styles/main.styl"
+			],
+			[
+				"fmissues",
+				"Field UI Project/js/test/spec/ui/directives/issues/fmIssuesSpec.js"
+			],
+			[
+				"issues.h",
+				"Field UI Project/js/app/ui/resources/views/issues/issues.html.jade"
+			],
+			[
+				"main",
+				"Field UI Project/js/app/common/resources/styles/main.styl"
+			],
+			[
+				"webpac",
+				"Field UI Project/webpack.config.js"
+			],
+			[
+				"head",
+				"Field UI Project/js/app/common/resources/styles/_headless.less"
+			],
+			[
+				"_edit-pdf-form.less",
+				"Field UI Project/js/app/common/resources/styles/_edit-pdf-form.less"
+			],
+			[
+				"_headless.less",
+				"Field UI Project/js/app/common/resources/styles/_headless.less"
+			],
+			[
+				"mai",
+				"Field UI Project/js/app/common/resources/styles/main.styl"
+			],
+			[
+				"issuesfilterslistctrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssuesFiltersListCtrl.js"
+			],
+			[
+				"headless",
+				"Field UI Project/js/app/common/resources/styles/_headless.less"
+			],
+			[
+				"template",
+				"Field UI Project/js/app/ui/checklists/templates-list/templates-list.less"
+			],
+			[
+				"issues",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.less"
+			],
+			[
+				"issues-gri",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.component.spec.js"
+			],
+			[
+				"issuelistpage",
+				"Field UI Project/js/app/ui/resources/scripts/services/issues/IssuesListPageService.js"
+			],
+			[
+				"fmareas",
+				"Field UI Project/js/app/ui/resources/scripts/directives/fmAreasPanel.js"
+			],
+			[
+				"issues.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/issues.html.jade"
+			],
+			[
+				"_hea",
+				"Field UI Project/js/app/common/resources/styles/_headless.less"
+			],
+			[
+				"issues-g",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.less"
+			],
+			[
+				"issues-grid-ro",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid-row.directive.spec.js"
+			],
+			[
+				"transla",
+				"Field UI Project/js/app/common/translations/translation_en.json"
+			],
+			[
+				"areaspan",
+				"Field UI Project/js/app/ui/resources/scripts/services/AreasPanelService.js"
+			],
+			[
+				"areas",
+				"Field UI Project/js/app/common/resources/scripts/services/Areas.js"
+			],
+			[
+				"location",
+				"Field UI Project/js/app/ui/resources/scripts/services/Locations.js"
+			],
+			[
+				"fmlocati",
+				"Field UI Project/js/app/ui/resources/scripts/directives/views/fmViewSettingsLocations.js"
+			],
+			[
+				"area",
+				"Field UI Project/js/app/common/resources/scripts/services/Areas.js"
+			],
+			[
+				"fmissue",
+				"Field UI Project/js/test/spec/ui/directives/issues/fmIssuesSpec.js"
+			],
+			[
+				"issueslistpagectrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssuesListPageCtrl.js"
+			],
+			[
+				"issuesfilterservice",
+				"Field UI Project/js/app/ui/resources/scripts/services/issues/IssuesFilterService.js"
+			],
+			[
+				"issueslistpageservice",
+				"Field UI Project/js/app/ui/resources/scripts/services/issues/IssuesListPageService.js"
+			],
+			[
+				"fmissuelist",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssuesListPage.js"
+			],
+			[
+				"issue-list",
+				"Field UI Project/js/app/ui/resources/views/issues/issues-list-page.html.jade"
+			],
+			[
+				"fmissueslistitem",
+				"Field UI Project/js/test/spec/ui/directives/issues/fmIssuesListItemSpec.js"
+			],
+			[
+				"fmissu",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssues.js"
+			],
+			[
+				"your-organisation.html.jade",
+				"Field UI Project/js/app/ui/resources/views/settings/your-organisation.html.jade"
+			],
+			[
+				"orgs",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/settings/YourOrganisationSettingsCtrl.js"
+			],
+			[
+				"headerctrl",
+				"Field UI Project/js/app/common/resources/scripts/controllers/HeaderCtrl.js"
+			],
+			[
+				"fmhead",
+				"Field UI Project/js/app/common/resources/scripts/directives/fmHeader.js"
+			],
+			[
+				"fmap",
+				"Field UI Project/js/app/common/resources/scripts/directives/fmApp.js"
+			],
+			[
+				"transl",
+				"Field UI Project/js/app/common/translations/translation_en.json"
+			],
+			[
+				"fmissuelistpage",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssuesListPage.js"
+			],
+			[
+				"issues-list-page.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/issues-list-page.html.jade"
+			],
+			[
+				"selectctrl",
+				"Field UI Project/js/app/common/resources/scripts/controllers/SelectCtrl.js"
+			],
+			[
+				"fmselect",
+				"Field UI Project/js/app/common/resources/scripts/directives/fmSelect.js"
+			],
+			[
+				"issuessortbyctrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssuesSortByCtrl.js"
+			],
+			[
+				"issues-sort-dropdown.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/issues-sort-dropdown.html.jade"
+			],
+			[
+				"fmissuesso",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssuesSortDropdown.js"
+			],
+			[
+				"fmedit",
+				"Field UI Project/js/test/spec/common/directives/fmEditableTextSpec.js"
+			],
+			[
+				"datefieldctrl",
+				"Field UI Project/js/test/spec/ui/controllers/issues/DateFieldCtrlSpec.js"
+			],
+			[
+				"issueassigneeselectctrl",
+				"Field UI Project/js/test/spec/ui/controllers/issues/IssueAssigneeSelectCtrlSpec.js"
+			],
+			[
+				"checklistdetailsctrl",
+				"Field UI Project/js/test/spec/ui/controllers/checklists/ChecklistDetailsCtrlSpec.js"
+			],
+			[
+				"organisationlabeldecorator",
+				"Field UI Project/js/app/common/resources/scripts/services/OrganisationLabelDecorator.js"
+			],
+			[
+				"roles",
+				"Field UI Project/js/test/spec/common/services/RolesSpec.js"
+			],
+			[
+				"template-list",
+				"Field UI Project/js/app/ui/checklists/templates-list/templates-list.controller.spec.js"
+			],
+			[
+				"",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.html.pug"
+			],
+			[
+				"issuesgridcontroller",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.controller.spec.js"
+			],
+			[
+				"issueeditfieldctrl",
+				"Field UI Project/js/test/spec/ui/controllers/issues/IssueEditFieldCtrlSpec.js"
+			],
+			[
+				"fmissuety",
+				"Field UI Project/js/test/spec/ui/directives/views/fmViewSettingsIssueTypesSpec.js"
+			],
+			[
+				"issue-edit-field.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/issue-edit-field.html.jade"
+			],
+			[
+				"fmissueedit",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssueEditField.js"
+			],
+			[
+				"issue-type-view-and-select.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/issue-type-view-and-select.html.jade"
+			],
+			[
+				"fmissuetyp",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssueTypeViewAndSelect.js"
+			],
+			[
+				"issue-assignee-select.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/issue-assignee-select.html.jade"
+			],
+			[
+				"fmissueassi",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssueAssigneeSelect.js"
+			],
+			[
+				"issue-assignee-view-and-select.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/issue-assignee-view-and-select.html.jade"
+			],
+			[
+				"issueassigneeviewandselectctrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssueAssigneeViewAndSelectCtrl.js"
+			],
+			[
+				"fmissueass",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssueAssigneeViewAndSelect.js"
+			],
+			[
+				"fmdate",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmDateField.js"
+			],
+			[
+				"templatelist",
+				"Field UI Project/js/app/ui/checklists/templates-list/templates-list.html.pug"
+			],
+			[
+				"issueslistitemctrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssuesListItemCtrl.js"
+			],
+			[
+				"issuetypeconfigctrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/settings/IssueTypeConfigCtrl.js"
+			],
+			[
+				"manage",
+				"Field UI Project/js/app/ui/checklists/common/template-category/manage-category.controller.js"
+			],
+			[
+				"routes",
+				"Field UI Project/js/app/ui/routes.js"
+			],
+			[
+				"uia",
+				"Field UI Project/js/app/ui/resources/scripts/uiapp.js"
+			],
+			[
+				"issuesgridfiltercontroller",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid-filter.controller.js"
+			],
+			[
+				"issues-search.html",
+				"Field UI Project/js/app/ui/issues/common/issues-search/issues-search.html.pug"
+			],
+			[
+				"paginati",
+				"Field UI Project/js/app/common/directives/pagination/pagination.js"
+			],
+			[
+				"view-settings-your-organisation.less",
+				"Field UI Project/js/app/common/resources/styles/components/view-settings-your-organisation.less"
+			],
+			[
+				"issues-grid.",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.controller.spec.js"
+			],
+			[
+				"issue-grid.d",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.directive.spec.js"
+			],
+			[
+				"issue-grid",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.controller.js"
+			],
+			[
+				"fmiss",
+				"Field UI Project/js/test/spec/ui/directives/issues/fmIssuesSpec.js"
+			],
+			[
+				"issues-search.html.pug",
+				"Field UI Project/js/app/ui/issues/common/issues-search/issues-search.html.pug"
+			],
+			[
+				"pagina",
+				"Field UI Project/js/app/common/directives/pagination/pagination.js"
+			],
+			[
+				"issues-li",
+				"Field UI Project/js/app/ui/resources/views/issues/issues-list-page.html.jade"
+			],
+			[
+				"issues-list",
+				"Field UI Project/js/app/ui/resources/views/issues/issues-list-page.html.jade"
+			],
+			[
+				"issuelst",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssuesListPageCtrl.js"
+			],
+			[
+				"managecategoryctrl",
+				"Field UI Project/js/app/ui/checklists/common/template-category/manage-category.controller.js"
+			],
+			[
+				"header",
+				"Field UI Project/js/test/spec/common/controllers/HeaderCtrlSpec.js"
+			],
+			[
+				"issues-grid.con",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.controller.spec.js"
+			],
+			[
+				"_h",
+				"Field UI Project/js/app/common/resources/styles/_headless.styl"
+			],
+			[
+				"fmissuevie",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssueAssigneeViewAndSelect.js"
+			],
+			[
+				"text-field.html.jade",
+				"Field UI Project/js/app/ui/resources/views/issues/text-field.html.jade"
+			],
+			[
+				"textfieldctrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/TextFieldCtrl.js"
+			],
+			[
+				"fmtext",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmTextField.js"
+			],
+			[
+				"fmisu",
+				"Field UI Project/js/test/spec/ui/directives/issues/fmIssuesSpec.js"
+			],
+			[
+				"spinner",
+				"Field UI Project/js/app/common/resources/scripts/services/Spinner.js"
+			],
+			[
+				"grow",
+				"Field UI Project/js/app/ui/resources/scripts/services/GrowlerService.js"
+			],
+			[
+				"fmlegac",
+				"Field UI Project/js/test/spec/ui/directives/issues/fmLegacyIssuesSwitchSpec.js"
+			],
+			[
+				"issues-grid-cont",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid.controller.spec.js"
+			],
+			[
+				"fmissuesfilterslist",
+				"Field UI Project/js/test/spec/ui/directives/issues/fmIssuesFiltersListSpec.js"
+			],
+			[
+				"ignore",
+				"Field UI Project/.eslintignore"
+			],
+			[
+				"fmapps",
+				"Field UI Project/js/test/spec/common/directives/fmAppSpec.js"
+			],
+			[
+				"fmapp",
+				"Field UI Project/js/app/common/resources/scripts/directives/fmApp.js"
+			],
+			[
+				"template-list.cont",
+				"Field UI Project/js/app/ui/checklists/templates-list/templates-list.controller.spec.js"
+			],
+			[
+				"issuedeta",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssueDetailsCtrl.js"
+			],
+			[
+				"issues.",
+				"Field UI Project/js/app/ui/resources/views/issues/issues.html.jade"
+			],
+			[
+				"routes.js",
+				"Field UI Project/js/app/ui/routes.js"
+			],
+			[
+				"uiapp",
+				"Field UI Project/js/app/ui/resources/scripts/uiapp.js"
+			],
+			[
+				"issuetypeviewandselectctrl",
+				"Field UI Project/js/app/ui/resources/scripts/controllers/issues/IssueTypeViewAndSelectCtrl.js"
+			],
+			[
+				"fmissuetye",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmIssueTypeViewAndSelect.js"
+			],
+			[
+				"fmdatefield",
+				"Field UI Project/js/app/ui/resources/scripts/directives/issues/fmDateField.js"
+			],
+			[
+				"issues-grid-row.html.pug",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid-row.html.pug"
+			],
+			[
+				"issues-grid-row",
+				"Field UI Project/js/app/ui/issues/issues-grid/issues-grid-row.directive.js"
+			],
+			[
+				"fmh",
+				"Field UI Project/js/app/common/resources/scripts/directives/fmHeader.js"
+			],
+			[
+				"run",
+				"Field UI Project/js/app/common/resources/scripts/services/Run.js"
+			],
+			[
+				"popover-shared-with.html.pug",
+				"Field UI Project/js/app/ui/checklists/templates-list/popover-shared-with.html.pug"
+			],
+			[
+				"area.html.jade",
+				"Field UI Project/js/app/ui/resources/views/settings/area.html.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 824.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 399.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

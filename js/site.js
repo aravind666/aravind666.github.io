@@ -9,13 +9,9 @@
     myroutines(window.jQuery, window, document);
 
 }(function($, window, document) {
-
     $(window).load(function() {
-        
 	   $(".loader-gear").fadeOut("slow");
-    
     })
-    
     $(function() {
 
         console.log('The DOM is ready and do things which you need to do');
@@ -32,11 +28,10 @@
                 isFitWidth: true
             });
         });
-
         $('pre code').each(function(i, block) {
             hljs.highlightBlock(block);
         });
-
+        $.timeliner({});
     });
 
     console.log('The DOM may not be ready');
