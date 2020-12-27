@@ -1,0 +1,312 @@
+@import 'sourcecode.css';
+
+main > .container {
+    padding: 60px 15px 0;
+}
+
+body {
+    background-color: #fffbf7;
+    color: #17a2b8;
+}
+
+.link-to-post {
+    color: #17a2b8;
+}
+
+.link-to-post:focus,
+.link-to-post:hover {
+    color: #25535A;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+/*
+ Text colouring for Navbar
+ */
+.header-text {
+    color: #fdff76;
+}
+
+.free-text {
+    color: #ffebb2;
+}
+
+p a,
+table tbody tr td a,
+blockquote a,
+.kesari-text {
+    color: #ff8906;
+}
+
+table tbody tr td a:hover,
+table tbody tr td a:focus,
+blockquote a:hover,
+blockquote a:focus,
+p a:hover,
+p a:focus {
+    color: #70541e;
+}
+
+/*
+ Backgrounds
+*/
+.kesari {
+    background-color: #ff8906;!important;
+}
+
+.gandha {
+    background-color: #ffebb2;!important;
+}
+
+.nimbe {
+    background-color: #fdff76;!important;
+}
+
+/*
+Colourful Navbar of Kesari designed by Aravind HU
+*/
+
+.navbar {
+    background-color: #ff8906;
+}
+
+.navbar .navbar-brand {
+    color: #ffebb2;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #fdff76;
+}
+
+.navbar .navbar-text {
+    color: #ffebb2;
+}
+
+.navbar .navbar-text a {
+    color: #ffebb2;
+}
+
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+    color: #fdff76;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffebb2;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #fdff76;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+    background-color: #ff9933;
+    border-color: #fdff76;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #fdff76;
+    background-color: #ffc357;
+    font-weight: bold;
+}
+
+.navbar .navbar-toggler {
+    border-color: #fdff76;
+}
+
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+    background-color: #fdff76;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+    color: #ffebb2;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+    border-color: #fdff76;
+}
+
+.navbar .navbar-link {
+    color: #eff0ef;
+}
+
+.navbar .navbar-link:hover {
+    color: #fdff76;
+}
+
+/*
+Glowing Hamberger
+ */
+.glowing-btn {
+    -webkit-animation: glowing 1300ms infinite;
+    -moz-animation: glowing 1300ms infinite;
+    -o-animation: glowing 1300ms infinite;
+    animation: glowing 1300ms infinite;
+}
+
+@-webkit-keyframes glowing {
+    0% {
+        background-color: #fdff76;
+        -webkit-box-shadow: 0 0 3px #fdff76;
+    }
+    50% {
+        background-color: #ffebb2;
+        -webkit-box-shadow: 0 0 15px #ffebb2;
+    }
+    100% {
+        background-color: #ffc357;
+        -webkit-box-shadow: 0 0 3px #ffc357;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #fdff76;
+        -webkit-box-shadow: 0 0 3px #fdff76;
+    }
+    50% {
+        background-color: #ffebb2;
+        -webkit-box-shadow: 0 0 15px #ffebb2;
+    }
+    100% {
+        background-color: #ffc357;
+        -webkit-box-shadow: 0 0 3px #ffc357;
+    }
+}
+
+/*
+    classes for custom content
+ */
+.contact-me .page-link {
+    border: none;
+    color: #70541e;
+}
+
+.contact-me .page-link:hover {
+    background-color: #ffebb2 !important;
+}
+
+.header-image {
+    height: 175px;
+    width: 175px;
+}
+/*
+Move to top
+ */
+.move-to-top {
+    color: #98622b;
+    padding: 4px;
+    cursor: pointer;
+    border: 3px solid #ff8906!important;
+    -webkit-animation: glow-mtp 1300ms infinite;
+    -moz-animation: glow-mtp 1300ms infinite;
+    -o-animation: glow-mtp 1300ms infinite;
+    animation: glow-mtp 1300ms infinite;
+}
+
+@keyframes glow-mtp {
+    0% {
+        color: #ffebb2;
+    }
+    50% {
+        color: #ffc357;
+    }
+    100% {
+        color: #98622b;
+    }
+}
+
+/*
+Footer styles
+ */
+.bg-light {
+    background-color: #ffebb2!important;
+}
+
+footer .navbar .navbar-brand {
+    color: #ff8906;
+    font-size: medium;
+}
+
+footer .navbar .navbar-brand:focus,
+footer .navbar .navbar-brand:hover {
+    color: #ff8906;
+}
+
+/*
+Styles of my posts
+ */
+
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+.blog-post {
+    margin-bottom: 4rem;
+}
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.first-letter {
+    font-size: 35px;
+    line-height: 70px;
+}
+

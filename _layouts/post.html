@@ -1,18 +1,36 @@
----
-layout: default
----
+{%- include header.html -%}
 
-<div class="row">
-    <div class="large-9 columns" role="content">
-        <article>
-            <h3><a href="#">{{ page.title }}</a></h3>
-            <h6>Written by <a href="/aboutme">{{ page.author }}</a> on {{ page.date | date: "%b %-d, %Y" }}</h6>
-                    {{ content }}
-        </article>
-    </div>
-    {% include side_bar_blog.html %}
+<div class="container-fluid pb-5">
+    <main role="main">
+        <div class="blog-main ml-4 mr-4">
+            <h2 class="pb-4 mb-4 mt-4 border-bottom">
+                {{ page.title | escape }}
+            </h2>
+            <div class="blog-post">
+                <p class="blog-post-meta">
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {{ page.date | date: date_format }}
+                    </time>
+                    {%- if page.modified_date -%}
+                    ~
+                    {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+                    <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+                        {{ mdate | date: date_format }}
+                    </time>
+                    {%- endif -%}
+                    {%- if page.author -%}
+                    • {% for author in page.author %}
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+                    {%- if forloop.last == false %}, {% endif -%}
+                    {% endfor %}
+                    {%- endif -%}
+                </p>
+                {{ content }}
+            </div><!-- /.blog-post -->
+        </div><!-- /.blog-main -->
+    </main><!-- /.container -->
+</div>
 
-</div>
-<div class="row">
-{% include social_media_bar.html %}
-</div>
+{%- include footer.html -%}

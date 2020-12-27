@@ -1,26 +1,25 @@
 ---
 layout: default
-description: "Aravind HU ( Aravind Udayashankara's ) experimental thoughts and understandings shared with public"
-title: "Personal Website and Blog"
-description: "Hi I am Aravind H.U (Aravind Udayashankara ). This is my personal website, it's a collection of superficial piecemeal knowledge of my own on technology, programming, open source software and frameworks. I am a software developer specializing in building high quality scalable web applications by using SDLC methodologies like Agile and by applying Object oriented design principles like SOLID I use open source technologies like PHP, Ruby, Rails, NodeJS and many more. I'm currently employed full-time and not open for consulting, but you can learn more about me and also read my blog posts ."
+title: "Aravind on Software"
+author: "Aravind HU"
+description: "Myself Aravind HU, I am an Autodidactist and a Software Developer.
+I’ve been working in the software industry since 2008.
+I am currently playing the role of Software Competency Lead
+at Philips Innovation Campus Bangalore."
 ---
-
-<div class="row">
-    <div class="large-12 columns">
-        <h2>
-            Hi I am Aravind Udayashankara
-        </h2>
-        <h3>
-            This is my personal website, it's a collection of superficial piecemeal knowledge of my own on Technology,
-            Programming, Process, Patterns, Platforms and Frameworks.
-        </h3>
-        <h3>
-            I am a software developer currently specializing in building high quality scalable applications on Web as well as Mobile
-            by using <a target="_blank" href="http://en.wikipedia.org/wiki/Systems_Development_Life_Cycle">SDLC</a> methodologies like <a target="_blank" href="http://en.wikipedia.org/wiki/Agile_software_development">Agile</a>  and by applying <a href="/oops/2014/08/23/object-oriented-design-principles/">  Object oriented design principles </a>like SOLID
-        </h3>
-        <h3>
-            I'm currently employed full-time and not open for consulting,
-            but you can learn more <a href="/aboutme">about me </a> and also read my <a href="/blog">blog posts </a>.
-        </h3>
-    </div>
+<div class="mb-4 ml-2 mt-4 mr-2">
+        {% assign categories = site.categories %}
+        {% for category in categories %}
+        <div class="col">
+            <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
+                <div class="p-4">
+                    <h3 class="p-2 border-bottom"> {{ category | first }}</h3>
+                    <p class="card-text mb-auto kesari-text lead">{% for post in category[1] %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+</div>
+<div class="container">
+    <div class="col"></div>
 </div>

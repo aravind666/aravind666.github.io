@@ -1,18 +1,16 @@
-# Site settings
-title: Aravind Udayashankara's Blog
+
+title: Aravind on Software
 email: aravind.udayashankara@gmail.com
-description: "Hi I'm Aravind Udayashankara and this is my blog, it's a collection of superficial piecemeal knowledge of my own on technology, programming, open source softwares and frameworks.
-              I am a software developer specializing in building web applications applying Agile methodologies with the help of various opensource technologies."
+description: ""
 baseurl: ""
 url: "http://aravindhu.com"
 twitter_username: aravindhu
 github_username:  aravind666
+google_analytics: UA-53462338-1
 
 # Build settings
-markdown: redcarpet
-permalink: pretty
-relative_permalinks: false
-
-collections:
-  categories:
-    output: true
+exclude: [.idea]
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+    {% elsif page.title %}
+        <meta name="description" content="{{ page.title }}">
+    {% endif %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    <meta content = "Aravind on Software" property="og:description">
+    <meta name="author" content="{{ page.author | escape }}">
+    <meta content ="article" property ="og:type">
+    <meta content="{{ page.title }}" property ="og:title">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>{{ page.title | escape }}</title>
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+        {%- include google-analytics.html -%}
+    {%- endif -%}
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/elusive-icons.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div class="navbar collapse navbar-collapse" id="navbarHeader">
+        <div class="d-flex justify-content-between">
+            <div class="col-sm mt-5">
+                <h4 class="header-text">Who Am I</h4>
+                <p class="pull-left free-text">
+                    <i>
+                        Myself Aravind, I am an Autodidactist and a Software Developer.
+                        I’ve been working in the software industry since 2008.
+                        I am currently playing the role of Software Competency Lead
+                        at Philips Innovation Campus Bangalore.</i>
+                </p>
+            </div>
+            <div class="col-sm mt-5">
+                <h4 class="header-text">What is This</h4>
+                <p class="free-text">
+                    <i>  This is my personal website,
+                        it's a collection of superficial piecemeal knowledge of my own on Technology,
+                        Programming, Process, Patterns, Platforms, Paradigms, Frameworks and bit of Philosophy.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid contact-me d-flex justify-content-center">
+            <a class="page-link kesari" target="_blank" href="https://stackexchange.com/users/1067259"><img src="https://stackexchange.com/users/flair/1067259.png" width="208" height="58" alt="profile for aravind.udayashankara on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for aravind.udayashankara on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
+            <a class="page-link kesari" target="_blank" href="https://www.linkedin.com/in/aravindudayashankara"><i class="el el-linkedin el-3x"></i></a>
+            <a class="page-link kesari" target="_blank" href="https://github.com/aravind666"><i class="el el-github el-3x"></i></a>
+            <a class="page-link kesari" target="_blank" href="mailto:aravind.udayashankara@gmail.com"><i class="el el-envelope el-3x"></i></a>
+        </div>
+    </div>
+    <div class="navbar shadow-sm navbar-light">
+        <a href="/" class="navbar-brand align-items-center flex-row justify-content-start">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+            <strong> &nbsp; Aravind H U</strong>
+        </a>
+
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/software.html">Software Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/impigrity.html">Impigrity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/management.html">Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cerberus.html">Cerberus</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn navbar-toggler-right glowing-btn" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                            aria-controls="navbarHeader" aria-expanded="false" aria-label="Know who am I">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
