@@ -2,7 +2,6 @@
 layout: post
 title:  "Domain Driven Design using CRC cards"
 category: Software Development
-date:   2014-08-23 14:47:19
 ---
 
 When we model classes for Domain, in any agile project, we start brainstorming the entities involved in the system, the way they communicate with each other, there properties and behaviours.
@@ -13,7 +12,7 @@ These cards are just paper handouts of post card size. Its very easy to create t
 
 Usually people use CRC cards in the below format.
 
-![Sample Class responsibility and collaboration card](/img/crc.jpg)
+![Sample Class responsibility and collaboration card](/assets/post_images/crc.jpg)
 
 You can create N number of cards, by reviewing requirement documents or an Agile user Story.
 
