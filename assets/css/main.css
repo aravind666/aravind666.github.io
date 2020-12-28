@@ -74,6 +74,15 @@ p a:focus {
     color: #70541e;
 }
 
+.nav-text-link {
+    color: #c8feff;
+}
+
+.nav-text-link:focus,
+.nav-text-link:hover {
+    color: #70541e;
+}
+
 /*
  Backgrounds
 */
