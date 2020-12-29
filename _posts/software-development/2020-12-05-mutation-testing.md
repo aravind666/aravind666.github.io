@@ -177,7 +177,7 @@ public void foo() {
 
 ### When to perform Mutation Analysis 
 
-This is quite tricky, It requires some sort of strategic analysis. As you know already know for a majority of the questions in Software Development the answer is "IT DEPENDS ..." . 
+This is quite tricky, It requires some sort of strategic analysis. As you already know for a majority of the questions in Software Development the answer is "IT DEPENDS ..." . 
 Even for this the answer is same. But you can actually make use of my experience to make your life little easy, I am not doing this mutation analysis since ages, but I have few years of experience doing it. 
 With that in mind I would like to share some approaches or strategies which had worked for me. 
 
@@ -185,6 +185,6 @@ Mutation analysis is a time-consuming process, it takes hell a lot of time and s
  
 ![MUTATION ANALYSIS STRATEGY](/assets/post_images/mutation-desicion.png)
 
-I have chosen 10 minutes as a breakout pomodoro time, why I choose 10 minutes is because my pomodoro size is 80 minutes, and I usually take a break for 10 minutes.
+I have chosen 10 minutes as a breakout [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) time, why I choose 10 minutes is because my pomodoro size is 80 minutes, and I usually take a break for 10 minutes.
 So what I usually do is post having good tests, post doing great refactoring, I start running mutation analysis and other checks and go for a break. 
 So this above flow chart requires some sort of customization, but I believe I made you understand the strategy that I apply to run mutation analysis.
