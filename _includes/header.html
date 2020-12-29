@@ -13,7 +13,14 @@
     <meta name="author" content="{{ page.author | escape }}">
     <meta content ="article" property ="og:type">
     <meta content="{{ page.title }}" property ="og:title">
-    <meta name="keywords" content="{{ page.keywords }}">
+    {%- if page.type == 'catalog' -%}
+        {% assign category = site.categories["Software Development"] %}
+        {% assign array_of_titles = "" | split: ',' %}
+        {% for post in category %} {% assign array_of_titles = array_of_titles | push: post.title %} {% endfor %}
+        <meta name="keywords" content="{{ array_of_titles | join: ',' }}">
+    {%- else -%}
+        <meta name="keywords" content="{{ page.keywords }}">
+    {%- endif -%}
     <meta name="generator" content="Jekyll v4.1.1">
     <title>{{ page.title | escape }}</title>
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
