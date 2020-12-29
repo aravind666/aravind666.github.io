@@ -63,7 +63,12 @@ table tbody tr td a,
 blockquote a,
 .kesari-text {
     color: #ff8906;
+    cursor: pointer;
 }
+
+/*.cursor-pointer{*/
+/*    cursor: pointer;*/
+/*}*/
 
 table tbody tr td a:hover,
 table tbody tr td a:focus,
@@ -72,15 +77,18 @@ blockquote a:focus,
 p a:hover,
 p a:focus {
     color: #70541e;
+    cursor: pointer;
 }
 
 .nav-text-link {
     color: #c8feff;
+    cursor: pointer;
 }
 
 .nav-text-link:focus,
 .nav-text-link:hover {
     color: #70541e;
+    cursor: pointer;
 }
 
 /*
