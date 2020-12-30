@@ -12,9 +12,16 @@ at Philips Innovation Campus Bangalore."
     {% assign category = site.categories["Cerberus"] %}
     <div class="col">
         <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
+            <div class="p-4">
+                <h3 class="p-2 border-bottom text-center"> <i class="el el-fast-forward"></i> The Cerberus <i class="el el-fast-forward"></i></h3>
+                <p class="lead text-justify">
+
+                </p>
+            </div>
+        </div>
+        <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
 
             <div class="p-4">
-                <h3 class="p-2 border-bottom"> Cerberus  </h3>
                 <p class="card-text mb-auto kesari-text lead">{% for post in category %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
             </div>
         </div>

@@ -41,7 +41,7 @@ There's also a good related quote that points out that
 Just imagine if we start rewarding people based on lines of code, people start writing more code on daily basis irrespective of weather it is required or not.
 People might go one step further and start Re-writing things and stop Re-using existing stuff. This might reduce the quality as well because some people might stop writing tests for code and start creating legacy code.
 Some might even start writing long classes, long methods without thinking about abstraction etc ... 
-After many days of such a pathetic life what we end up would be a working software looking like a Frankenstein Monster which is extremely huge and fragile.
+After many days of such a pathetic life what we end up would be a working software looking like a [Frankenstein Monster](https://en.wikipedia.org/wiki/Frankenstein%27s_monster) which is extremely huge and fragile.
 
 The customers of a product do not care weather how many lines of code are in the system. 
 They care whether the feature works properly or not. They also love your product based on how soon you can deliver the requested changes. 
@@ -70,7 +70,7 @@ For eg, If you are measuring developer productivity, Here are the things that I 
 These are really hard to measure. These measurements are a much better quality indicators. Just question yourself, if you have set of developers in your team who scores really high in all those 7 things that I have listed above. 
 you can actually deliver anything without any problems .
 
-If you are hiring someone from some Big company or some one who has solved some Algorithm, and he is too poor in all those 7 things that I have listed 
+If you are hiring someone from some Big company or someone who had solved some complex problem or someone who is aware of some complex algorithm, and he is too poor in all those 7 things that I have listed 
 what is the use of having such an Einstein/Newton in your team. 
 
 So measuring stuff is good for taking decisions as long as your decision on what all to measure is wise enough. 
