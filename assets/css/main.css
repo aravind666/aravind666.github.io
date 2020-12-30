@@ -70,6 +70,13 @@ blockquote a,
 /*    cursor: pointer;*/
 /*}*/
 
+.flip-icon {
+    transform: scaleX(-1);
+}
+
+
+
+
 .jumbotron a:hover,
 .jumbotron a:focus,
 table tbody tr td a:hover,
