@@ -51,7 +51,7 @@ function max(a, b)
 // Mutated code Version 2
 function max(a, b) 
 {
-   return (a <= b) ? b : a;
+   return (a => b) ? b : a;
 }
 
 // Mutated code Version 3

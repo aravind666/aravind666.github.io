@@ -70,6 +70,8 @@ blockquote a,
 /*    cursor: pointer;*/
 /*}*/
 
+.jumbotron a:hover,
+.jumbotron a:focus,
 table tbody tr td a:hover,
 table tbody tr td a:focus,
 blockquote a:hover,
