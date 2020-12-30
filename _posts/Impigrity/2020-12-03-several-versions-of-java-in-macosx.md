@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Switching between versions of Java in MacOSx"
-category: Impigrity
+category: The Impigrity Catalog
 author: "Aravind HU"
 description: "Having different modules of same software running in different versions of JAVA. Or Your team is an amazing team, and your product is an amazing product, built on latest JAVA, and you are an amazing engineer part of the same team, who always keeps an eye on new JAVA releases, and experiments its features. In either of the case, you need a setup in your machine, where you should be able to switch between the versions and flavours of Java. "
 keywords: "MacOSx, Multiple java versions, Switch Java versions, Multiple JDK's"

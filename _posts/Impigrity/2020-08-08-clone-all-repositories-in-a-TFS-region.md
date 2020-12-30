@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Clone all repos in a TFS region"
-category: Impigrity
+category: The Impigrity Catalog
 author: "Aravind HU"
 description: "Clone all repositories in a TFS region "
 keywords: "TFS, Git, clone, Github, multiple clone, TFS region, TFS-GIT, TFS git"

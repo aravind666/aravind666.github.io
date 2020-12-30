@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Clone all repositories in a Github Organization of Enterprise"
-category: Impigrity
+category: The Impigrity Catalog
 author: "Aravind HU"
 description: "Clone all repositories in a Github Organization of Enterprise "
 keywords: "Git, clone, Github, multiple clone, github enterprise"

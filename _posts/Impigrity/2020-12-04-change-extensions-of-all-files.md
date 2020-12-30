@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Changing file extensions of all files in a directory"
-category: Impigrity
+category: The Impigrity Catalog
 author: "Aravind HU"
 description: "My Personal blog, was built using Jekyll. In 2020, It was in my todo list to revamp the website. One of the Situation that I encountered was to rename the file extension of all 50 html files to markdown"
 keywords: "MacOSx, Changing file extensions, Terminal, Commandline, file extensions of all files in a directory"

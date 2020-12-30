@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Perform Git pull on all the sub directories"
-category: Impigrity
+category: The Impigrity Catalog
 author: "Aravind HU"
 description: "Perform Git pull on all the sub directories "
 keywords: "TFS, Git, git pull, Impigrity"
