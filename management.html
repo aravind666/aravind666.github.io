@@ -13,31 +13,10 @@ at Philips Innovation Campus Bangalore."
     {% assign category = site.categories["Management"] %}
     <div class="col">
         <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
-            <div class="p-4">
-                <h3 class="p-2 border-bottom text-center"> <i class="el el-align-right"></i> Management <i class="el el-align-left"></i></h3>
-                <p class="lead text-justify">
-                    As an engineer and an individual contributor for a longtime, I was always on the technical career ladder. I was always quite frustrated
-                   about the slower career growth rate  in a technical career ladder. As a person who is highly reflective by nature I started going under the rabbit hole to figure out
-                   the science behind management. I later ended up finding lots of things which helped me understand the facts and gave me some sort of piece of mind because the 6th sense which was giving me an instinct on bad management on several occasions was actually correct.
-                    Long long ago In 1987, <a class="kesari-text" target="_blank" href="https://www.nap.edu/read/18890/chapter/4">National Research council had defined management of technology</a> as : -
-                </p>
-                <blockquote class="blockquote">
-                    Management of Technology links between engineering , science and management disciplines to plan, develop, and implement technological capabilities to shape and accomplish
-                    the strategic and operational objective of the organization.
-                </blockquote>
-                <p class="lead text-justify">
-                    So the conclusion is how well you mange technology is all depends on how well you have strengthened the linkage between disciplines.
-                </p>
-                <p class="lead text-justify">
-                    In this section, I am publishing some of the successful ways which helps to
-                    strengthen the linkage between various disciplines .
-                </p>
-            </div>
-        </div>
-        <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
 
             <div class="p-4">
-                <p class="card-text mb-auto kesari-text lead">{% for post in category %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
+                <h3 class="p-2 border-bottom text-center"> <i class="el el-align-right"></i> Management <i class="el el-align-left"></i></h3>
+                <p class="card-text mb-auto kesari-link lead">{% for post in category %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
             </div>
         </div>
     </div>

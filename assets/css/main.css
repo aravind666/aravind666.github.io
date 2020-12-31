@@ -61,21 +61,10 @@ code {
 p a,
 table tbody tr td a,
 blockquote a,
-.kesari-text {
+.kesari-link {
     color: #ff8906;
     cursor: pointer;
 }
-
-/*.cursor-pointer{*/
-/*    cursor: pointer;*/
-/*}*/
-
-.flip-icon {
-    transform: scaleX(-1);
-}
-
-
-
 
 .jumbotron a:hover,
 .jumbotron a:focus,
