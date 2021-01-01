@@ -9,11 +9,10 @@
         <meta content ="{{ page.description }}"  property="og:description">
     {% elsif page.title %}
         <meta name="description" content="{{ page.title }}">
-        <meta content = "Aravind On Software"  property="og:description">
+        <meta content = "{{ page.title }}"  property="og:description">
     {% endif %}
     <meta content = "{{ site.title }}"  property="og:site_name">
     <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-
     <meta name="author" content="{{ page.author | escape }}">
     <meta content ="article" property ="og:type">
     <meta content="{{ page.title }}" property ="og:title">

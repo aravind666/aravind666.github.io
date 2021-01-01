@@ -3,10 +3,11 @@ layout: default
 title: "Aravind On Software"
 author: "Aravind HU"
 type: "catalog"
-description: "Myself Aravind HU ( ARAVIND UDAYASHANKARA ) , I am an Autodidactist and a Software Developer.
-I’ve been working in the software industry since 2008.
-I am currently playing the role of Software Competency Lead
-at Philips Innovation Campus Bangalore."
+description: "In the world of Software Development, there is nothing called Silver bullet solution.
+When ever I faced problems in my professional life,  I usually end up coming up with plethora of solutions. In the journey
+of finding those solutions, I usually end up perceive things which I was not so much aware of.
+This is the section where I publish, such new things which I had perceived in the past.
+"
 ---
 
 <div class="mb-4 ml-2 mt-4 mr-2">
@@ -15,6 +16,16 @@ at Philips Innovation Campus Bangalore."
         <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
             <div class="p-4">
                 <h3 class="p-2 border-bottom text-center"> <i class="el el-cog"></i> Software Development <i class="el el-cog"></i></h3>
+                <p class="lead text-justify">
+                In the world of Software Development, there is nothing called Silver bullet solution.
+                When ever I faced problems in my professional life,  I usually end up coming up with plethora of solutions. In the journey
+                of finding those solutions, I usually end up perceive things which I was not so much aware of.
+                This is the section where I publish, such new things which I had perceived in the past.
+                </p>
+            </div>
+        </div>
+        <div class="no-gutters border rounded mb-5 shadow-sm h-md-250">
+            <div class="p-4">
                 <p class="card-text mb-auto kesari-link lead">{% for post in category %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
             </div>
         </div>

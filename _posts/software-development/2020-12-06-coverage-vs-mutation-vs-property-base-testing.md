@@ -2,6 +2,8 @@
 layout: post
 title:  "Test Coverage Vs Mutation Testing Vs Property Base Testing"
 category: "Software Development"
+description: "Being a part of transformation team, I face lots of arguments, one such interesting argument was the need for Mutation testing and the need for Property based testing and the need for coverage. 
+All three of them enhances Brevity and Elegance of your source code. But All three of them comes with Three different values. "
 ---
 
 Being a part of transformation team, I face lots of arguments, one such interesting argument was the need for Mutation testing and the need for Property based testing and the need for coverage. 

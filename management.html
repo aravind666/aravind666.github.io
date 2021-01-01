@@ -3,19 +3,26 @@ layout: default
 title: "Aravind On Software - Management"
 author: "Aravind HU"
 type: "catalog"
-description: "Myself Aravind HU ( ARAVIND UDAYASHANKARA ), I am an Autodidactist and a Software Developer.
-I’ve been working in the software industry since 2008.
-I am currently playing the role of Software Competency Lead
-at Philips Innovation Campus Bangalore."
+description: "Managing Software Development is always challenging, It is challenging because it has 100s of aspects, It requires maintaining strong links between various other disciplines which your team collaborates with.
+This is the section where I publish some of the lessons of management that I learnt in my professional life.
+"
 ---
 
 <div class="mb-4 ml-2 mt-4 mr-2">
     {% assign category = site.categories["Management"] %}
     <div class="col">
         <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
-
             <div class="p-4">
                 <h3 class="p-2 border-bottom text-center"> <i class="el el-align-right"></i> Management <i class="el el-align-left"></i></h3>
+                <p class="lead text-justify">
+                    Managing Software Development is always challenging, It is challenging because it has 100s of aspects, It requires maintaining strong links between various other disciplines which your team collaborates with.
+                    This is the section where I publish some of the lessons of management that I learnt in my professional life.
+                </p>
+            </div>
+        </div>
+        <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
+
+            <div class="p-4">
                 <p class="card-text mb-auto kesari-link lead">{% for post in category %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
             </div>
         </div>

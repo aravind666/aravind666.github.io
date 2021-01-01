@@ -20,7 +20,7 @@ description: "I strongly believe that we human beings are bad in doing repetitiv
                 </p>
             </div>
         </div>
-        <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
+        <div class="no-gutters border rounded mb-5 shadow-sm h-md-250">
             <div class="p-4">
                 <p class="card-text mb-auto kesari-link lead">{% for post in category %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
             </div>
