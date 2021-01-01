@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% if page.description %}
         <meta name="description" content="{{ page.description }}">
+        <meta content ="{{ page.description }}"  property="og:description">
     {% elsif page.title %}
         <meta name="description" content="{{ page.title }}">
+        <meta content = "Aravind On Software"  property="og:description">
     {% endif %}
+    <meta content = "{{ site.title }}"  property="og:site_name">
     <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    <meta content = "Aravind On Software"  property="og:description">
+
     <meta name="author" content="{{ page.author | escape }}">
     <meta content ="article" property ="og:type">
     <meta content="{{ page.title }}" property ="og:title">
