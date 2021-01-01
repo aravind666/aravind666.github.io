@@ -3,6 +3,7 @@ layout: post
 title:  "The four categories of an acceptance criteria"
 category: "Management"
 author: "Aravind HU"
+description: "Reduce technical uncertainties by properly defining Acceptance Criteria"
 keywords: "Acceptance criteria, Agile, Story, Epic"
 ---
 
