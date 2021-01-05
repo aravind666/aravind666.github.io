@@ -25,8 +25,8 @@ Also, another conclusion was not all features are getting used by a decent subse
 
 When I did some personal research on to identify the root cause of this behaviour I ended up finding a real scientific reason behind this behaviour.
 
-I was also sad as well as happy :), lots of people were curious to know the reason for this sort of behaviour. American  psychologists [William Edmund Hick](https://en.wikipedia.org/wiki/W._E._Hick) and [Ray Hyman](https://en.wikipedia.org/wiki/Ray_Hyman) were the early curious folks who were curious on this behaviour.
-They came out with a nice description of observed phenomena and defined a law for by generalizing it.
+I was also sad ( because I was not the first one ) as well as happy :), because lots of people since ages were curious to know the reason for this sort of behaviour. American  psychologists [William Edmund Hick](https://en.wikipedia.org/wiki/W._E._Hick) and [Ray Hyman](https://en.wikipedia.org/wiki/Ray_Hyman) were the early curious folks who were curious about this behaviour.
+They came out with a nice description of observed phenomena and defined a law by generalizing it.
 
 It is popularly called Hick's law.
 
@@ -43,15 +43,16 @@ Also, the more you add elements on the screen, it becomes more hard for users to
 Adding a feature to the product is easy, but removing it is hard. Especially if your product is a commercial enterprise product or a product solving some problem for an enterprise. 
 Because business will ask for features to be built by paying for it,  and management or decision makers who asked you to build the feature will obviously not be so interested to remove it.
 
-So think, discuss and gather analytics before you build.
-
+So think, discuss and gather analytics or perform a proper usability test on existing behaviour before you build. Sometimes less functionality improves practicality and usability. 
+Software that is limited, but simple to use, may be more appealing and intuitive.
+                                                                               
 There is also a beautiful book written by a Psychology professor [Barry Schwartz](https://en.wikipedia.org/wiki/Barry_Schwartz_(psychologist)) it is called 
 
 ["The Paradox of Choice – Why More is Less"](https://www.goodreads.com/book/show/10639.The_Paradox_of_Choice). 
 
 Just for your information, I did not read his book, I just listened to his interesting, thoughtful and insightful TED talk in Youtube.
 
-<div class="ratio ratio-16x9">
+<div class="ratio">
     <iframe src="https://www.youtube.com/embed/VO6XEQIsCoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -61,8 +62,7 @@ There are so many real world examples which I later was able to point out
 2.  Steve job's always used to wear Black long-sleeved mock turtleneck T-shirt and a Levis Jeans pant throughout his life in all his public appearances .
 3.  Albert Einstein use to always wear a typical grey suit every day. 
 
-These folks might have learnt or might have figured out long back that it saves a lot of time by keeping lesser options.    
-
+These folks might have learnt or figured out long back that it saves a lot of time and helps them to be productive by keeping lesser options.    
 
 
  

@@ -21,6 +21,8 @@
     {%- else -%}
         <meta property="og:image" content="{{ site.url }}/assets/post_images/AOS-og.png"/>
     {%- endif -%}
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
     {%- if page.type == 'catalog' -%}
         {% assign category = site.categories["Software Development"] %}
         {% assign array_of_titles = "" | split: ',' %}
