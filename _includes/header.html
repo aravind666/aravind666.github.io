@@ -16,6 +16,11 @@
     <meta name="author" content="{{ page.author | escape }}">
     <meta content ="article" property ="og:type">
     <meta content="{{ page.title }}" property ="og:title">
+    {% if page.image %}
+        <meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
+    {%- else -%}
+        <meta property="og:image" content="{{ site.url }}/assets/post_images/AOS-og.png"/>
+    {%- endif -%}
     {%- if page.type == 'catalog' -%}
         {% assign category = site.categories["Software Development"] %}
         {% assign array_of_titles = "" | split: ',' %}
@@ -33,7 +38,10 @@
     <link href="/assets/css/elusive-icons.min.css" rel="stylesheet">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 

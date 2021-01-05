@@ -3,6 +3,7 @@ layout: post
 title:  "Options... Options... Options..."
 category: "Management"
 author: "Aravind HU"
+image: "/assets/post_images/options-options-options.png"
 description: "Time taken by a person to make a decision from possible options increases logarithmically when  number of choices are increased "
 keywords: "Hick's Law, complexity of choices, more is less, The Paradox of Choice, Why More Is Less, Analysis paralysis, Options"
 ---
