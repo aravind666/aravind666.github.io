@@ -146,3 +146,8 @@ In case of Maven, to treat compiler warnings as errors we can use [Maven compile
     </configuration>
 </plugin>
 ```
+
+{:.alert .alert-secondary .text-justify}
+If you are building A spring Boot application, I have seen some difficulties in treating warnings as errors. 
+Please do visit my another post on [treating warnings as errors in Spring Boot](/software%20development/2021/03/20/spring-boot-treat-warnings-as-errors.html)
+where I explain it in detail.
