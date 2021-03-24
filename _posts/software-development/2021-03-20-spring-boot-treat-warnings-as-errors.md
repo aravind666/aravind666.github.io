@@ -11,7 +11,7 @@ keywords: "Compiler warnings, warnings, compiler errors, treat warnings as error
 As I have explained in my previous post on [how important and helpful it is to treat compiler warnings as errors](/software%20development/2021/03/18/treat-warnings-as-errors-in-java.html).
 From my experience, I had found that Spring Boot framework used to building production-grade Spring-based Applications in JAVA, has its complications to deal with when the team decides to treat compiler warnings as fatal.
 
-#### Here is the working solution for those spring boot developers who are struggling hard looking for a way to compiler warnings as errors in their application.
+#### Here is the working solution for those spring boot developers who are struggling hard looking for a way to treat compiler warnings as errors in their application.
 
 If you are using maven to build your Spring Boot application and wanted to treat warnings as errors.
 
