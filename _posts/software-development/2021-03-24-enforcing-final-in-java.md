@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Applying some final thoughts on Java final modifier"
+title:  "Enforce your final thoughts on Java final modifier"
 category: "Software Development"
 author: "Aravind HU"
 description: "In Java, all methods and instance variables can be overridden by default. If you wish to declare that you want to no longer allow subclasses to override your variables or methods, you can declare them with <b>final</b> modifier"
