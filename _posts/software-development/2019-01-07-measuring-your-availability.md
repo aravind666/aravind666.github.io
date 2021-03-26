@@ -4,7 +4,7 @@ title: "Measuring the availability"
 category: "Software Development"
 description: "One of the first and foremost steps in creating a Risk matrix for scalability perspective is to measure the availability of your product"
 ---
-Previously in the post ["Techniques to build applications with high availability"](/software%20development/2019/01/06/Techniques-to-build-applications-with-high-availability.html), I had described various techniques to increase the availability of your application. 
+Previously in the post ["Building applications with high availability"](/software%20development/2019/01/06/build-applications-with-high-availability.html), I had described various techniques to increase the availability of your application. 
 One of the techniques that I described there is creating a Risk matrix
 
 One of the first and foremost steps in creating a Risk matrix for scalability perspective is to measure the availability of your product
