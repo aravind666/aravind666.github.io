@@ -22,10 +22,13 @@ description: "It is a tool to measure code quality parameters, With in this sect
                 </p>
             </div>
         </div>
-        <div class="no-gutters border rounded mb-5 shadow-sm h-md-250">
-
-            <div class="p-4">
-                <p class="card-text mb-auto kesari-link lead">{% for post in category %}{{ forloop.index }}.&nbsp;<a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
+        <div class="no-gutters border rounded mb-5 shadow-sm h-md-250 p-3">
+            <div class="card-columns">
+                {% for post in category %}
+                <div class="card">
+                    <div class="card-header kesari-link mb-auto">{{ forloop.index }}. <a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a></div>
+                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
