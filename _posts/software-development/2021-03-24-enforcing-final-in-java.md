@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Enforce your final thoughts on Java final modifier"
+title:  "The Java final modifier, What is the right way to use it ?.  How to enforce the right way? "
 category: "Software Development"
 author: "Aravind HU"
-description: "In Java, all methods and instance variables can be overridden by default. If you wish to declare that you want to no longer allow subclasses to override your variables or methods, you can declare them with <b>final</b> modifier"
+description: "In Java, all methods and instance variables can be overridden by default. If you wish to declare that you want to no longer allow subclasses to override your variables or methods, you can declare them with the final modifier or final keyword. In this post, I  would like to share how you can enforce your team to use it in the right way via static analysis."
 keywords: "Final modifier, checkstyle final, Final keyword java, Java seal classes, prevent overriding methods and variables"
 ---
 
