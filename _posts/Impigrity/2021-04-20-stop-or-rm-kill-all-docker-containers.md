@@ -32,7 +32,7 @@ docker ps -aq
 
 ```
 
-**To Stop all containers in my machine: -**
+**To Stop all containers in my machine with impigrity: -**
 
 Use the trick we just did in your shell 
 
@@ -42,7 +42,7 @@ docker container stop $(docker ps -aq)
 
 ```
 
-**To Kill all containers in my machine: -**
+**To Kill all containers in my machine with impigrity: -**
 
 {:.alert .alert-info}
 This is different from stop actually stop gracefully stops the container and kill terminates instantly. To understand more in detail 
@@ -54,7 +54,7 @@ docker container kill $(docker ps -aq)
 
 ```
 
-**To Remove all containers in my machine: -**
+**To Remove all containers in my machine with impigrity: -**
 ```shell
 
 docker container rm $(docker ps -aq) 
