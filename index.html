@@ -3,30 +3,35 @@ layout: default
 title: "Aravind On Software By Aravind HU"
 author: "Aravind HU"
 type: "catalog"
-description: "Myself Aravind HU (ARAVIND UDAYASHANKARA, aravindhu) and Autodidactist and a Software Developer, 'Aravind On Software'
-collection of superficial piecemeal knowledge of my own on Technology ."
+description: "Myself Aravind HU , an experienced, hands-on software architect, involved in the
+architecture, design, and implementation of microservices
+architectures, service-oriented architectures, micro front-end architectures, and other
+distributed systems in a variety
+of technologies. Being in the software industry for around 15 years have built
+significant competencies in application,
+integration, and enterprise architecture, mostly within the Finance, Healthcare, and
+Construction Domains."
 ---
 
-
-
 <div class="mb-4 ml-2 mt-4 mr-2">
-        {% assign categories = site.categories %}
-        {% for category in categories %}
-        <div class="col">
-            <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
-                <div class="p-4">
-                    <h3 class="p-2 border-bottom"> {{ category | first }}</h3>
-                    <div class="card-columns">
-                        {% for post in category[1] %}
-                            <div class="card">
-                                <div class="card-header kesari-link mb-auto">{{ forloop.index }}. <a class="link-to-post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a></div>
-                            </div>
-                        {% endfor %}
+    {% assign categories = site.categories %}
+    {% for category in categories %}
+    <div class="col">
+        <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
+            <div class="p-4">
+                <h3 class="p-2 border-bottom"> {{ category | first }}</h3>
+                <div class="card-columns">
+                    {% for post in category[1] %}
+                    <div class="card">
+                        <div class="card-header kesari-link mb-auto">{{ forloop.index }}. <a class="link-to-post"
+                                href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a></div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-        {% endfor %}
+    </div>
+    {% endfor %}
 </div>
 <div class="container">
     <div class="col"></div>
