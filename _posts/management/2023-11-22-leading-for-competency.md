@@ -3,10 +3,14 @@ layout: post
 title:  "Leading For Competence - Getting Things Done"
 category: "Management"
 author: "Aravind HU"
-image: "/assets/post_images/Leading-for-Competence.png"
+image: "/assets/post_images/Leading-for-competency.png"
 description: "Finding a way to exhibit your behavior to influence the performance of an individual based on his Competence"
 keywords: "Leadership styles, Competence based leadership, leadership for Competence"
 ---
+
+<figure class="figure w-50 float-left m-3 col-3">
+    <img src="/assets/post_images/Leading-for-competency.png" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
+</figure>
 
 With 15+ years of experiance in Software Industry, one of the most important quality of a leader which I understood was "Getting Things Done". This is purely a personal opinion, what ever Oxford english dictionary calls or Harward business management books call it, End of the day the quality which could call a leader as a good leader is nothing but the quality of "Get things done".
 
@@ -55,6 +59,10 @@ This way of classifying people would ease my behavioural reflection while dealin
 
 Situational Leadership Theory, developed by Paul Hersey and Ken Blanchard in the late 1960s and early 1970s, Helps us by defining four leadership Behaviours, each corresponding to a different level of follower readiness. The theory also suggests there is no one-size-fits-all approach to leadership. Instead, effective leaders adapt their leadership style based on the readiness or maturity ( Competence or Commitment ) of their followers
 
+<figure class="figure w-50 float-right m-3 col-3">
+    <img src="/assets/post_images/leader-support.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
+</figure>
+
 1. **Directing** : - The Leader should provide specific instructions and closely supervises task accomplishment.
 
 2. **Coaching** : - The leader continues to direct and closely supervise task accomplishment, but also explains decisions, solicits suggestions, and supports progress.
@@ -63,7 +71,7 @@ Situational Leadership Theory, developed by Paul Hersey and Ken Blanchard in the
 
 4. **Delegating** : - The leader turns over responsibility for decision making and problem solving to subordinates.
 
-Before reflecting on a each behaviours listed above, it is better to understand that no matter what behaviour you exhibit by reflecting against the individual's Competence and commitment,
+Before reflecting on a each behaviours listed above, it is better to understand that no matter what behaviour you exhibit by reflecting against the individual's Competence and commitment.
 
 > You should be capable of doing things which your subordinates cannot do for themselves. If not then it is hard to lead any sort of people, or you are not the correct person to lead them
 
@@ -95,7 +103,6 @@ The table Below provides a clean overview of different leadership styles, their 
     </tr>
   </tbody>
 </table>
-
 
 Leadership effectiveness depends on various factors, including the specific situation, organizational culture, and individual personalities. Remember that effective leadership involves flexibility and the ability to adapt to the needs of individuals and the situation at hand. Leaders may need to use a combination of styles based on the characteristics of the team and the context in which they are working. Additionally, it's essential to consider ethical considerations and organizational values when choosing a leadership approach.
 
