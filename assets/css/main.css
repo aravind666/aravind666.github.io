@@ -9,6 +9,8 @@ body {
     color: #17a2b8;
 }
 
+
+
 .link-to-post {
     color: #17a2b8;
 }
@@ -66,6 +68,16 @@ blockquote a,
     cursor: pointer;
 }
 
+table th {
+    color: #ff8906;
+    cursor: pointer;
+}
+
+table tr {
+    color: #17a2b8;
+    cursor: pointer;
+}
+
 .jumbotron a:hover,
 .jumbotron a:focus,
 table tbody tr td a:hover,
@@ -87,6 +99,12 @@ p a:focus {
 .nav-text-link:hover {
     color: #70541e;
     cursor: pointer;
+}
+
+blockquote p {
+    color:  #ff8906;
+    font-style: italic;
+    font-size: large;
 }
 
 /*
