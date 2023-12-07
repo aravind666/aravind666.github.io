@@ -68,6 +68,22 @@ blockquote a,
     cursor: pointer;
 }
 
+.table {
+    width: 50%;
+    border: 1px solid #f35e08;
+}
+
+.table td, .table th, .table tr {
+    padding: 0.75rem;
+    vertical-align: baseline;
+    text-align: center;
+    border: 1px solid #17a2b8;
+}
+
+.table thead th {
+    border: 2px solid #17a2b8;
+}
+
 table th {
     color: #ff8906;
     cursor: pointer;

@@ -12,9 +12,9 @@ keywords: "Leadership styles, Competence based leadership, leadership for Compet
     <img src="/assets/post_images/Leading-for-competency.png" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
 </figure>
 
-With 15+ years of experience in the Software Industry, one of the most important leadership qualities I have come to appreciate is “Getting Things Done”. This is purely a personal opinion. Regardless of what the Oxford English dictionary or Harvard business management books say, at the end of the day the quality that defines a good leader is nothing but the things they get done.  
+With 15+ years of experience in the Software Industry, one of the most important leadership qualities I have come to appreciate is **“Getting Things Done”**. This is purely a personal opinion. Regardless of what the Oxford English dictionary or Harvard business management books say, at the end of the day the quality that defines a good leader is nothing but the things they get done.  
 
-There are many leadership books, self-help books, and there are pioneers and legends who have spoken about leadership styles, leadership approaches, and many more. I      read some of them - to be honest, many of them. One of the common patterns I noticed was that most of them focus on the behavior approach. But none of them actually tell   the reader the reflection of behavior based on the competence of the individual, and they provide scattered information on certain terminologies. In this blog post, I will explain in detail how to answer some questions regarding “Getting Things Done” by reflecting on your behavior based on the levels of competence of the people      you are working with.
+There are many leadership books, self-help books, and there are pioneers and legends who have spoken about leadership styles, leadership approaches, and many more. I      read some of them - to be honest, many of them. One of the common patterns I noticed was that most of them focus on the behavior approach. But none of them actually tell   the reader the reflection of behavior based on the competence of the individual, and they provide scattered information on certain terminologies. In this blog post, I will explain in detail how to answer some questions regarding **“Getting Things Done”** by reflecting on your behavior based on the levels of competence of the people      you are working with.
 
 #### Before I explain this, let me explain a few terms we often use when talking about leadership
 
@@ -28,7 +28,7 @@ There are many leadership books, self-help books, and there are pioneers and leg
 
 **Commitment:**  Commitment is a combination of confidence and motivation.
 
-Now it's time for me to help you understand what is the problem in “Getting Things Done”.
+Now it's time for me to help you understand what is the problem in **“Getting Things Done”**.
 
 > The problem would be either Commitment or Competence.
 
@@ -49,8 +49,6 @@ One easy approach would be to classify them based on the combination of Commitem
 
 There are some other combinations which I would assume you defer a candidate during the interview when you hire, If you identify such characteristics. Ideally no leader hires folks with such character. Sometimes it happens, as you all know it is common, there are exceptions in every organization.
 
-There are some other combinations which I would assume would lead you to defer a candidate when interviewing them for hire. Ideally no leader hires folks with such character. But sometimes, it happens, as you know, there are exceptions in every organization.
-
 ##### One of those no hire red-flag combinations : -
 
 1. Low Competence and Low commitment
@@ -61,18 +59,13 @@ This way of classifying people would ease my behavioral reflection while evaluat
 
 Situational Leadership Theory, developed by Paul Hersey and Ken Blanchard in the late 1960s and early 1970s, helps us by defining four leadership behaviors, each corresponding to a different level of follower readiness. The theory also suggests there is no one-size-fits-all approach to leadership. Instead, effective leaders adapt their leadership style based on  readiness or maturity ( Competence or Commitment ) of their followers.
 
-<figure class="figure w-50 float-right m-3 col-3">
-    <img src="/assets/post_images/leader-support.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
-</figure>
+1. **Directing:**  The Leader should provide specific instructions and closely supervises task accomplishment.
 
+2. **Coaching:**  The leader continues to direct and closely supervise task accomplishment, but also explains decisions, solicits suggestions, and supports progress.
 
-1. **Directing** :  The Leader should provide specific instructions and closely supervises task accomplishment.
+3. **Supporting:**  The Leader facilitates and supports subordinate's efforts toward task accomplishment and shares responsibility for decision making with them.
 
-2. **Coaching** : The leader continues to direct and closely supervise task accomplishment, but also explains decisions, solicits suggestions, and supports progress.
-
-3. **Supporting** : The Leader facilitates and supports subordinates’ efforts toward task accomplishment and shares responsibility for decision making with them.
-
-4. **Delegating** : The leader turns over responsibility for decision making and problem solving to subordinates.
+4. **Delegating:**  The leader turns over responsibility for decision making and problem solving to subordinates.
 
 
 As a leader before reflecting on each of those leadership styles above, it is better to understand that no matter what style you exhibit your personal capability matters a lot.
@@ -108,12 +101,16 @@ The table Below provides a clean overview of different leadership styles, their 
   </tbody>
 </table>
 
+<figure class="figure float-right m-2 col-2">
+    <img src="/assets/post_images/leader-support.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
+</figure>
+
 Leadership effectiveness depends on various factors, including the specific situation, organizational culture, and individual personalities. Remember that effective leadership involves flexibility and the ability to adapt to the needs of individuals and the situation at hand. Leaders may need to use a combination of styles based on the characteristics of the team and the context in which they are working. Additionally, it's essential to consider ethical considerations and organizational values when choosing a leadership approach.
 
 To summarize, to successfully lead your followers, all you have to do is  understand their commitment and Competence, and reflect on your behavior based on that. That would help you get things done.
 
 > The most factful evidence of a leader who got things done is when
-> people say "We did overselves".
+> people say "We Did Overselves".
 
 There are several tools for a leader such as 
 
@@ -121,4 +118,4 @@ There are several tools for a leader such as
 2. Recognizing individuals 
 3. Reprimands 
 
-Which would help him to change the characteristics of people but again, A leader cannot always work on changing the characteristics of people or he cannot also always work on Getting things done, there should be a balance. That would be another blog post for sure. I hope you enjoyed reading this. 
+Which would help him to change the characteristics of people but again, A leader cannot always work on changing the characteristics of people or he cannot also always work on **“Getting Things Done”**, there should be a balance. That would be another blog post for sure. I hope you enjoyed reading this. 
