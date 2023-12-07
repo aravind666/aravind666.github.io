@@ -18,15 +18,15 @@ There are many leadership books, self-help books, and there are pioneers and leg
 
 #### Before I explain this, let me explain a few terms we often use when talking about leadership
 
-**Skill: ** A skill is a specific ability or expertise that is developed through training, practice, or experience. Skills are often practical, tangible, and can be easily measured or demonstrated. Examples include debugging a software, programming in a particular language, defining a stack in a cloud service provider like AWS, or using a particular software for observability, etc... Skills are often easier to measure and assess objectively. You can test or observe someone’s proficiency in a particular skill through practical tasks or assessments such as AWS certifications or Azure certifications etc...     
+**Skill:**  A skill is a specific ability or expertise that is developed through training, practice, or experience. Skills are often practical, tangible, and can be easily measured or demonstrated. Examples include debugging a software, programming in a particular language, defining a stack in a cloud service provider like AWS, or using a particular software for observability, etc... Skills are often easier to measure and assess objectively. You can test or observe someone’s proficiency in a particular skill through practical tasks or assessments such as AWS certifications or Azure certifications etc...     
 
-**Competence: ** Competence is a broader concept that encompasses a combination of skills, knowledge, abilities, and behaviors required to perform a specific job or task effectively. Competencies are often seen as a set of attributes that contribute to overall job performance. This means the competence of a person is a function of knowledge and skills that can be gained from education, training, and experience. Competencies may involve a combination of skills, knowledge, and behaviors, making them sometimes more challenging to measure in a straightforward manner. Assessing competencies often requires a more holistic evaluation of an individual’s performance. Remember those code assessment, system design, and code pairing interviews that companies conduct before hiring? They are meant to assess competencies.
+**Competence:**  Competence is a broader concept that encompasses a combination of skills, knowledge, abilities, and behaviors required to perform a specific job or task effectively. Competencies are often seen as a set of attributes that contribute to overall job performance. This means the competence of a person is a function of knowledge and skills that can be gained from education, training, and experience. Competencies may involve a combination of skills, knowledge, and behaviors, making them sometimes more challenging to measure in a straightforward manner. Assessing competencies often requires a more holistic evaluation of an individual’s performance. Remember those code assessment, system design, and code pairing interviews that companies conduct before hiring? They are meant to assess competencies.
 
-**Confidence: ** Confidence is a measure of a person’s self-assuredness - a feeling of being able to do a task well without much supervision.
+**Confidence:**  Confidence is a measure of a person’s self-assuredness - a feeling of being able to do a task well without much supervision.
 
-**Motivation: ** Motivation is a person’s interest in and enthusiasm for doing a task well.
+**Motivation:**  Motivation is a person’s interest in and enthusiasm for doing a task well.
 
-**Commitment: ** Commitment is a combination of confidence and motivation.
+**Commitment:**  Commitment is a combination of confidence and motivation.
 
 Now it's time for me to help you understand what is the problem in “Getting Things Done”.
 
