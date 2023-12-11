@@ -12,7 +12,7 @@ keywords: "Leadership styles, Competence based leadership, leadership for Compet
     <img src="/assets/post_images/Leading-for-competency.png" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
 </figure>
 
-With 15+ years of experience in the Software Industry, one of the most important leadership qualities I have come to appreciate is **“Getting Things Done”**. This is purely a personal opinion. Regardless of what the Oxford English dictionary or Harvard business management books say, at the end of the day the quality that defines a good leader is nothing but the things they get done.  
+With 15+ years of experience in the Software Industry, one of the most important leadership qualities I have come to appreciate is **“Getting Things Done”**. This is purely a personal opinion. Regardless of what the Oxford English dictionary or Harvard business management books say, at the end of the day, the most important quality that defines a good leader are the things they get done.  
 
 There are many leadership books, self-help books, and there are pioneers and legends who have spoken about leadership styles, leadership approaches, and many more. I      read some of them - to be honest, many of them. One of the common patterns I noticed was that most of them focus on the behavior approach. But none of them actually tell   the reader the reflection of behavior based on the competence of the individual, and they provide scattered information on certain terminologies. In this blog post, I will explain in detail how to answer some questions regarding **“Getting Things Done”** by reflecting on your behavior based on the levels of competence of the people      you are working with.
 
@@ -110,7 +110,7 @@ Leadership effectiveness depends on various factors, including the specific situ
 To summarize, to successfully lead your followers, all you have to do is  understand their commitment and Competence, and reflect on your behavior based on that. That would help you get things done.
 
 > The most factful evidence of a leader who got things done is when
-> people say "We Did Overselves".
+> people say "We Did It Overselves".
 
 There are several tools for a leader such as 
 
@@ -119,3 +119,12 @@ There are several tools for a leader such as
 3. Reprimands 
 
 Which would help him to change the characteristics of people but again, A leader cannot always work on changing the characteristics of people or he cannot also always work on **“Getting Things Done”**, there should be a balance. That would be another blog post for sure. I hope you enjoyed reading this. 
+
+#### References
+If you're interested in delving deeper into the topic of Situational Leadership Theory, the following references provide valuable insights and additional perspectives:
+
+*Blanchard, Kenneth H. (2019). Leading at a higher level : Blanchard on leadership and creating high performing organizations. Ken Blanchard Companies [OCLC 1081335498](https://www.worldcat.org/oclc/1081335498)*
+
+#### Credits
+
+I would like to extend my heartfelt appreciation to my colleagues [Ruben](https://www.linkedin.com/in/ruben-olivier-6572741/), [Jill](https://www.linkedin.com/in/jill-dorjath/), [Allesandra](https://www.linkedin.com/in/allesandra-c-2992b220a/) and [Ben](https://www.linkedin.com/in/bendee983/) at Philips for their invaluable assistance with lot encouragement in enhancing the readability of my blog post. Their insightful feedback and collaborative efforts played a crucial role in making the content more engaging and intuitive. I am truly grateful for their support and contributions to this endeavour.
