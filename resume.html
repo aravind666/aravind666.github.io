@@ -1,0 +1,739 @@
+---
+layout: default
+title: "Aravind HU - Resume | Platform Engineering Leader"
+description: "Senior Engineering & Platform Leader with 15+ years transforming delivery velocity, developer experience, and engineering ecosystems"
+---
+
+<style>
+/* Animated Background Particles */
+.floating-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.1;
+    animation: float 20s infinite ease-in-out;
+}
+
+.shape.circle {
+    border-radius: 50%;
+    background: var(--nature-green);
+}
+
+.shape.square {
+    background: var(--dark-green);
+    transform: rotate(45deg);
+}
+
+.shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 52px solid var(--light-green);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-100px) rotate(180deg); }
+}
+
+.shape:nth-child(1) { width: 80px; height: 80px; left: 10%; top: 20%; animation-duration: 15s; }
+.shape:nth-child(2) { width: 60px; height: 60px; left: 80%; top: 60%; animation-duration: 18s; animation-delay: 2s; }
+.shape:nth-child(3) { left: 20%; top: 70%; animation-duration: 22s; animation-delay: 4s; }
+.shape:nth-child(4) { width: 50px; height: 50px; left: 70%; top: 30%; animation-duration: 16s; animation-delay: 1s; }
+.shape:nth-child(5) { width: 90px; height: 90px; left: 50%; top: 80%; animation-duration: 20s; animation-delay: 3s; }
+.shape:nth-child(6) { left: 90%; top: 15%; animation-duration: 19s; animation-delay: 5s; }
+
+/* Content Container with z-index */
+.resume-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animated Hero Section */
+.hero-animated {
+    background: linear-gradient(135deg, var(--nature-green) 0%, var(--dark-green) 100%);
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.hero-animated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="%23ffffff" fill-opacity="0.1" fill-rule="evenodd"/%3E%3C/svg%3E');
+    opacity: 0.3;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.typing-text {
+    border-right: 3px solid var(--soft-cream);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(40) 1s both, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Scroll-triggered fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animated Timeline */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--light-green), var(--dark-green));
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-item:nth-child(even) {
+    transform: translateX(50px);
+}
+
+.timeline-item:nth-child(even).visible {
+    transform: translateX(0);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: var(--nature-green);
+    border: 4px solid var(--soft-cream);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(63, 184, 72, 0.7); }
+    50% { transform: translateX(-50%) scale(1.1); box-shadow: 0 0 0 10px rgba(63, 184, 72, 0); }
+}
+
+.timeline-content {
+    width: 45%;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(63, 184, 72, 0.2);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 55%;
+}
+
+/* Skill Pills with animation */
+.skill-pill {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    background: var(--soft-cream);
+    border: 2px solid var(--light-green);
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark-green);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-pill:hover {
+    background: var(--light-green);
+    color: white;
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 4px 12px rgba(63, 184, 72, 0.3);
+}
+
+/* Animated Stats Counter */
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--nature-green);
+    display: inline-block;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 8px 25px rgba(63, 184, 72, 0.2);
+}
+
+/* Progress bars */
+.capability-bar {
+    height: 8px;
+    background: var(--cream-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.capability-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--nature-green), var(--light-green));
+    border-radius: 10px;
+    width: 0;
+    transition: width 1.5s ease;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.capability-bar.visible .capability-progress {
+    width: var(--progress-width);
+}
+
+/* Floating CTA Button */
+.floating-cta {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    animation: floatUp 3s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.floating-cta .button {
+    box-shadow: 0 6px 20px rgba(63, 184, 72, 0.4);
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 60px !important;
+    }
+    
+    .timeline-item {
+        transform: translateX(0) !important;
+    }
+}
+
+/* Contact card hover effect */
+.contact-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--nature-green);
+}
+
+.contact-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(63, 184, 72, 0.2);
+    border-left-width: 8px;
+}
+</style>
+
+<!-- Floating Background Shapes -->
+<div class="floating-shapes">
+    <div class="shape circle"></div>
+    <div class="shape square"></div>
+    <div class="shape triangle"></div>
+    <div class="shape circle"></div>
+    <div class="shape square"></div>
+    <div class="shape triangle"></div>
+</div>
+
+<div class="resume-content">
+    <!-- Animated Hero Section -->
+    <div class="hero-animated">
+        <div class="container hero-content">
+            <div class="has-text-centered">
+                <h1 class="title is-1" style="color: white; margin-bottom: 1rem; font-size: 3.5rem;">
+                    Aravind HU
+                </h1>
+                <div class="typing-text" style="color: var(--soft-cream); font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem;">
+                    Platform Engineering Leader
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:hirearavindhu@gmail.com" class="button is-light is-large" style="margin: 0.5rem;">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <span>hirearavindhu@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aravindudayashankara/" target="_blank" class="button is-light is-large" style="margin: 0.5rem;">
+                        <span class="icon"><i class="fab fa-linkedin"></i></span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <section class="section">
+        <div class="container">
+            <div class="box fade-in" style="background: white; padding: 3rem; border-left: 6px solid var(--nature-green);">
+                <h2 class="title is-3" style="color: var(--dark-green); margin-bottom: 2rem;">
+                    <i class="fas fa-user-astronaut" style="margin-right: 1rem; color: var(--nature-green);"></i>
+                    Executive Summary
+                </h2>
+                <p style="font-size: 1.15rem; line-height: 1.9; color: var(--text-dark);">
+                    Senior Engineering & Platform Leader with <strong style="color: var(--nature-green);">15+ years</strong> of experience spearheading, architecting, and scaling cloud-native platforms, internal developer platforms (IDPs), and enterprise engineering ecosystems across <strong>regulated healthcare, construction lifecycle systems, and high-scale SaaS</strong>. Proven track record of transforming delivery velocity, stabilizing reliability, and elevating developer experience through platform engineering, DevOps, shift-left quality, and AI-assisted development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="section" style="background: var(--soft-cream); padding: 4rem 2rem;">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered fade-in" style="color: var(--dark-green); margin-bottom: 3rem;">
+                Impact at a Glance
+            </h2>
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="stat-box fade-in">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div style="font-size: 1.2rem; color: var(--text-dark); margin-top: 0.5rem;">Years Experience</div>
+                        <i class="fas fa-trophy" style="font-size: 2rem; color: var(--light-green); margin-top: 1rem;"></i>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="stat-box fade-in" style="transition-delay: 0.1s;">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div style="font-size: 1.2rem; color: var(--text-dark); margin-top: 0.5rem;">% Faster Releases</div>
+                        <i class="fas fa-rocket" style="font-size: 2rem; color: var(--light-green); margin-top: 1rem;"></i>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="stat-box fade-in" style="transition-delay: 0.2s;">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div style="font-size: 1.2rem; color: var(--text-dark); margin-top: 0.5rem;">% Platform Adoption</div>
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--light-green); margin-top: 1rem;"></i>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="stat-box fade-in" style="transition-delay: 0.3s;">
+                        <div class="stat-number" data-count="7">0</div>
+                        <div style="font-size: 1.2rem; color: var(--text-dark); margin-top: 0.5rem;">Organizations Led</div>
+                        <i class="fas fa-building" style="font-size: 2rem; color: var(--light-green); margin-top: 1rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Capabilities -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered fade-in" style="color: var(--dark-green); margin-bottom: 3rem;">
+                Core Capabilities
+            </h2>
+            
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <div class="box fade-in" style="height: 100%; background: white;">
+                        <h3 class="title is-5" style="color: var(--nature-green); margin-bottom: 1.5rem;">
+                            <i class="fas fa-layer-group" style="margin-right: 0.5rem;"></i>
+                            Platform & Engineering Leadership
+                        </h3>
+                        <div class="capability-bar">
+                            <div class="capability-progress" style="--progress-width: 95%;"></div>
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-dark);">Platform Engineering Strategy • Platformization • Engineering Governance • Operating Models • InnerSource Enablement</p>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="box fade-in" style="height: 100%; background: white; transition-delay: 0.1s;">
+                        <h3 class="title is-5" style="color: var(--nature-green); margin-bottom: 1.5rem;">
+                            <i class="fas fa-users-cog" style="margin-right: 0.5rem;"></i>
+                            Developer Experience & Productivity
+                        </h3>
+                        <div class="capability-bar">
+                            <div class="capability-progress" style="--progress-width: 98%;"></div>
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-dark);">Internal Developer Platforms (IDP) • Backstage • Golden Paths • Developer Self-Service • DevEx Optimization</p>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="box fade-in" style="height: 100%; background: white; transition-delay: 0.2s;">
+                        <h3 class="title is-5" style="color: var(--nature-green); margin-bottom: 1.5rem;">
+                            <i class="fas fa-cloud" style="margin-right: 0.5rem;"></i>
+                            Cloud & Architecture
+                        </h3>
+                        <div class="capability-bar">
+                            <div class="capability-progress" style="--progress-width: 92%;"></div>
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-dark);">Cloud-Native Architecture • Microservices • Distributed Systems • Scalability & Reliability Engineering</p>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="box fade-in" style="height: 100%; background: white; transition-delay: 0.3s;">
+                        <h3 class="title is-5" style="color: var(--nature-green); margin-bottom: 1.5rem;">
+                            <i class="fas fa-robot" style="margin-right: 0.5rem;"></i>
+                            AI & Modern Engineering
+                        </h3>
+                        <div class="capability-bar">
+                            <div class="capability-progress" style="--progress-width: 90%;"></div>
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-dark);">AI-Assisted Development • GitHub Copilot Adoption • Engineering Enablement with AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section class="section" style="background: var(--soft-cream); padding: 4rem 2rem;">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered fade-in" style="color: var(--dark-green); margin-bottom: 4rem;">
+                Professional Journey
+            </h2>
+            
+            <div class="timeline">
+                <!-- Philips -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <h3 class="title is-4" style="color: var(--dark-green); margin-bottom: 1rem; font-size: 1.5rem;">PHILIPS</h3>
+                                <p class="subtitle is-6" style="color: var(--nature-green); font-weight: 600; font-size: 1.1rem;">Senior Software Architect / Engineering Leader</p>
+                            </div>
+                            <span class="tag" style="background: var(--nature-green); color: white; font-weight: 600;">2019 – Present</span>
+                        </div>
+                        <p style="color: var(--text-dark); margin-bottom: 1rem; font-style: italic;">Healthcare Platforms & Digital Solutions | Bengaluru, India</p>
+                        <ul style="color: var(--text-dark); line-height: 1.8;">
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Spearheaded platform engineering for regulated healthcare products</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Established enterprise Internal Developer Platform (IDP) with Backstage</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Institutionalized InnerSource practices across organization</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Nearly halved release cycles through shift-left quality practices</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Pioneered AI-assisted development with GitHub Copilot integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SAP Concur -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <h3 class="title is-4" style="color: var(--dark-green); margin-bottom: 1rem; font-size: 1.5rem;">SAP CONCUR</h3>
+                                <p class="subtitle is-6" style="color: var(--nature-green); font-weight: 600; font-size: 1.1rem;">Senior Software Development Engineer III</p>
+                            </div>
+                            <span class="tag" style="background: var(--dark-green); color: white; font-weight: 600;">Mar 2018 – Nov 2019</span>
+                        </div>
+                        <p style="color: var(--text-dark); margin-bottom: 1rem; font-style: italic;">Enterprise Expense Management SaaS | Bengaluru, India</p>
+                        <ul style="color: var(--text-dark); line-height: 1.8;">
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Engineered high-volume SaaS platforms for global enterprises</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Improved performance and stabilized reliability at scale</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Built foundation in operational excellence and production-grade systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Earlier Roles -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <h3 class="title is-4" style="color: var(--dark-green); margin-bottom: 1rem; font-size: 1.5rem;">EARLIER ROLES</h3>
+                                <p class="subtitle is-6" style="color: var(--nature-green); font-weight: 600; font-size: 1.1rem;">Engineering & Leadership Positions</p>
+                            </div>
+                            <span class="tag" style="background: var(--forest-dark); color: white; font-weight: 600;">2009 – 2018</span>
+                        </div>
+                        <p style="color: var(--text-dark); margin-bottom: 1rem; font-style: italic;">Aconex • GlobalEdge (IoT) • CoStrategix • Wisdomleaf • Design Esthetics</p>
+                        <ul style="color: var(--text-dark); line-height: 1.8;">
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Progressed from hands-on engineering to module leadership</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Delivered APIs, cloud infrastructure, DevOps automation, IoT platforms</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--light-green); margin-right: 0.5rem;"></i>Established full lifecycle ownership and delivery excellence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Impact Highlights -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered fade-in" style="color: var(--dark-green); margin-bottom: 3rem;">
+                Key Impact Highlights
+            </h2>
+            
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <div class="box fade-in" style="background: linear-gradient(135deg, white 0%, var(--soft-cream) 100%); border-left: 4px solid var(--nature-green); height: 100%;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 60px; height: 60px; background: var(--light-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                                <i class="fas fa-rocket" style="font-size: 1.8rem; color: white;"></i>
+                            </div>
+                            <p style="font-size: 1.1rem; color: var(--text-dark); font-weight: 600;">Enabled platformization and developer self-service</p>
+                        </div>
+                        <p style="color: var(--text-light); margin-left: 75px;">Reducing dependency on central teams</p>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="box fade-in" style="background: linear-gradient(135deg, white 0%, var(--soft-cream) 100%); border-left: 4px solid var(--nature-green); height: 100%; transition-delay: 0.1s;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 60px; height: 60px; background: var(--nature-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                                <i class="fas fa-code-branch" style="font-size: 1.8rem; color: white;"></i>
+                            </div>
+                            <p style="font-size: 1.1rem; color: var(--text-dark); font-weight: 600;">Transformed delivery pipelines</p>
+                        </div>
+                        <p style="color: var(--text-light); margin-left: 75px;">Through CI standardization and shift-left quality</p>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="box fade-in" style="background: linear-gradient(135deg, white 0%, var(--soft-cream) 100%); border-left: 4px solid var(--dark-green); height: 100%; transition-delay: 0.2s;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 60px; height: 60px; background: var(--dark-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                                <i class="fas fa-chart-line" style="font-size: 1.8rem; color: white;"></i>
+                            </div>
+                            <p style="font-size: 1.1rem; color: var(--text-dark); font-weight: 600;">Accelerated engineering productivity</p>
+                        </div>
+                        <p style="color: var(--text-light); margin-left: 75px;">Through intentional DevEx and IDP strategy</p>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="box fade-in" style="background: linear-gradient(135deg, white 0%, var(--soft-cream) 100%); border-left: 4px solid var(--dark-green); height: 100%; transition-delay: 0.3s;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 60px; height: 60px; background: var(--forest-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                                <i class="fas fa-shield-alt" style="font-size: 1.8rem; color: white;"></i>
+                            </div>
+                            <p style="font-size: 1.1rem; color: var(--text-dark); font-weight: 600;">Scaled across regulated environments</p>
+                        </div>
+                        <p style="color: var(--text-light); margin-left: 75px;">Healthcare, construction, and enterprise SaaS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Stack -->
+    <section class="section" style="background: var(--soft-cream); padding: 4rem 2rem;">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered fade-in" style="color: var(--dark-green); margin-bottom: 3rem;">
+                Technical & Leadership Foundation
+            </h2>
+            
+            <div class="has-text-centered fade-in">
+                <span class="skill-pill">Cloud & Cloud-Native</span>
+                <span class="skill-pill">CI/CD & DevOps</span>
+                <span class="skill-pill">Microservices</span>
+                <span class="skill-pill">Distributed Systems</span>
+                <span class="skill-pill">Platform Tooling</span>
+                <span class="skill-pill">Backstage</span>
+                <span class="skill-pill">Internal Developer Platforms</span>
+                <span class="skill-pill">InnerSource</span>
+                <span class="skill-pill">Golden Paths</span>
+                <span class="skill-pill">GitHub Copilot</span>
+                <span class="skill-pill">AI-Assisted Development</span>
+                <span class="skill-pill">Security & Compliance</span>
+                <span class="skill-pill">Healthcare Platforms</span>
+                <span class="skill-pill">Engineering Governance</span>
+                <span class="skill-pill">Team Leadership</span>
+                <span class="skill-pill">Stakeholder Management</span>
+                <span class="skill-pill">Architecture Strategy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <div class="box contact-card fade-in" style="background: white; padding: 3rem; text-align: center;">
+                        <h2 class="title is-3" style="color: var(--dark-green); margin-bottom: 2rem;">
+                            <i class="fas fa-handshake" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                            Let's Connect
+                        </h2>
+                        <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 2rem;">
+                            Open to senior leadership roles focused on <strong>platform engineering, architecture, and engineering excellence</strong>. Frequently engaged as a platform strategy advisor and engineering thought partner.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                            <a href="mailto:hirearavindhu@gmail.com" class="button is-custom-green is-large">
+                                <span class="icon"><i class="fas fa-envelope"></i></span>
+                                <span>Email Me</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aravindudayashankara/" target="_blank" class="button is-outlined is-large" style="border-color: var(--nature-green); color: var(--nature-green);">
+                                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/aravind666" target="_blank" class="button is-outlined is-large" style="border-color: var(--dark-green); color: var(--dark-green);">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Floating CTA -->
+<div class="floating-cta">
+    <a href="mailto:hirearavindhu@gmail.com" class="button is-custom-green is-large">
+        <span class="icon"><i class="fas fa-paper-plane"></i></span>
+        <span>Get in Touch</span>
+    </a>
+</div>
+
+<script>
+// Scroll-triggered animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in, .timeline-item, .capability-bar').forEach(el => {
+    observer.observe(el);
+});
+
+// Animated counter for stats
+function animateCounter(element) {
+    const target = parseInt(element.getAttribute('data-count'));
+    const duration = 2000;
+    const step = target / (duration / 16);
+    let current = 0;
+    
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+            element.textContent = target + (target === 50 || target === 100 ? '' : '+');
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
+}
+
+// Trigger counter animation when visible
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target.querySelector('.stat-number');
+            if (counter && !counter.classList.contains('animated')) {
+                counter.classList.add('animated');
+                animateCounter(counter);
+            }
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat-box').forEach(box => {
+    counterObserver.observe(box);
+});
+
+// Remove typing animation after completion
+setTimeout(() => {
+    const typingText = document.querySelector('.typing-text');
+    if (typingText) {
+        typingText.style.borderRight = 'none';
+    }
+}, 4000);
+</script>

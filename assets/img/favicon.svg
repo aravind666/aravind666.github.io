@@ -1,15 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Background Circle - Tropical Vibes -->
-  <circle cx="256" cy="256" r="256" fill="#3fb848"/>
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5fd869;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3fb848;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d8a3e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="letterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffef7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fffcf0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
   
-  <!-- Inner Circle -->
-  <circle cx="256" cy="256" r="220" fill="#2d8a3e"/>
+  <!-- Modern rounded square background -->
+  <rect width="512" height="512" rx="120" fill="url(#mainGradient)"/>
   
-  <!-- Letter 'A' in modern bold style -->
-  <text x="256" y="330" font-family="Arial, sans-serif" font-size="240" font-weight="bold" fill="#fffcf0" text-anchor="middle" dominant-baseline="middle">A</text>
+  <!-- Large stylized 'A' -->
+  <path d="M 160 380 L 220 200 L 280 200 L 340 380 L 300 380 L 290 350 L 210 350 L 200 380 Z M 225 310 L 275 310 L 250 230 Z" 
+        fill="url(#letterGradient)" 
+        stroke="#fffcf0" 
+        stroke-width="4"/>
   
-  <!-- Accent dots for visual interest -->
-  <circle cx="256" cy="100" r="12" fill="#fffcf0" opacity="0.6"/>
-  <circle cx="200" cy="430" r="10" fill="#fffcf0" opacity="0.5"/>
-  <circle cx="312" cy="430" r="10" fill="#fffcf0" opacity="0.5"/>
+  <!-- Subtle platform/code symbol (three horizontal lines) -->
+  <rect x="360" y="140" width="80" height="12" rx="6" fill="#fffcf0" opacity="0.9"/>
+  <rect x="360" y="170" width="80" height="12" rx="6" fill="#fffcf0" opacity="0.8"/>
+  <rect x="360" y="200" width="80" height="12" rx="6" fill="#fffcf0" opacity="0.7"/>
+  
+  <!-- Decorative dots -->
+  <circle cx="80" cy="140" r="16" fill="#fffcf0" opacity="0.4"/>
+  <circle cx="80" cy="200" r="12" fill="#fffcf0" opacity="0.3"/>
 </svg>
