@@ -1,37 +1,45 @@
 ---
 layout: post
-title:  "360 degree retrospections"
+title: "360 Degree Retrospections"
 category: "Management"
 author: "Aravind HU"
-description: "360 degree retrospections"
-keywords: "360 degree, feedback, continuous feedback, continuous improvement"
+description: "How structured, multi-directional feedback strengthens trust, reflection, and team maturity."
+keywords: "360 degree feedback, retrospectives, continuous improvement, leadership"
 ---
 
-Dear readers after working in companies like Aconex, Co-strategix, Jobsite and many more where scrum/XP are the key methodologies, for product development.
+In organizations that genuinely improve, feedback isn’t episodic—it’s institutionalized.
 
-One really different thing that I learnt from my previous mentor [Craig Brown](https://www.linkedin.com/in/craigwbrown/) who is the VP of Collaboration at [Aconex](https://www.linkedin.com/company/aconex/) is about 360 retros with product stake holders.
+During my early years working with teams at Aconex, CoStrategix, Jobsite, and others practicing Scrum and XP, I was **introduced**, **guided**, and **mentored** into a deceptively simple but deeply powerful practice by Craig Brown, VP of Collaboration at Aconex: **360-degree retrospectives involving product stakeholders**.
 
-Here is how 360 degree retro works.
+Unlike traditional retrospectives that focus on process and delivery, this approach **surfaces interpersonal impact**, **cultivates reflection**, and **strengthens trust**.
 
-1.  Gather all team members in a meeting room Ask everyone to write down
-2.  What he/she feels good and bad for each other participant (Fix time for this so that it does not prolong) Start from a person in the fashion you want. ( clock wise or anti clock wise )
-3.  Ask him to move to centre of the meeting room ( if the real estate is good )
-4.  Ask every other person to give feedback on the person at the centre
-5.  The format of feedback will be great if we have a uniform format like Good first bad last, or bad first good last ( for people like me, who loves to hear bad first ) .
-6.  Do this for everyone in the team.
+## How a 360-Degree Retrospective Works
 
-At first this appears really difficult, if you are of very responsive character rather than being very reflective in nature.
+The structure is intentionally simple:
 
-360 retros actually hits the head of the actual nail, it literally heels the hot burns in the mind. It also helps an individual in the team to understand what others feel about he/she in less time, rather than knowing about it in the yearly review cycle, where you just know your number not where exactly you need to work on.
+1. Gather all team members in one room.
+2. Ask everyone to write down what they appreciate and what they find challenging about every other participant.
+3. One person moves to the center.
+4. Others share feedback directly with them.
+5. Use a consistent format (good-first or improvement-first).
+6. Repeat for everyone.
 
-Also another added advantage is the process like this helps the team members to improve privacy by keeping the feedback limited to the person who needed it most (the person being reviewed), without exposing it to the judgement of others (managers, HR, etc.). As a result of this, person can work on his weak areas with out making others to know about his weakness.
+At first, this feels uncomfortable—especially for highly responsive personalities. But discomfort is often the signal that learning is happening.
 
-Last but not least, If you are hiring a manager to an existing team. It is actually a Herculean task for any one who is doing that job (Director of engineering or Principle Architect etc … ) reason is new guys are usually hated, if you hire some one with high standards and high skills, people tend to hate him because of there own reasons Or if you hire some one who is of low standards with low skills, again people still hate him and start gossiping bad about him. But if we have 360 retro in place and if the newcomer gets feedback every month or two, it becomes a cake walk for any one to get acquainted with people, and know what team culture is.
+## Why It Works
 
-According to me Agile enables team to be more reflective in nature where stakeholders can assert almost everything, that they come across and ask people to evangelize the decision, so that every one ( POs, tech folks, Domain experts, UXers, QAs etc … ) understands business and what value they are adding to the team. 360 retro is an easy way in which people can be made more reflective, from responsive.
+360 retrospectives **diagnose** issues early, **surface blind spots**, and **accelerate self-awareness**. Instead of waiting for annual performance reviews that reduce growth to a number, individuals gain **timely, actionable insight** into how they are perceived.
 
-Overall, 360 retro strengthens relationship and trust.
+A subtle but powerful benefit is **privacy**. Feedback is directed to the individual—not broadcast to managers or HR—allowing people to **own**, **address**, and **improve** their gaps without fear or judgment.
 
-I found this as some thing good to have in an agile team, and hence shared in the form of a blog post .
+## A Hidden Superpower for New Leaders
 
-I hope you enjoyed reading this, feel free to comment and assert what I have expressed. It really helps me to understand and learn more.
+Hiring a manager into an existing team is notoriously difficult. With 360 retrospectives in place, newcomers can **integrate faster**, **understand team culture**, and **course-correct early**—transforming a high-risk transition into a manageable one.
+
+## Final Reflection
+
+Agile practices are most effective when they **shift teams from reactive to reflective**. 360-degree retrospectives are one of the most **effective, humane, and scalable** ways I’ve seen to do that.
+
+They don’t just improve delivery—they **strengthen relationships**, **reinforce trust**, and **elevate teams**.
+
+If you’re serious about continuous improvement, this is a practice worth institutionalizing.

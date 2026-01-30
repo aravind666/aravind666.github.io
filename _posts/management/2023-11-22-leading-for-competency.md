@@ -1,130 +1,209 @@
 ---
 layout: post
-title:  "Leading For Competence - Getting Things Done"
-category: "Management"
+title: "Leading for Competence: The Discipline of Getting Things Done"
+category: "Leadership"
 author: "Aravind HU"
 image: "/assets/post_images/Leading-for-competency.png"
-description: "Finding a way to exhibit your behavior to influence the performance of an individual based on his Competence"
-keywords: "Leadership styles, Competence based leadership, leadership for Competence"
+description: "How effective leaders adapt behavior based on competence and commitment to consistently deliver outcomes"
+keywords: "Leadership, Competence-based leadership, Engineering leadership, Situational leadership"
 ---
 
 <figure class="figure w-50 float-left m-3 col-3">
     <img src="/assets/post_images/Leading-for-competency.png" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
 </figure>
 
-With 15+ years of experience in the Software Industry, one of the most important leadership qualities I have come to appreciate is **“Getting Things Done”**. This is purely a personal opinion. Regardless of what the Oxford English dictionary or Harvard business management books say, at the end of the day, the most important quality that defines a good leader are the things they get done.  
+After more than **15 years leading software, platform, and engineering teams**, one leadership principle has consistently separated high-performing organizations from the rest:
 
-There are many leadership books, self-help books, and there are pioneers and legends who have spoken about leadership styles, leadership approaches, and many more. I      read some of them - to be honest, many of them. One of the common patterns I noticed was that most of them focus on the behavior approach. But none of them actually tell   the reader the reflection of behavior based on the competence of the individual, and they provide scattered information on certain terminologies. In this blog post, I will explain in detail how to answer some questions regarding **“Getting Things Done”** by reflecting on your behavior based on the levels of competence of the people      you are working with.
+> **Leadership is ultimately measured by what gets done.**
 
-#### Before I explain this, let me explain a few terms we often use when talking about leadership
+Not intent.  
+Not articulation.  
+Not vision decks or leadership frameworks.
 
-**Skill:**  A skill is a specific ability or expertise that is developed through training, practice, or experience. Skills are often practical, tangible, and can be easily measured or demonstrated. Examples include debugging a software, programming in a particular language, defining a stack in a cloud service provider like AWS, or using a particular software for observability, etc... Skills are often easier to measure and assess objectively. You can test or observe someone’s proficiency in a particular skill through practical tasks or assessments such as AWS certifications or Azure certifications etc...     
+**Outcomes.**
 
-**Competence:**  Competence is a broader concept that encompasses a combination of skills, knowledge, abilities, and behaviors required to perform a specific job or task effectively. Competencies are often seen as a set of attributes that contribute to overall job performance. This means the competence of a person is a function of knowledge and skills that can be gained from education, training, and experience. Competencies may involve a combination of skills, knowledge, and behaviors, making them sometimes more challenging to measure in a straightforward manner. Assessing competencies often requires a more holistic evaluation of an individual’s performance. Remember those code assessment, system design, and code pairing interviews that companies conduct before hiring? They are meant to assess competencies.
+I’ve read my share of leadership literature — from classical management theory to modern behavioral leadership models. While many frameworks focus heavily on *behavior*, very few address a critical dimension leaders deal with every day:
 
-**Confidence:**  Confidence is a measure of a person’s self-assuredness - a feeling of being able to do a task well without much supervision.
+> **How should a leader adapt their behavior based on the *competence* of the people they lead?**
 
-**Motivation:**  Motivation is a person’s interest in and enthusiasm for doing a task well.
+This post explores exactly that — not theoretically, but practically — through the lens of *getting things done at scale*.
 
-**Commitment:**  Commitment is a combination of confidence and motivation.
+---
 
-Now it's time for me to help you understand what is the problem in **“Getting Things Done”**.
+## Clarifying the Building Blocks
 
-> The problem would be either Commitment or Competence.
+Before we talk leadership behavior, we need shared clarity on a few foundational terms.
 
-One of the most interesting difference when it comes to Commitment and Competence is, first one could be measured with various approaches, but latter one as I said earlier, needs a holistic approach. There is also another very interesting variable when it comes to Commitment and Competence, latter is highly contextual, but Commitment has no context.
+### **Skill**
+A *skill* is a specific, observable capability developed through training and practice.  
+Examples include:
+- Designing a cloud-native architecture
+- Debugging distributed systems
+- Implementing CI/CD pipelines
+- Operating observability platforms
 
-One of the most interesting differences between Commitment and Competence is that the former can be measured with various approaches, but the latter — as I said earlier —  needs a holistic approach. Another very interesting distinction is that Competence is context-dependent while Commitment has no context.
+Skills are **measurable, testable, and demonstrable**.
 
-##### How do I as a leader change my behavior based on the Commitment or Competence of the people I am leading ?
+---
 
-One easy approach would be to classify them based on the combination of Commitement and Competence. Remember that everyone has a peak performance potential. You just need to know where they are coming from and meet them there.
+### **Competence**
+*Competence* is broader and more consequential.
 
-##### Below are the most probable ones in any organization and in the most ideal scenarios.
+It is the **integration of skills, knowledge, judgment, and behavior** applied effectively in real-world contexts.
 
-1. Low Competence and High Commitment
-2. Average Competence and Low Commitment
-3. High Competence and Average Commitment
-4. High Competence and High Commitment
+Competence answers questions like:
+- Can this person operate independently under ambiguity?
+- Can they make sound trade-offs?
+- Can they execute consistently across changing constraints?
 
-There are some other combinations which I would assume you defer a candidate during the interview when you hire, If you identify such characteristics. Ideally no leader hires folks with such character. Sometimes it happens, as you all know it is common, there are exceptions in every organization.
+This is why interviews rely on **system design, scenario discussions, and pairing exercises** — they assess competence, not just skills.
 
-##### One of those no hire red-flag combinations : -
+---
 
-1. Low Competence and Low commitment
+### **Confidence**
+Confidence reflects a person’s **self-belief in their ability to execute without constant supervision**.
 
-This way of classifying people would ease my behavioral reflection while evaluating them.
+---
 
-##### How do I shift my behaviour, based on commitment and Competence level of individuals ?
+### **Motivation**
+Motivation represents **energy, intent, and willingness to engage deeply** with the work.
 
-Situational Leadership Theory, developed by Paul Hersey and Ken Blanchard in the late 1960s and early 1970s, helps us by defining four leadership behaviors, each corresponding to a different level of follower readiness. The theory also suggests there is no one-size-fits-all approach to leadership. Instead, effective leaders adapt their leadership style based on  readiness or maturity ( Competence or Commitment ) of their followers.
+---
 
-1. **Directing:**  The Leader should provide specific instructions and closely supervises task accomplishment.
+### **Commitment**
+Commitment is where **confidence and motivation converge**.
 
-2. **Coaching:**  The leader continues to direct and closely supervise task accomplishment, but also explains decisions, solicits suggestions, and supports progress.
+> Commitment is visible.  
+> Competence must be inferred holistically.
 
-3. **Supporting:**  The Leader facilitates and supports subordinate's efforts toward task accomplishment and shares responsibility for decision making with them.
+---
 
-4. **Delegating:**  The leader turns over responsibility for decision making and problem solving to subordinates.
+## The Real Bottleneck to Execution
 
+When outcomes stall, the root cause is almost always one of two things:
 
-As a leader before reflecting on each of those leadership styles above, it is better to understand that no matter what style you exhibit your personal capability matters a lot.
+> **A gap in competence — or a gap in commitment.**
 
-> You should be capable of doing things that your subordinates cannot do for themselves. If you can’t, then it is hard to lead them or you are not the correct person to lead them
+An important distinction:
+- **Competence is contextual** — someone can be highly competent in one domain and struggling in another.
+- **Commitment is context-agnostic** — it shows up regardless of task complexity.
 
-The table Below provides a clean overview of different leadership styles, their associated group characteristics, where each style might be applicable.  
+Recognizing this difference is a leadership superpower.
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Class/Group People Characteristics</th>
-      <th scope="col">Leader Behaviour</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Low Competence and High Commitment</td>
-      <td>Directing</td>
-    </tr>
-     <tr>
-      <td>Average Competence and Low Commitment</td>
-      <td>Coaching</td>
-    </tr>
-     <tr>
-      <td>High Competence and Average Commitment</td>
-      <td>Supporting</td>
-    </tr>
-    <tr>
-      <td>High Competence and High Commitment</td>
-      <td>Delegating</td>
-    </tr>
-  </tbody>
-</table>
+---
+
+## Classifying Reality (Not People)
+
+Every individual has **peak performance potential**.  
+Effective leaders meet people *where they are* — not where they wish they were.
+
+In most organizations, you’ll encounter these combinations:
+
+1. **Low Competence / High Commitment**
+2. **Average Competence / Low Commitment**
+3. **High Competence / Average Commitment**
+4. **High Competence / High Commitment**
+
+There is one combination leaders should actively avoid hiring:
+
+### 🚩 **Low Competence / Low Commitment**
+This is not a coaching opportunity — it is a structural risk.
+
+---
+
+## Adjusting Leadership Behavior — Not Values
+
+Leadership is not static.  
+It is **situational, adaptive, and deliberate**.
+
+Situational Leadership Theory (Hersey & Blanchard) provides a pragmatic model that maps leadership behavior to competence and commitment.
+
+### The Four Leadership Modes
+
+1. **Directing**  
+   Clear instructions, close supervision  
+   → *Low competence, high commitment*
+
+2. **Coaching**  
+   Direction + explanation + encouragement  
+   → *Developing competence, low commitment*
+
+3. **Supporting**  
+   Shared decision-making, empowerment  
+   → *High competence, variable commitment*
+
+4. **Delegating**  
+   Ownership, trust, autonomy  
+   → *High competence, high commitment*
+
+---
+
+## The Leader’s Non-Negotiable Responsibility
+
+Before adapting your style, ask yourself this:
+
+> **Can I do what my team cannot do for themselves?**
+
+If the answer is no, leadership becomes positional — not credible.
+
+Authority in engineering leadership is earned through:
+- Depth
+- Judgment
+- Pattern recognition
+- The ability to unblock complexity
+
+---
+
+## Competence × Commitment → Leadership Behavior
+
+| Team Characteristics | Leadership Behavior |
+|---------------------|--------------------|
+| Low Competence / High Commitment | Directing |
+| Average Competence / Low Commitment | Coaching |
+| High Competence / Average Commitment | Supporting |
+| High Competence / High Commitment | Delegating |
+
+---
 
 <figure class="figure float-right m-2 col-2">
-    <img src="/assets/post_images/leader-support.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
+  <img src="/assets/post_images/leader-support.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="Leadership Support">
 </figure>
 
-Leadership effectiveness depends on various factors, including the specific situation, organizational culture, and individual personalities. Remember that effective leadership involves flexibility and the ability to adapt to the needs of individuals and the situation at hand. Leaders may need to use a combination of styles based on the characteristics of the team and the context in which they are working. Additionally, it's essential to consider ethical considerations and organizational values when choosing a leadership approach.
+Effective leadership is **not ideological**.  
+It is **contextual, ethical, and outcome-driven**.
 
-To summarize, to successfully lead your followers, all you have to do is  understand their commitment and Competence, and reflect on your behavior based on that. That would help you get things done.
+Great leaders:
+- Adapt without compromising values
+- Balance delivery with development
+- Optimize for long-term capability, not short-term heroics
 
-> The most factful evidence of a leader who got things done is when
-> people say "We Did It Overselves".
+---
 
-There are several tools for a leader such as 
+## Final Thought
 
-1. Defining short precise goals 
-2. Recognizing individuals 
-3. Reprimands 
+To consistently **get things done**, leaders must:
 
-Which would help him to change the characteristics of people but again, A leader cannot always work on changing the characteristics of people or he cannot also always work on **“Getting Things Done”**, there should be a balance. That would be another blog post for sure. I hope you enjoyed reading this. 
+- Understand competence deeply
+- Read commitment accurately
+- Adjust behavior intentionally
 
-#### References
-If you're interested in delving deeper into the topic of Situational Leadership Theory, the following references provide valuable insights and additional perspectives:
+When leadership works, you’ll hear the ultimate validation:
 
-*Blanchard, Kenneth H. (2019). Leading at a higher level : Blanchard on leadership and creating high performing organizations. Ken Blanchard Companies [OCLC 1081335498](https://www.worldcat.org/oclc/1081335498)*
+> **“We did it ourselves.”**
 
-#### Credits
+That is the quiet signal of leadership done right.
 
-I would like to extend my heartfelt appreciation to my colleagues [Ruben](https://www.linkedin.com/in/ruben-olivier-6572741/), [Jill](https://www.linkedin.com/in/jill-dorjath/), [Allesandra](https://www.linkedin.com/in/allesandra-c-2992b220a/) and [Ben](https://www.linkedin.com/in/bendee983/) at Philips for their invaluable assistance with lot encouragement in enhancing the readability of my blog post. Their insightful feedback and collaborative efforts played a crucial role in making the content more engaging and intuitive. I am truly grateful for their support and contributions to this endeavour.
+---
+
+### References
+*Blanchard, Kenneth H. (2019). Leading at a Higher Level. Ken Blanchard Companies.*
+
+---
+
+### Credits
+Grateful to my colleagues at Philips —  
+[Ruben](https://www.linkedin.com/in/ruben-olivier-6572741/),  
+[Jill](https://www.linkedin.com/in/jill-dorjath/),  
+[Alessandra](https://www.linkedin.com/in/allesandra-c-2992b220a/), and  
+[Ben](https://www.linkedin.com/in/bendee983/) —  
+for their thoughtful feedback and encouragement in refining this piece.
