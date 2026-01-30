@@ -1,0 +1,290 @@
+/* Tropical Vibes Syntax Highlighting Theme */
+/* Based on Rouge syntax highlighter for Jekyll */
+
+.highlight {
+    background: #1a1b2e;
+    color: #fffcf0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-left: 4px solid #3fb848;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.highlight pre {
+    margin: 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.highlight code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Line numbers */
+.highlight .lineno {
+    color: #5fd869;
+    margin-right: 1rem;
+    opacity: 0.6;
+    user-select: none;
+}
+
+/* Comments */
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs {
+    color: #8d99ae;
+    font-style: italic;
+}
+
+/* Keywords */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+    color: #3fb848;
+    font-weight: bold;
+}
+
+/* Strings */
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+    color: #5fd869;
+}
+
+/* Numbers */
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx {
+    color: #ffc8dd;
+}
+
+/* Functions */
+.highlight .nf,
+.highlight .fm {
+    color: #fffcf0;
+    font-weight: 600;
+}
+
+/* Variables */
+.highlight .n,
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .ni,
+.highlight .nl,
+.highlight .nn,
+.highlight .no,
+.highlight .nv,
+.highlight .nx,
+.highlight .py,
+.highlight .nt,
+.highlight .bp,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+    color: #fffcf0;
+}
+
+/* Operators */
+.highlight .o,
+.highlight .ow {
+    color: #2d8a3e;
+}
+
+/* Punctuation */
+.highlight .p {
+    color: #fffcf0;
+}
+
+/* Generics */
+.highlight .gd {
+    color: #ff6b6b;
+}
+
+.highlight .ge {
+    font-style: italic;
+}
+
+.highlight .gr {
+    color: #ff6b6b;
+}
+
+.highlight .gh {
+    color: #3fb848;
+    font-weight: bold;
+}
+
+.highlight .gi {
+    color: #5fd869;
+}
+
+.highlight .go {
+    color: #8d99ae;
+}
+
+.highlight .gp {
+    color: #3fb848;
+    font-weight: bold;
+}
+
+.highlight .gs {
+    font-weight: bold;
+}
+
+.highlight .gu {
+    color: #3fb848;
+    font-weight: bold;
+}
+
+.highlight .gt {
+    color: #ff6b6b;
+}
+
+/* Special */
+.highlight .w {
+    color: #fffcf0;
+}
+
+.highlight .err {
+    color: #ff6b6b;
+    background-color: #2d1f1f;
+}
+
+/* HTML/XML specific */
+.highlight .nt {
+    color: #3fb848;
+    font-weight: bold;
+}
+
+.highlight .na {
+    color: #5fd869;
+}
+
+.highlight .nv {
+    color: #fffcf0;
+}
+
+/* CSS specific */
+.highlight .nc {
+    color: #3fb848;
+    font-weight: bold;
+}
+
+.highlight .nf {
+    color: #fffcf0;
+}
+
+.highlight .nn {
+    color: #3fb848;
+}
+
+/* JavaScript specific */
+.highlight .kd {
+    color: #3fb848;
+}
+
+.highlight .nx {
+    color: #fffcf0;
+}
+
+/* SQL specific */
+.highlight .k {
+    color: #3fb848;
+    text-transform: uppercase;
+}
+
+/* Copy button styling */
+.highlight-wrapper {
+    position: relative;
+}
+
+.copy-code-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: #2d8a3e;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease, background 0.3s ease;
+    z-index: 10;
+}
+
+.highlight-wrapper:hover .copy-code-btn {
+    opacity: 1;
+}
+
+.copy-code-btn:hover {
+    background: #3fb848;
+}
+
+.copy-code-btn:active {
+    background: #1a5d2a;
+}
+
+.copy-code-btn.copied {
+    background: #5fd869;
+}
+
+/* Scrollbar styling for code blocks */
+.highlight::-webkit-scrollbar {
+    height: 8px;
+}
+
+.highlight::-webkit-scrollbar-track {
+    background: #0f1018;
+    border-radius: 4px;
+}
+
+.highlight::-webkit-scrollbar-thumb {
+    background: #2d8a3e;
+    border-radius: 4px;
+}
+
+.highlight::-webkit-scrollbar-thumb:hover {
+    background: #3fb848;
+}
+
+/* Inline code (not in code blocks) */
+:not(pre) > code {
+    background: #f5f0e6;
+    color: #2d8a3e;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    border: 1px solid #e8e0d0;
+}

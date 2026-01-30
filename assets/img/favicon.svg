@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background Circle - Tropical Vibes -->
+  <circle cx="256" cy="256" r="256" fill="#3fb848"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="256" cy="256" r="220" fill="#2d8a3e"/>
+  
+  <!-- Letter 'A' in modern bold style -->
+  <text x="256" y="330" font-family="Arial, sans-serif" font-size="240" font-weight="bold" fill="#fffcf0" text-anchor="middle" dominant-baseline="middle">A</text>
+  
+  <!-- Accent dots for visual interest -->
+  <circle cx="256" cy="100" r="12" fill="#fffcf0" opacity="0.6"/>
+  <circle cx="200" cy="430" r="10" fill="#fffcf0" opacity="0.5"/>
+  <circle cx="312" cy="430" r="10" fill="#fffcf0" opacity="0.5"/>
+</svg>

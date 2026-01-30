@@ -2,37 +2,177 @@
 layout: default
 title: "Aravind On Software By Aravind HU"
 author: "Aravind HU"
-type: "catalog"
-description: "Myself Aravind HU , an experienced, hands-on software architect, involved in the
-architecture, design, and implementation of microservices
-architectures, service-oriented architectures, micro front-end architectures, and other
-distributed systems in a variety
-of technologies. Being in the software industry for around 15 years have built
-significant competencies in application,
-integration, and enterprise architecture, mostly within the Finance, Healthcare, and
-Construction Domains."
+description: "Platform Engineering & Developer Experience insights by Aravind HU - Transforming engineering platforms into systems teams trust across regulated environments."
 ---
 
-<div class="mb-4 ml-2 mt-4 mr-2">
-    {% assign categories = site.categories %}
-    {% for category in categories %}
-    <div class="col">
-        <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
-            <div class="p-4">
-                <h3 class="p-2 border-bottom"> {{ category | first }}</h3>
-                <div class="card-columns">
-                    {% for post in category[1] %}
-                    <div class="card">
-                        <div class="card-header kesari-link mb-auto">{{ forloop.index }}. <a class="link-to-post"
-                                href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a></div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+<div class="section">
+    <div class="container">
+        
+        <!-- Simple Hero -->
+        <div class="has-text-centered" style="margin-bottom: 3rem;">
+            <h1 class="title is-2" style="color: var(--dark-green); margin-bottom: 1rem;">
+                <i class="fas fa-code" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                Aravind On Software
+            </h1>
+            <p class="subtitle is-5" style="color: var(--text-dark); max-width: 700px; margin: 0 auto;">
+                Platform Engineering & Developer Experience insights from the field
+            </p>
         </div>
+        
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="quickSearch" placeholder="🔍 Quick search across all posts..." />
+        </div>
+
+        <!-- All Posts in Masonry Layout -->
+        <div class="posts-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
+            {% for post in site.posts %}
+            <article class="post-card" data-category="{{ post.categories | first }}">
+                <div class="post-card-header">
+                    <h3 class="post-card-title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            {{ post.title }}
+                        </a>
+                    </h3>
+                    <div class="post-card-meta">
+                        <span>
+                            <i class="far fa-calendar-alt"></i>
+                            {{ post.date | date: "%B %d, %Y" }}
+                        </span>
+                    </div>
+                </div>
+                
+                {% if post.excerpt %}
+                <div class="post-card-body">
+                    <p class="post-card-excerpt">
+                        {{ post.excerpt | strip_html | truncatewords: 30 }}
+                    </p>
+                </div>
+                {% endif %}
+                
+                <div class="post-card-footer">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="button is-custom-green is-small">
+                        <span>Read More</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    
+                    {% assign category_name = post.categories | first %}
+                    {% if category_name == "Software Development" %}
+                    <span class="tag is-custom-green is-light" style="float: right;">
+                        <i class="fas fa-layer-group" style="margin-right: 0.3rem;"></i>
+                        Platform
+                    </span>
+                    {% elsif category_name == "Management" %}
+                    <span class="tag is-custom-pink" style="float: right;">
+                        <i class="fas fa-users-cog" style="margin-right: 0.3rem;"></i>
+                        Leadership
+                    </span>
+                    {% elsif category_name == "Cerberus" %}
+                    <span class="tag is-custom-green" style="float: right;">
+                        <i class="fas fa-shield-alt" style="margin-right: 0.3rem;"></i>
+                        Quality
+                    </span>
+                    {% elsif category_name == "The Impigrity Catalog" %}
+                    <span class="tag is-custom-blue" style="float: right;">
+                        <i class="fas fa-rocket" style="margin-right: 0.3rem;"></i>
+                        DevOps
+                    </span>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        
     </div>
-    {% endfor %}
 </div>
-<div class="container">
-    <div class="col"></div>
+
+<!-- Scroll to Top Button -->
+<div class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
 </div>
+
+<script>
+// Quick Search Functionality
+document.getElementById('quickSearch').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const postCards = document.querySelectorAll('.post-card');
+    
+    postCards.forEach(card => {
+        const title = card.querySelector('.post-card-title').textContent.toLowerCase();
+        const excerpt = card.querySelector('.post-card-excerpt') 
+            ? card.querySelector('.post-card-excerpt').textContent.toLowerCase() 
+            : '';
+        
+        if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+
+// Scroll to Top
+const scrollTop = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollTop.classList.add('visible');
+    } else {
+        scrollTop.classList.remove('visible');
+    }
+});
+
+scrollTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Intersection Observer for scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.post-card').forEach(card => {
+    observer.observe(card);
+});
+
+// Page Loader
+window.addEventListener('load', function() {
+    const loader = document.getElementById('pageLoader');
+    if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 300);
+    }
+});
+
+// Mobile navbar toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+    if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const targetElement = document.getElementById(target);
+                el.classList.toggle('is-active');
+                targetElement.classList.toggle('is-active');
+            });
+        });
+    }
+});
+</script>

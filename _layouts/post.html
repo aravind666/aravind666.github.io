@@ -1,30 +1,166 @@
 {%- include header.html -%}
-{%- include index-script.html -%}
 
-<div class="container-fluid pb-5">
-    <main role="main">
-        <div class="blog-main ml-4 mr-4">
-            <h2 class="pb-4 mb-4 mt-4 border-bottom">
-                {{ page.title | escape }}
-            </h2>
-            <div class="blog-post">
-                <p class="blog-post-meta">
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+<div class="section" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <div class="container">
+        <div class="blog-content">
+            
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" aria-label="breadcrumbs" style="margin-bottom: 2rem;">
+                <ul>
+                    <li><a href="/">
+                        <i class="fas fa-home"></i>
+                        <span style="margin-left: 0.5rem;">Home</span>
+                    </a></li>
+                    <li><a href="#">{{ page.category }}</a></li>
+                    <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
+                </ul>
+            </nav>
+
+            <!-- Post Header -->
+            <div style="margin-bottom: 2rem;">
+                <h1 class="title is-2" style="color: var(--dark-green); line-height: 1.3; margin-bottom: 1rem;">
+                    {{ page.title | escape }}
+                </h1>
+                
+                <div class="tags" style="margin-bottom: 1rem;">
+                    <span class="tag is-custom-green">
+                        <i class="fas fa-folder" style="margin-right: 0.3rem;"></i>
+                        {{ page.category }}
+                    </span>
+                    <span class="tag is-custom-blue">
+                        <i class="far fa-calendar-alt" style="margin-right: 0.3rem;"></i>
+                        {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
                         {{ page.date | date: date_format }}
-                    </time>
+                    </span>
+                    {% if page.author %}
+                    <span class="tag is-custom-pink">
+                        <i class="far fa-user" style="margin-right: 0.3rem;"></i>
+                        {{ page.author }}
+                    </span>
+                    {% endif %}
                     {%- if page.modified_date -%}
-                    ~
-                    {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-                    <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-                        {{ mdate | date: date_format }}
-                    </time>
+                    <span class="tag is-light">
+                        <i class="fas fa-sync-alt" style="margin-right: 0.3rem;"></i>
+                        Updated: {{ page.modified_date | date: date_format }}
+                    </span>
                     {%- endif -%}
-                </p>
+                </div>
+            </div>
+
+            <!-- Post Content -->
+            <div class="content is-medium">
                 {{ content }}
-            </div><!-- /.blog-post -->
-        </div><!-- /.blog-main -->
-    </main><!-- /.container -->
+            </div>
+
+            <!-- Post Footer Navigation -->
+            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--soft-cream);">
+                <div class="columns">
+                    <div class="column">
+                        {% if page.previous.url %}
+                        <a href="{{ page.previous.url }}" class="button is-fullwidth is-custom-green is-outlined">
+                            <span class="icon">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span>Previous Post</span>
+                        </a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-light);">
+                            {{ page.previous.title }}
+                        </p>
+                        {% endif %}
+                    </div>
+                    <div class="column has-text-right">
+                        {% if page.next.url %}
+                        <a href="{{ page.next.url }}" class="button is-fullwidth is-custom-green is-outlined">
+                            <span>Next Post</span>
+                            <span class="icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-light);">
+                            {{ page.next.title }}
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div style="margin-top: 2rem; padding: 1.5rem; background: var(--soft-cream); border-radius: 12px; text-align: center;">
+                <p style="margin-bottom: 1rem; color: var(--text-dark); font-weight: 600;">
+                    <i class="fas fa-share-alt" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                    Share this post
+                </p>
+                <div class="buttons is-centered">
+                    <a class="button" href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}" target="_blank" style="background-color: #1DA1F2; color: white;">
+                        <span class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>Twitter</span>
+                    </a>
+                    <a class="button" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}" target="_blank" style="background-color: #0077b5; color: white;">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="button" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" style="background-color: #1877f2; color: white;">
+                        <span class="icon">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+
+<!-- Scroll to Top Button -->
+<div class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+// Scroll to Top
+const scrollTop = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollTop.classList.add('visible');
+    } else {
+        scrollTop.classList.remove('visible');
+    }
+});
+
+scrollTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Page Loader
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const loader = document.getElementById('pageLoader');
+        if (loader) loader.classList.add('hidden');
+    }, 500);
+});
+
+// Mobile navbar burger
+document.addEventListener('DOMContentLoaded', () => {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+        });
+    });
+});
+</script>
 
 {%- include footer.html -%}

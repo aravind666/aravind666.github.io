@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Options - Choose Your Favorite</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .palette-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .color-swatch {
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .color-swatch:hover {
+            transform: scale(1.05);
+        }
+        .color-code {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+        .palette-preview {
+            height: 200px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .apply-btn {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title is-2 has-text-centered" style="margin-bottom: 3rem;">
+            <i class="fas fa-palette"></i> Choose Your Perfect Color Palette
+        </h1>
+
+        <!-- OPTION 1: Forest Fresh (Current - Enhanced) -->
+        <div class="palette-card">
+            <h2 class="title is-4">
+                <span class="tag is-success is-light">Current</span>
+                Option 1: Forest Fresh
+            </h2>
+            <p class="subtitle is-6">Vibrant green with warm cream accents</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #2d6a4f 0%, #52b788 50%, #fefae0 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #52b788;">Primary Green</div>
+                    <div class="color-code">#52b788</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #2d6a4f;">Dark Green</div>
+                    <div class="color-code">#2d6a4f</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #fefae0; color: #2d6a4f;">Cream</div>
+                    <div class="color-code">#fefae0</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #a8dadc;">Blue Accent</div>
+                    <div class="color-code">#a8dadc</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #ffc8dd;">Pink Accent</div>
+                    <div class="color-code">#ffc8dd</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 2: Sage Serenity -->
+        <div class="palette-card">
+            <h2 class="title is-4">
+                <span class="tag is-info is-light">Recommended</span>
+                Option 2: Sage Serenity
+            </h2>
+            <p class="subtitle is-6">Softer, more elegant green with sophisticated cream</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #6b9080 0%, #a4c3b2 50%, #f6f6f6 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #6b9080;">Sage Green</div>
+                    <div class="color-code">#6b9080</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #4a5d53;">Deep Sage</div>
+                    <div class="color-code">#4a5d53</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #f6f6f6; color: #4a5d53;">Soft Cream</div>
+                    <div class="color-code">#f6f6f6</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #91c4f2;">Sky Blue</div>
+                    <div class="color-code">#91c4f2</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #f4a6d7;">Rose Pink</div>
+                    <div class="color-code">#f4a6d7</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 3: Emerald Elegance -->
+        <div class="palette-card">
+            <h2 class="title is-4">
+                <span class="tag is-success">Premium</span>
+                Option 3: Emerald Elegance
+            </h2>
+            <p class="subtitle is-6">Rich emerald with luxurious cream and gold undertones</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 30%, #40916c 60%, #fff8e7 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #40916c;">Emerald</div>
+                    <div class="color-code">#40916c</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #1b4332;">Forest Deep</div>
+                    <div class="color-code">#1b4332</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #fff8e7; color: #1b4332;">Golden Cream</div>
+                    <div class="color-code">#fff8e7</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #89b0ae;">Teal Blue</div>
+                    <div class="color-code">#89b0ae</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #f4bfdb;">Blush Pink</div>
+                    <div class="color-code">#f4bfdb</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 4: Mint Meadow -->
+        <div class="palette-card">
+            <h2 class="title is-4">
+                <span class="tag is-warning is-light">Playful</span>
+                Option 4: Mint Meadow
+            </h2>
+            <p class="subtitle is-6">Fresh mint green with bright, energetic accents</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #80b918 0%, #95d5b2 50%, #fffbf0 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #80b918;">Lime Green</div>
+                    <div class="color-code">#80b918</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #55a630;">Fresh Green</div>
+                    <div class="color-code">#55a630</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #fffbf0; color: #55a630;">Vanilla Cream</div>
+                    <div class="color-code">#fffbf0</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #74c0fc;">Ocean Blue</div>
+                    <div class="color-code">#74c0fc</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #faa2c1;">Coral Pink</div>
+                    <div class="color-code">#faa2c1</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 5: Olive Garden -->
+        <div class="palette-card">
+            <h2 class="title is-4">
+                <span class="tag is-dark is-light">Professional</span>
+                Option 5: Olive Garden
+            </h2>
+            <p class="subtitle is-6">Muted olive with earthy sophistication</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #606c38 0%, #7f9172 50%, #fefae0 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #606c38;">Olive</div>
+                    <div class="color-code">#606c38</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #283618;">Dark Olive</div>
+                    <div class="color-code">#283618</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #fefae0; color: #283618;">Warm Cream</div>
+                    <div class="color-code">#fefae0</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #9fb8ad;">Dusty Blue</div>
+                    <div class="color-code">#9fb8ad</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #e8b4b8;">Dusty Pink</div>
+                    <div class="color-code">#e8b4b8</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 6: Pine & Peach -->
+        <div class="palette-card">
+            <h2 class="title is-4">
+                <span class="tag is-danger is-light">Bold</span>
+                Option 6: Pine & Peach
+            </h2>
+            <p class="subtitle is-6">Deep pine green with peachy warm tones</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #004d40 0%, #00897b 50%, #ffeaa7 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #00897b;">Pine Teal</div>
+                    <div class="color-code">#00897b</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #004d40;">Deep Pine</div>
+                    <div class="color-code">#004d40</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #ffeaa7; color: #004d40;">Peach Cream</div>
+                    <div class="color-code">#ffeaa7</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #74b9ff;">Bright Blue</div>
+                    <div class="color-code">#74b9ff</div>
+                </div>
+                <div class="column is-3">
+                    <div class="color-swatch" style="background: #fd79a8;">Vibrant Pink</div>
+                    <div class="color-code">#fd79a8</div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin: 3rem 0; border: 2px dashed #52b788;">
+        
+        <h2 class="title is-3 has-text-centered" style="color: #52b788; margin-bottom: 2rem;">
+            <i class="fas fa-leaf"></i> Parrot Green & Cream Exclusive Palettes
+        </h2>
+
+        <!-- OPTION 7: Tropical Vibes -->
+        <div class="palette-card" style="border: 3px solid #3fb848;">
+            <h2 class="title is-4">
+                <span class="tag" style="background: #3fb848; color: white;">⭐ Vibrant</span>
+                Option 7: Tropical Vibes
+            </h2>
+            <p class="subtitle is-6">Bright parrot green with warm vanilla cream - energetic and fresh</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #2d8a3e 0%, #3fb848 40%, #fffcf0 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #3fb848;">Parrot Green</div>
+                    <div class="color-code">#3fb848</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #2d8a3e;">Deep Parrot</div>
+                    <div class="color-code">#2d8a3e</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #fffcf0; color: #2d8a3e;">Vanilla Cream</div>
+                    <div class="color-code">#fffcf0</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #5fd869;">Light Parrot</div>
+                    <div class="color-code">#5fd869</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #1a5d2a;">Forest Dark</div>
+                    <div class="color-code">#1a5d2a</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 8: Lime Paradise -->
+        <div class="palette-card" style="border: 3px solid #32cd32;">
+            <h2 class="title is-4">
+                <span class="tag" style="background: #32cd32; color: white;">🌿 Fresh</span>
+                Option 8: Lime Paradise
+            </h2>
+            <p class="subtitle is-6">Zesty lime green with buttery cream - modern and lively</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #228b22 0%, #32cd32 40%, #fff9e6 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #32cd32;">Lime Green</div>
+                    <div class="color-code">#32cd32</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #228b22;">Forest Lime</div>
+                    <div class="color-code">#228b22</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #fff9e6; color: #228b22;">Butter Cream</div>
+                    <div class="color-code">#fff9e6</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #7fff00;">Chartreuse</div>
+                    <div class="color-code">#7fff00</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #0f4d0f;">Deep Forest</div>
+                    <div class="color-code">#0f4d0f</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 9: Spring Meadow -->
+        <div class="palette-card" style="border: 3px solid #4ade80;">
+            <h2 class="title is-4">
+                <span class="tag" style="background: #4ade80; color: white;">🌱 Soft</span>
+                Option 9: Spring Meadow
+            </h2>
+            <p class="subtitle is-6">Gentle parrot green with ivory cream - balanced and pleasant</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #22c55e 0%, #4ade80 40%, #fffff0 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #4ade80;">Spring Green</div>
+                    <div class="color-code">#4ade80</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #22c55e;">Meadow Green</div>
+                    <div class="color-code">#22c55e</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #fffff0; color: #22c55e;">Ivory Cream</div>
+                    <div class="color-code">#fffff0</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #86efac;">Mint Light</div>
+                    <div class="color-code">#86efac</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #166534;">Evergreen</div>
+                    <div class="color-code">#166534</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 10: Neon Nature -->
+        <div class="palette-card" style="border: 3px solid #00ff41;">
+            <h2 class="title is-4">
+                <span class="tag" style="background: #00ff41; color: #000;">⚡ Electric</span>
+                Option 10: Neon Nature
+            </h2>
+            <p class="subtitle is-6">Ultra-bright neon green with pure cream - bold and eye-catching</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #00d932 0%, #00ff41 40%, #fffef7 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #00ff41; color: #000;">Neon Green</div>
+                    <div class="color-code">#00ff41</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #00d932;">Electric Green</div>
+                    <div class="color-code">#00d932</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #fffef7; color: #00d932;">Pure Cream</div>
+                    <div class="color-code">#fffef7</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #39ff14; color: #000;">Highlighter</div>
+                    <div class="color-code">#39ff14</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #013220;">Deep Jungle</div>
+                    <div class="color-code">#013220</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 11: Jade Elegance -->
+        <div class="palette-card" style="border: 3px solid #00a86b;">
+            <h2 class="title is-4">
+                <span class="tag" style="background: #00a86b; color: white;">💎 Refined</span>
+                Option 11: Jade Elegance
+            </h2>
+            <p class="subtitle is-6">Rich jade green with champagne cream - sophisticated and premium</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #007a4d 0%, #00a86b 40%, #f5f5dc 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #00a86b;">Jade Green</div>
+                    <div class="color-code">#00a86b</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #007a4d;">Deep Jade</div>
+                    <div class="color-code">#007a4d</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #f5f5dc; color: #007a4d;">Champagne</div>
+                    <div class="color-code">#f5f5dc</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #00c78c;">Bright Jade</div>
+                    <div class="color-code">#00c78c</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #004d35;">Jade Shadow</div>
+                    <div class="color-code">#004d35</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 12: Kelly Green Classic -->
+        <div class="palette-card" style="border: 3px solid #4cbb17;">
+            <h2 class="title is-4">
+                <span class="tag" style="background: #4cbb17; color: white;">☘️ Balanced</span>
+                Option 12: Kelly Green Classic
+            </h2>
+            <p class="subtitle is-6">True kelly green with warm beige cream - timeless and professional</p>
+            
+            <div class="palette-preview" style="background: linear-gradient(135deg, #388e3c 0%, #4cbb17 40%, #faf8f3 100%);">
+                <h3 style="color: white; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Aravind On Software
+                </h3>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #4cbb17;">Kelly Green</div>
+                    <div class="color-code">#4cbb17</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #388e3c;">Irish Green</div>
+                    <div class="color-code">#388e3c</div>
+                </div>
+                <div class="column is-4">
+                    <div class="color-swatch" style="background: #faf8f3; color: #388e3c;">Linen Cream</div>
+                    <div class="color-code">#faf8f3</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #66cc33;">Grass Green</div>
+                    <div class="color-code">#66cc33</div>
+                </div>
+                <div class="column is-6">
+                    <div class="color-swatch" style="background: #1b5e20;">Forest Kelly</div>
+                    <div class="color-code">#1b5e20</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- My Recommendation -->
+        <div class="notification is-success is-light" style="margin-top: 3rem;">
+            <h3 class="title is-4">
+                <i class="fas fa-star"></i> My Recommendations for Parrot Green & Cream
+            </h3>
+            <p class="content">
+                <strong>Best Overall: Option 7 (Tropical Vibes)</strong> - #3fb848
+                <ul>
+                    <li>Perfect balance of vibrant yet professional</li>
+                    <li>True parrot green that's energetic without being harsh</li>
+                    <li>Excellent with warm cream (#fffcf0)</li>
+                    <li>Modern, fresh, and memorable</li>
+                </ul>
+                
+                <strong>If you want more energy: Option 10 (Neon Nature)</strong> - #00ff41
+                <ul>
+                    <li>Ultra-modern and eye-catching</li>
+                    <li>Perfect for tech/platform engineering vibe</li>
+                    <li>Commands attention</li>
+                </ul>
+                
+                <strong>If you want sophistication: Option 11 (Jade Elegance)</strong> - #00a86b
+                <ul>
+                    <li>Premium, refined appearance</li>
+                    <li>Great for professional positioning</li>
+                    <li>Rich depth with champagne cream</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="has-text-centered" style="margin: 3rem 0;">
+            <a href="/" class="button is-large is-primary">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span>Back to Blog</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+    // Copy color code on click
+    document.querySelectorAll('.color-swatch').forEach(swatch => {
+        swatch.addEventListener('click', function() {
+            const colorCode = this.nextElementSibling.textContent;
+            navigator.clipboard.writeText(colorCode);
+            
+            // Show feedback
+            const original = this.innerHTML;
+            this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => {
+                this.innerHTML = original;
+            }, 1000);
+        });
+    });
+    </script>
+</body>
+</html>
