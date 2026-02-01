@@ -13,6 +13,10 @@ google_analytics: UA-53462338-1
 exclude: [.idea]
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  math_engine: katex
+  input: GFM
+  syntax_highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-sitemap

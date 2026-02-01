@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250">
+  <defs>
+    <style>
+      .phase-box { stroke: #2C5F8D; stroke-width: 3; }
+      .phase1 { fill: #50C878; }
+      .phase2 { fill: #FFD700; }
+      .phase3 { fill: #FF6B6B; }
+      .arrow { fill: none; stroke: #333; stroke-width: 3; marker-end: url(#arrowhead); }
+      .text-main { font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .text-desc { font-family: Arial, sans-serif; font-size: 12px; fill: #555; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="35" class="title">The Three-Stage Degradation</text>
+  
+  <!-- Phase 1: Good Measure -->
+  <rect x="50" y="70" width="160" height="100" class="phase-box phase1" rx="8"/>
+  <text x="130" y="100" class="text-main">Valid Measure</text>
+  <text x="130" y="125" class="text-desc">Metric tracks</text>
+  <text x="130" y="143" class="text-desc">real performance</text>
+  <text x="130" y="161" class="text-desc">✓ Useful signal</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 220 120 L 270 120" class="arrow"/>
+  
+  <!-- Phase 2: Becomes Target -->
+  <rect x="280" y="70" width="160" height="100" class="phase-box phase2" rx="8"/>
+  <text x="360" y="100" class="text-main">Becomes Target</text>
+  <text x="360" y="125" class="text-desc">Team optimizes</text>
+  <text x="360" y="143" class="text-desc">for the metric</text>
+  <text x="360" y="161" class="text-desc">⚠ Behavior shifts</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M 450 120 L 500 120" class="arrow"/>
+  
+  <!-- Phase 3: Ceases to be Good -->
+  <rect x="510" y="70" width="160" height="100" class="phase-box phase3" rx="8"/>
+  <text x="590" y="100" class="text-main">Loses Value</text>
+  <text x="590" y="125" class="text-desc">Gaming the system</text>
+  <text x="590" y="143" class="text-desc">distorts reality</text>
+  <text x="590" y="161" class="text-desc">✗ Bad measure</text>
+  
+  <!-- Examples -->
+  <text x="350" y="205" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; text-anchor: middle;">
+    Common Examples:
+  </text>
+  <text x="180" y="230" class="text-desc">Story points → Inflation</text>
+  <text x="350" y="230" class="text-desc">Lines of code → Avoiding reuse</text>
+  <text x="540" y="230" class="text-desc">Hours logged → Fake busy work</text>
+</svg>

@@ -26,10 +26,7 @@
                     <a href="https://stackexchange.com/users/1067259" target="_blank" title="Stack Exchange">
                         <i class="fab fa-stack-overflow"></i>
                     </a>
-                    <a href="https://twitter.com/aravindhu" target="_blank" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="mailto:aravind.udayashankara@gmail.com" title="Email">
+                    <a href="mailto:hirearavindhu@gmail.com" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -119,6 +116,17 @@
                 });
             });
         }
+        
+        // KaTeX Auto-render for Math Equations
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '\\(', right: '\\)', display: false}
+            ],
+            throwOnError: false
+        });
     });
     </script>
 

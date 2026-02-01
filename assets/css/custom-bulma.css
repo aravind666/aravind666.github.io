@@ -778,3 +778,131 @@ html {
     font-size: 1.1rem;
     opacity: 0.9;
 }
+
+/* Math Equations Styling (KaTeX) */
+.katex-display {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8fff9 0%, var(--soft-cream) 100%);
+    border-left: 4px solid var(--nature-green);
+    border-radius: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+.katex-display > .katex {
+    display: inline-block;
+    text-align: center;
+    min-width: min-content;
+}
+
+.katex {
+    font-size: 1.15em;
+    color: var(--text-dark);
+}
+
+/* Math in blockquotes */
+.blockquote {
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.blockquote .katex-display {
+    background: rgba(255, 255, 255, 0.6);
+    border-left: 4px solid var(--dark-green);
+    margin: 1rem 0;
+    overflow-x: auto;
+    width: calc(100% - 2rem);
+    max-width: 100%;
+}
+
+.blockquote > * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Inline math */
+p .katex {
+    padding: 0.15rem 0.3rem;
+    background: rgba(63, 184, 72, 0.08);
+    border-radius: 4px;
+}
+
+/* Ensure math formulas don't break poorly on mobile */
+@media (max-width: 768px) {
+    .katex-display {
+        padding: 1rem;
+        font-size: 0.9em;
+        width: 100%;
+    }
+    
+    .katex {
+        font-size: 1em;
+    }
+    
+    .katex-display > .katex {
+        font-size: 0.85em;
+    }
+    
+    .blockquote .katex-display {
+        width: calc(100% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .katex-display {
+        padding: 0.75rem;
+        font-size: 0.8em;
+    }
+    
+    .katex-display > .katex {
+        font-size: 0.75em;
+    }
+    
+    .blockquote .katex-display {
+        width: calc(100% - 0.5rem);
+    }
+}
+
+/* Mermaid Diagram Styling */
+.mermaid {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8fff9 0%, var(--soft-cream) 100%);
+    border-radius: 8px;
+    border-left: 4px solid var(--nature-green);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Diagram container for better spacing */
+.diagram-container {
+    margin: 2rem 0;
+}
+
+.diagram-title {
+    text-align: center;
+    font-weight: 600;
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .mermaid {
+        padding: 1rem;
+        font-size: 0.9em;
+    }
+}

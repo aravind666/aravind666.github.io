@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 500">
+  <defs>
+    <style>
+      .measure-box { fill: #4A90E2; stroke: #2C5F8D; stroke-width: 3; }
+      .behavior-box { fill: #FFD700; stroke: #DAA520; stroke-width: 3; }
+      .culture-box { fill: #9B59B6; stroke: #6C3483; stroke-width: 3; }
+      .impact-arrow { fill: none; stroke: #E94B3C; stroke-width: 3; marker-end: url(#impact-arrowhead); }
+      .box-text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .box-desc { font-family: Arial, sans-serif; font-size: 12px; fill: white; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .cycle-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #E94B3C; text-anchor: middle; }
+    </style>
+    <marker id="impact-arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#E94B3C" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="325" y="35" class="title">The Metrics → Behavior → Culture Cycle</text>
+  
+  <!-- Top: What You Measure -->
+  <rect x="235" y="80" width="180" height="80" class="measure-box" rx="10"/>
+  <text x="325" y="110" class="box-text">What You</text>
+  <text x="325" y="132" class="box-text">Measure</text>
+  <text x="325" y="152" class="box-desc">Metrics &amp; KPIs</text>
+  
+  <!-- Bottom Left: What You Get -->
+  <rect x="80" y="280" width="180" height="80" class="behavior-box" rx="10"/>
+  <text x="170" y="310" class="box-text">What Teams</text>
+  <text x="170" y="332" class="box-text">Optimize</text>
+  <text x="170" y="352" class="box-desc">Behaviors</text>
+  
+  <!-- Bottom Right: Culture -->
+  <rect x="390" y="280" width="180" height="80" class="culture-box" rx="10"/>
+  <text x="480" y="310" class="box-text">Culture</text>
+  <text x="480" y="332" class="box-text">You Create</text>
+  <text x="480" y="352" class="box-desc">Long-term Impact</text>
+  
+  <!-- Arrow: Measure to Behavior (top to bottom-left) -->
+  <path d="M 270 165 L 200 275" class="impact-arrow"/>
+  <text x="220" y="210" class="cycle-text">drives</text>
+  
+  <!-- Arrow: Behavior to Culture (bottom-left to bottom-right) -->
+  <path d="M 265 320 L 385 320" class="impact-arrow"/>
+  <text x="325" y="310" class="cycle-text">shapes</text>
+  
+  <!-- Arrow: Culture back to Measure (bottom-right to top, creating feedback loop) -->
+  <path d="M 480 275 L 380 165" class="impact-arrow"/>
+  <text x="450" y="210" class="cycle-text">reinforces</text>
+  
+  <!-- Center text -->
+  <text x="325" y="215" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #666; text-anchor: middle;">
+    Continuous
+  </text>
+  <text x="325" y="235" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #666; text-anchor: middle;">
+    Feedback Loop
+  </text>
+  
+  <!-- Examples section -->
+  <text x="325" y="400" style="font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #2C3E50; text-anchor: middle;">
+    Two Paths:
+  </text>
+  
+  <!-- Wrong path -->
+  <rect x="50" y="420" width="260" height="45" fill="#FFE5E5" stroke="#C92A2A" stroke-width="2" rx="5"/>
+  <text x="180" y="440" style="font-family: Arial, sans-serif; font-size: 12px; fill: #C92A2A; text-anchor: middle;">
+    ✗ Lines of code → Bloat → Technical debt
+  </text>
+  <text x="180" y="456" style="font-family: Arial, sans-serif; font-size: 11px; fill: #C92A2A; text-anchor: middle;">
+    (Culture of shortcuts)
+  </text>
+  
+  <!-- Right path -->
+  <rect x="340" y="420" width="260" height="45" fill="#E5F8ED" stroke="#2C7A4E" stroke-width="2" rx="5"/>
+  <text x="470" y="440" style="font-family: Arial, sans-serif; font-size: 12px; fill: #2C7A4E; text-anchor: middle;">
+    ✓ Quality → Pride in craft → Excellence
+  </text>
+  <text x="470" y="456" style="font-family: Arial, sans-serif; font-size: 11px; fill: #2C7A4E; text-anchor: middle;">
+    (Culture of mastery)
+  </text>
+</svg>

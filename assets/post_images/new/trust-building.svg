@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <defs>
+    <style>
+      .foundation { fill: #E8F4F8; stroke: #4A90E2; stroke-width: 2; }
+      .block { fill: #50C878; stroke: #2C7A4E; stroke-width: 2; }
+      .top-block { fill: #FFD700; stroke: #DAA520; stroke-width: 2; }
+      .block-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 13px; fill: #555; text-anchor: middle; }
+    </style>
+    <linearGradient id="foundationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F4F8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B3D9E8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="300" y="35" class="title">Building Trust Through Feedback</text>
+  <text x="300" y="55" class="subtitle">The Foundation of Team Excellence</text>
+  
+  <!-- Foundation Platform -->
+  <rect x="100" y="340" width="400" height="35" fill="url(#foundationGrad)" stroke="#4A90E2" stroke-width="3" rx="5"/>
+  <text x="300" y="362" class="block-text">360° Retrospectives</text>
+  
+  <!-- Bottom Layer - Core Values -->
+  <rect x="115" y="280" width="120" height="50" class="block" rx="3"/>
+  <text x="175" y="302" class="block-text" style="font-size: 13px;">Direct</text>
+  <text x="175" y="319" class="block-text" style="font-size: 13px;">Feedback</text>
+  
+  <rect x="240" y="280" width="120" height="50" class="block" rx="3"/>
+  <text x="300" y="302" class="block-text" style="font-size: 13px;">Privacy &amp;</text>
+  <text x="300" y="319" class="block-text" style="font-size: 13px;">Safety</text>
+  
+  <rect x="365" y="280" width="120" height="50" class="block" rx="3"/>
+  <text x="425" y="302" class="block-text" style="font-size: 13px;">Timely</text>
+  <text x="425" y="319" class="block-text" style="font-size: 13px;">Insights</text>
+  
+  <!-- Middle Layer - Outcomes -->
+  <rect x="140" y="220" width="140" height="50" class="block" rx="3"/>
+  <text x="210" y="249" class="block-text" style="font-size: 13px;">Self-Awareness</text>
+  
+  <rect x="320" y="220" width="140" height="50" class="block" rx="3"/>
+  <text x="390" y="249" class="block-text" style="font-size: 13px;">Blind Spot Discovery</text>
+  
+  <!-- Upper Layer - Results -->
+  <rect x="185" y="160" width="110" height="50" class="block" rx="3"/>
+  <text x="240" y="182" class="block-text" style="font-size: 13px;">Stronger</text>
+  <text x="240" y="199" class="block-text" style="font-size: 13px;">Relationships</text>
+  
+  <rect x="305" y="160" width="110" height="50" class="block" rx="3"/>
+  <text x="360" y="182" class="block-text" style="font-size: 13px;">Team</text>
+  <text x="360" y="199" class="block-text" style="font-size: 13px;">Maturity</text>
+  
+  <!-- Top - Ultimate Goal -->
+  <rect x="215" y="95" width="170" height="55" class="top-block" rx="5"/>
+  <text x="300" y="119" class="block-text" style="font-size: 15px; fill: #8B4513;">High-Performance</text>
+  <text x="300" y="139" class="block-text" style="font-size: 15px; fill: #8B4513;">Culture</text>
+  
+  <!-- Decorative elements - pillars -->
+  <line x1="175" y1="340" x2="175" y2="330" stroke="#4A90E2" stroke-width="2" opacity="0.3"/>
+  <line x1="300" y1="340" x2="300" y2="330" stroke="#4A90E2" stroke-width="2" opacity="0.3"/>
+  <line x1="425" y1="340" x2="425" y2="330" stroke="#4A90E2" stroke-width="2" opacity="0.3"/>
+  
+  <line x1="210" y1="280" x2="210" y2="270" stroke="#50C878" stroke-width="2" opacity="0.3"/>
+  <line x1="390" y1="280" x2="390" y2="270" stroke="#50C878" stroke-width="2" opacity="0.3"/>
+  
+  <line x1="240" y1="220" x2="240" y2="210" stroke="#50C878" stroke-width="2" opacity="0.3"/>
+  <line x1="360" y1="220" x2="360" y2="210" stroke="#50C878" stroke-width="2" opacity="0.3"/>
+  
+  <line x1="240" y1="160" x2="260" y2="150" stroke="#FFD700" stroke-width="2" opacity="0.3"/>
+  <line x1="360" y1="160" x2="340" y2="150" stroke="#FFD700" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Bottom label -->
+  <text x="300" y="400" class="subtitle" style="font-size: 12px; fill: #666;">
+    Each layer builds upon the foundation of structured, regular feedback
+  </text>
+</svg>

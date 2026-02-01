@@ -57,6 +57,33 @@
     <!-- Syntax Highlighting -->
     <link href="/assets/css/syntax-highlighting.css" rel="stylesheet">
     
+    <!-- KaTeX for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    
+    <!-- Mermaid for Diagrams -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#3fb848',
+                primaryTextColor: '#2b2d42',
+                primaryBorderColor: '#2d8a3e',
+                lineColor: '#2d8a3e',
+                secondaryColor: '#fffcf0',
+                tertiaryColor: '#f8fff9',
+                background: '#fffcf0',
+                mainBkg: '#f8fff9',
+                secondBkg: '#fffcf0',
+                textColor: '#2b2d42',
+                fontSize: '16px'
+            }
+        });
+    </script>
+    
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">

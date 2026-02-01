@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .person-outer { fill: #4A90E2; }
+      .person-center { fill: #E94B3C; }
+      .arrow { fill: none; stroke: #50C878; stroke-width: 3; marker-end: url(#arrowhead); }
+      .text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#50C878" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="300" y="30" class="title">360° Feedback Structure</text>
+  
+  <!-- Center person (receiving feedback) -->
+  <g transform="translate(300, 300)">
+    <circle cx="0" cy="0" r="35" class="person-center"/>
+    <circle cx="0" cy="-15" r="12" fill="white"/>
+    <ellipse cx="0" cy="10" rx="20" ry="25" fill="white"/>
+    <text x="0" y="60" class="text">Receiver</text>
+  </g>
+  
+  <!-- Team members in circle -->
+  <!-- Top -->
+  <g transform="translate(300, 120)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 300 150 L 300 245" class="arrow"/>
+  
+  <!-- Top Right -->
+  <g transform="translate(450, 180)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 430 200 L 340 270" class="arrow"/>
+  
+  <!-- Right -->
+  <g transform="translate(480, 300)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 445 300 L 345 300" class="arrow"/>
+  
+  <!-- Bottom Right -->
+  <g transform="translate(450, 420)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 430 400 L 340 330" class="arrow"/>
+  
+  <!-- Bottom -->
+  <g transform="translate(300, 480)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 300 450 L 300 355" class="arrow"/>
+  
+  <!-- Bottom Left -->
+  <g transform="translate(150, 420)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 170 400 L 260 330" class="arrow"/>
+  
+  <!-- Left -->
+  <g transform="translate(120, 300)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 155 300 L 255 300" class="arrow"/>
+  
+  <!-- Top Left -->
+  <g transform="translate(150, 180)">
+    <circle cx="0" cy="0" r="30" class="person-outer"/>
+    <circle cx="0" cy="-12" r="10" fill="white"/>
+    <ellipse cx="0" cy="8" rx="16" ry="20" fill="white"/>
+    <text x="0" y="50" class="text">Team Member</text>
+  </g>
+  <path d="M 170 200 L 260 270" class="arrow"/>
+  
+  <!-- Legend -->
+  <text x="300" y="570" style="font-size: 12px; fill: #666; text-anchor: middle;">
+    Each team member provides direct feedback to the person in the center
+  </text>
+</svg>
