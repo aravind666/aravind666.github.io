@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380">
+  <defs>
+    <style>
+      .chart-line { fill: none; stroke: #E94B3C; stroke-width: 4; }
+      .axis { stroke: #333; stroke-width: 2; }
+      .grid { stroke: #ddd; stroke-width: 1; }
+      .point { fill: #E94B3C; }
+      .label { font-family: Arial, sans-serif; font-size: 13px; fill: #333; }
+      .axis-label { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .note { font-family: Arial, sans-serif; font-size: 12px; fill: #666; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="35" class="title">Hick's Law: Choice vs. Decision Time</text>
+  
+  <!-- Axes -->
+  <line x1="100" y1="300" x2="650" y2="300" class="axis"/>
+  <line x1="100" y1="80" x2="100" y2="300" class="axis"/>
+  
+  <!-- Grid lines -->
+  <line x1="100" y1="240" x2="650" y2="240" class="grid"/>
+  <line x1="100" y1="180" x2="650" y2="180" class="grid"/>
+  <line x1="100" y1="120" x2="650" y2="120" class="grid"/>
+  
+  <line x1="200" y1="80" x2="200" y2="300" class="grid"/>
+  <line x1="300" y1="80" x2="300" y2="300" class="grid"/>
+  <line x1="400" y1="80" x2="400" y2="300" class="grid"/>
+  <line x1="500" y1="80" x2="500" y2="300" class="grid"/>
+  <line x1="600" y1="80" x2="600" y2="300" class="grid"/>
+  
+  <!-- Logarithmic curve (approximation) -->
+  <path d="M 100 295 Q 200 260, 300 220 T 500 160 T 650 120" class="chart-line"/>
+  
+  <!-- Data points -->
+  <circle cx="100" cy="295" r="5" class="point"/>
+  <circle cx="200" cy="255" r="5" class="point"/>
+  <circle cx="300" cy="220" r="5" class="point"/>
+  <circle cx="400" cy="190" r="5" class="point"/>
+  <circle cx="500" cy="165" r="5" class="point"/>
+  <circle cx="600" cy="145" r="5" class="point"/>
+  
+  <!-- X-axis labels -->
+  <text x="100" y="320" class="label" text-anchor="middle">1</text>
+  <text x="200" y="320" class="label" text-anchor="middle">2</text>
+  <text x="300" y="320" class="label" text-anchor="middle">4</text>
+  <text x="400" y="320" class="label" text-anchor="middle">8</text>
+  <text x="500" y="320" class="label" text-anchor="middle">16</text>
+  <text x="600" y="320" class="label" text-anchor="middle">32</text>
+  
+  <!-- Axis labels -->
+  <text x="375" y="350" class="axis-label" text-anchor="middle">Number of Choices →</text>
+  <text x="40" y="190" class="axis-label" text-anchor="middle" style="writing-mode: tb;">← Decision Time</text>
+  
+  <!-- Annotations -->
+  <rect x="450" y="200" width="180" height="70" fill="#FFF3CD" stroke="#FFC107" stroke-width="2" rx="5"/>
+  <text x="540" y="220" class="note" style="font-weight: bold; fill: #856404;">Logarithmic Growth</text>
+  <text x="540" y="238" class="note" style="fill: #856404;">More choices =</text>
+  <text x="540" y="253" class="note" style="fill: #856404;">Slower decisions</text>
+  
+  <!-- Bottom insight -->
+  <text x="350" y="370" class="note">
+    Complexity doesn't scale linearly—it compounds
+  </text>
+</svg>

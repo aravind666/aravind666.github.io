@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <defs>
+    <style>
+      .bad-metric { fill: #FF6B6B; stroke: #C92A2A; stroke-width: 2; }
+      .good-metric { fill: #50C878; stroke: #2C7A4E; stroke-width: 2; }
+      .metric-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: white; text-anchor: start; }
+      .metric-desc { font-family: Arial, sans-serif; font-size: 11px; fill: white; text-anchor: start; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .section-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .icon { font-size: 20px; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="35" class="title">What to Measure: Vanity vs. Value</text>
+  
+  <!-- Left side: Easy to Measure (Bad) -->
+  <text x="175" y="70" class="section-title" style="fill: #C92A2A;">✗ Easy to Measure</text>
+  <text x="175" y="90" style="font-family: Arial, sans-serif; font-size: 12px; fill: #666; text-anchor: middle;">
+    (But misleading)
+  </text>
+  
+  <!-- Bad metrics -->
+  <rect x="50" y="110" width="250" height="50" class="bad-metric" rx="5"/>
+  <text x="60" y="132" class="metric-text">📊 Story Points</text>
+  <text x="60" y="149" class="metric-desc">Teams inflate estimates, output appears high</text>
+  
+  <rect x="50" y="175" width="250" height="50" class="bad-metric" rx="5"/>
+  <text x="60" y="197" class="metric-text">💻 Lines of Code</text>
+  <text x="60" y="214" class="metric-desc">Encourages verbose code, discourages reuse</text>
+  
+  <rect x="50" y="240" width="250" height="50" class="bad-metric" rx="5"/>
+  <text x="60" y="262" class="metric-text">⏰ Hours Logged</text>
+  <text x="60" y="279" class="metric-desc">Rewards time spent, not value delivered</text>
+  
+  <rect x="50" y="305" width="250" height="50" class="bad-metric" rx="5"/>
+  <text x="60" y="327" class="metric-text">🎯 Velocity</text>
+  <text x="60" y="344" class="metric-desc">Easily gamed, sacrifices quality for speed</text>
+  
+  <!-- Right side: Hard to Measure (Good) -->
+  <text x="525" y="70" class="section-title" style="fill: #2C7A4E;">✓ Hard to Measure</text>
+  <text x="525" y="90" style="font-family: Arial, sans-serif; font-size: 12px; fill: #666; text-anchor: middle;">
+    (But truly valuable)
+  </text>
+  
+  <!-- Good indicators -->
+  <rect x="400" y="110" width="250" height="50" class="good-metric" rx="5"/>
+  <text x="410" y="132" class="metric-text">🛡️ Reliability</text>
+  <text x="410" y="149" class="metric-desc">System stability and uptime under stress</text>
+  
+  <rect x="400" y="175" width="250" height="50" class="good-metric" rx="5"/>
+  <text x="410" y="197" class="metric-text">🤝 Trustworthiness</text>
+  <text x="410" y="214" class="metric-desc">Commitments kept, transparency maintained</text>
+  
+  <rect x="400" y="240" width="250" height="50" class="good-metric" rx="5"/>
+  <text x="410" y="262" class="metric-text">🌱 Growth Mindset</text>
+  <text x="410" y="279" class="metric-desc">Learning, adaptation, continuous improvement</text>
+  
+  <rect x="400" y="305" width="250" height="50" class="good-metric" rx="5"/>
+  <text x="410" y="327" class="metric-text">💎 Code Quality</text>
+  <text x="410" y="344" class="metric-desc">Maintainability, testability, clarity</text>
+  
+  <!-- Bottom insight -->
+  <rect x="100" y="385" width="500" height="50" fill="#E8F4F8" stroke="#4A90E2" stroke-width="2" rx="8"/>
+  <text x="350" y="408" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; text-anchor: middle;">
+    Teams strong in the right indicators
+  </text>
+  <text x="350" y="427" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; text-anchor: middle;">
+    can deliver almost anything
+  </text>
+</svg>

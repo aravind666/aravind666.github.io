@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520">
+  <defs>
+    <style>
+      .cycle-arrow { fill: none; stroke: #4A90E2; stroke-width: 4; marker-end: url(#cycle-arrowhead); }
+      .phase-circle { fill: #50C878; stroke: #2C7A4E; stroke-width: 3; }
+      .phase-text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .phase-detail { font-family: Arial, sans-serif; font-size: 13px; fill: #333; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .center-text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #E94B3C; text-anchor: middle; }
+    </style>
+    <marker id="cycle-arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#4A90E2" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="35" class="title">Continuous Improvement Through Feedback</text>
+  
+  <!-- Center circle with text -->
+  <circle cx="350" cy="280" r="70" fill="#FFE5E5" stroke="#E94B3C" stroke-width="3"/>
+  <text x="350" y="275" class="center-text">Continuous</text>
+  <text x="350" y="295" class="center-text">Growth</text>
+  
+  <!-- Phase 1: Gather (Top) -->
+  <circle cx="350" cy="120" r="55" class="phase-circle"/>
+  <text x="350" y="120" class="phase-text">1. Gather</text>
+  <text x="350" y="138" class="phase-text" style="font-size: 13px;">Feedback</text>
+  <text x="425" y="111" class="phase-detail" style="text-anchor: start;">Team writes observations</text>
+  <text x="425" y="129" class="phase-detail" style="text-anchor: start;">about each member</text>
+  
+  <!-- Phase 2: Share (Right) -->
+  <circle cx="530" cy="280" r="55" class="phase-circle"/>
+  <text x="530" y="280" class="phase-text">2. Share</text>
+  <text x="530" y="298" class="phase-text" style="font-size: 13px;">Directly</text>
+  <text x="553" y="350" class="phase-detail">One person in center,</text>
+  <text x="553" y="368" class="phase-detail">others provide feedback</text>
+  
+  <!-- Phase 3: Reflect (Bottom) -->
+  <circle cx="350" cy="440" r="55" class="phase-circle"/>
+  <text x="350" y="440" class="phase-text">3. Reflect</text>
+  <text x="350" y="458" class="phase-text" style="font-size: 13px;">&amp; Process</text>
+  <text x="350" y="507" class="phase-detail">Individual processes</text>
+  <text x="350" y="515" class="phase-detail" style="visibility: hidden;">insights privately</text>
+  
+  <!-- Phase 4: Improve (Left) -->
+  <circle cx="170" cy="280" r="55" class="phase-circle"/>
+  <text x="170" y="280" class="phase-text">4. Improve</text>
+  <text x="170" y="298" class="phase-text" style="font-size: 13px;">&amp; Adapt</text>
+  <text x="100" y="271" class="phase-detail" style="text-anchor: end;">Apply changes,</text>
+  <text x="100" y="289" class="phase-detail" style="text-anchor: end;">adjust behavior</text>
+  
+  <!-- Connecting arrows forming a cycle -->
+  <!-- 1 to 2 -->
+  <path d="M 395 145 Q 480 200, 500 245" class="cycle-arrow"/>
+  
+  <!-- 2 to 3 -->
+  <path d="M 505 325 Q 460 380, 395 415" class="cycle-arrow"/>
+  
+  <!-- 3 to 4 -->
+  <path d="M 305 415 Q 240 380, 200 325" class="cycle-arrow"/>
+  
+  <!-- 4 to 1 -->
+  <path d="M 200 245 Q 220 200, 305 145" class="cycle-arrow"/>
+</svg>

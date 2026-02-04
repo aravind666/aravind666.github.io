@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420">
+  <defs>
+    <style>
+      .constrain-box { fill: #9B59B6; stroke: #6C3483; stroke-width: 3; }
+      .filter { fill: #E8F4F8; stroke: #4A90E2; stroke-width: 2; }
+      .outcome { fill: #50C878; stroke: #2C7A4E; stroke-width: 3; }
+      .funnel-line { stroke: #9B59B6; stroke-width: 3; fill: none; }
+      .box-text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .filter-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .outcome-text { font-family: Arial, sans-serif; font-size: 14px; fill: white; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .note { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="325" y="35" class="title">Thoughtful Constraint Creates Clarity</text>
+  
+  <!-- Top: Many Options -->
+  <rect x="125" y="70" width="400" height="50" fill="#FFE5E5" stroke="#C92A2A" stroke-width="2" rx="8"/>
+  <text x="325" y="100" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #C92A2A; text-anchor: middle;">
+    Unlimited Options (Overwhelming)
+  </text>
+  
+  <!-- Funnel shape -->
+  <path d="M 150 130 L 325 180 L 500 130" class="funnel-line"/>
+  <path d="M 200 180 L 325 230 L 450 180" class="funnel-line"/>
+  <path d="M 250 230 L 325 280 L 400 230" class="funnel-line"/>
+  
+  <!-- Filter stages -->
+  <rect x="180" y="145" width="290" height="40" class="filter" rx="5"/>
+  <text x="325" y="170" class="filter-text">Intentional Design</text>
+  
+  <rect x="220" y="195" width="210" height="40" class="filter" rx="5"/>
+  <text x="325" y="220" class="filter-text">Hard Trade-offs</text>
+  
+  <rect x="260" y="245" width="130" height="40" class="filter" rx="5"/>
+  <text x="325" y="270" class="filter-text">Respect Limits</text>
+  
+  <!-- Bottom: Better Outcomes -->
+  <rect x="225" y="300" width="200" height="60" class="outcome" rx="10"/>
+  <text x="325" y="325" class="outcome-text" style="font-size: 16px; font-weight: bold;">Better Outcomes</text>
+  <text x="325" y="347" class="outcome-text" style="font-size: 13px;">Fewer, clearer choices</text>
+  
+  <!-- Benefits -->
+  <text x="325" y="385" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; text-anchor: middle;">
+    Results:
+  </text>
+  
+  <text x="140" y="410" class="note">✓ Faster decisions</text>
+  <text x="280" y="410" class="note">✓ Higher completion</text>
+  <text x="440" y="410" class="note">✓ Reduced friction</text>
+</svg>

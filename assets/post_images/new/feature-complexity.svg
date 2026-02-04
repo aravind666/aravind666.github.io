@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <defs>
+    <style>
+      .complex-box { fill: #FF6B6B; stroke: #C92A2A; stroke-width: 3; }
+      .simple-box { fill: #50C878; stroke: #2C7A4E; stroke-width: 3; }
+      .feature { fill: #4A90E2; stroke: #2C5F8D; stroke-width: 1; }
+      .unused-feature { fill: #ccc; stroke: #999; stroke-width: 1; }
+      .box-text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .feature-text { font-family: Arial, sans-serif; font-size: 11px; fill: white; text-anchor: middle; }
+      .metric { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .section-title { font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="35" class="title">Feature Bloat vs. Thoughtful Simplicity</text>
+  
+  <!-- Left: Complex Product -->
+  <text x="175" y="70" class="section-title" style="fill: #C92A2A;">✗ Feature-Rich (Complex)</text>
+  
+  <rect x="50" y="90" width="250" height="200" class="complex-box" rx="10"/>
+  <text x="175" y="120" class="box-text">Too Many Options</text>
+  
+  <!-- Feature boxes - many overlapping -->
+  <rect x="70" y="140" width="60" height="30" class="feature" rx="3"/>
+  <text x="100" y="159" class="feature-text">Feature 1</text>
+  
+  <rect x="140" y="140" width="60" height="30" class="feature" rx="3"/>
+  <text x="170" y="159" class="feature-text">Feature 2</text>
+  
+  <rect x="210" y="140" width="60" height="30" class="feature" rx="3"/>
+  <text x="240" y="159" class="feature-text">Feature 3</text>
+  
+  <rect x="70" y="180" width="60" height="30" class="unused-feature" rx="3"/>
+  <text x="100" y="199" class="feature-text">Unused</text>
+  
+  <rect x="140" y="180" width="60" height="30" class="feature" rx="3"/>
+  <text x="170" y="199" class="feature-text">Feature 5</text>
+  
+  <rect x="210" y="180" width="60" height="30" class="unused-feature" rx="3"/>
+  <text x="240" y="199" class="feature-text">Unused</text>
+  
+  <rect x="70" y="220" width="60" height="30" class="feature" rx="3"/>
+  <text x="100" y="239" class="feature-text">Feature 7</text>
+  
+  <rect x="140" y="220" width="60" height="30" class="unused-feature" rx="3"/>
+  <text x="170" y="239" class="feature-text">Unused</text>
+  
+  <rect x="210" y="220" width="60" height="30" class="unused-feature" rx="3"/>
+  <text x="240" y="239" class="feature-text">Unused</text>
+  
+  <!-- Metrics for complex -->
+  <text x="60" y="315" class="metric">⚠ High cognitive load</text>
+  <text x="60" y="332" class="metric">⚠ Features unused (40%)</text>
+  <text x="60" y="349" class="metric">⚠ Slow task completion</text>
+  <text x="60" y="366" class="metric">⚠ User confusion</text>
+  
+  <!-- Right: Simple Product -->
+  <text x="525" y="70" class="section-title" style="fill: #2C7A4E;">✓ Intentionally Simple</text>
+  
+  <rect x="400" y="90" width="250" height="200" class="simple-box" rx="10"/>
+  <text x="525" y="120" class="box-text">Essential Options</text>
+  
+  <!-- Feature boxes - fewer, well-spaced -->
+  <rect x="440" y="150" width="80" height="40" class="feature" rx="3"/>
+  <text x="480" y="173" class="feature-text" style="font-size: 12px;">Core Feature 1</text>
+  
+  <rect x="530" y="150" width="80" height="40" class="feature" rx="3"/>
+  <text x="570" y="173" class="feature-text" style="font-size: 12px;">Core Feature 2</text>
+  
+  <rect x="440" y="200" width="80" height="40" class="feature" rx="3"/>
+  <text x="480" y="223" class="feature-text" style="font-size: 12px;">Core Feature 3</text>
+  
+  <rect x="530" y="200" width="80" height="40" class="feature" rx="3"/>
+  <text x="570" y="223" class="feature-text" style="font-size: 12px;">Core Feature 4</text>
+  
+  <!-- Metrics for simple -->
+  <text x="410" y="315" class="metric">✓ Low cognitive load</text>
+  <text x="410" y="332" class="metric">✓ All features used</text>
+  <text x="410" y="349" class="metric">✓ Fast task completion</text>
+  <text x="410" y="366" class="metric">✓ Clear user journey</text>
+</svg>

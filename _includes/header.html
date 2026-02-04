@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="en" class="h-100">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     <meta content="{{ page.description }}" property="og:description">
@@ -12,11 +12,13 @@
     <meta name="description" content="{{ page.title }}">
     <meta content="{{ page.title }}" property="og:description">
     {% endif %}
+    
     <meta content="{{ site.title }}" property="og:site_name">
     <meta content="{{ site.url }}{{ page.url }}" property="og:url">
     <meta name="author" content="{{ page.author | escape }}">
     <meta content="article" property="og:type">
     <meta content="{{ page.title }}" property="og:title">
+    
     {% if page.image %}
     <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
     {%- else -%}
@@ -24,117 +26,139 @@
     {%- endif -%}
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
+    
     {%- if page.type == 'catalog' -%}
     {% assign category = site.categories["Software Development"] %}
     {% assign array_of_titles = "" | split: ',' %}
-    {% for post in category %} {% assign array_of_titles = array_of_titles | push: post.title %} {% endfor %}
+    {% for post in category %} 
+        {% assign array_of_titles = array_of_titles | push: post.title %} 
+    {% endfor %}
     <meta name="keywords" content="{{ array_of_titles | join: ',' }}">
     {%- else -%}
     <meta name="keywords" content="{{ page.keywords }}">
     {%- endif -%}
-    <meta name="generator" content="Jekyll v4.1.1">
+    
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}">
     <title>{{ page.title | escape }}</title>
+    
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
     {%- endif -%}
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/css/elusive-icons.min.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
+    
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Bulma Theme -->
+    <link href="/assets/css/custom-bulma.css" rel="stylesheet">
+    
+    <!-- Syntax Highlighting -->
+    <link href="/assets/css/syntax-highlighting.css" rel="stylesheet">
+    
+    <!-- KaTeX for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    
+    <!-- Mermaid for Diagrams -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#3fb848',
+                primaryTextColor: '#2b2d42',
+                primaryBorderColor: '#2d8a3e',
+                lineColor: '#2d8a3e',
+                secondaryColor: '#fffcf0',
+                tertiaryColor: '#f8fff9',
+                background: '#fffcf0',
+                mainBkg: '#f8fff9',
+                secondBkg: '#fffcf0',
+                textColor: '#2b2d42',
+                fontSize: '16px'
+            }
+        });
+    </script>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+    <meta name="theme-color" content="#3fb848">
 </head>
 
 <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
 
-    <header>
-        <div class="navbar collapse navbar-collapse" id="navbarHeader">
-            <div class="d-flex justify-content-between">
-                <div class="col-sm mt-5">
-                    <h4 class="header-text">Who Am I</h4>
-                    <p class="pull-left free-text">
-                        <i>
-                            Myself <b> Aravind HU </b>, an experienced, hands-on software architect, involved in the
-                            architecture, design, and implementation of microservices
-                            architectures, service-oriented architectures, micro front-end architectures, and other
-                            distributed systems in a variety
-                            of technologies. <b>Being in the software industry for around 15 years </b> have built
-                            significant competencies in application,
-                            integration, and enterprise architecture, mostly within the Finance, Healthcare, and
-                            Construction Domains.
-                        </i>
-                    </p>
-                </div>
-                <div class="col-sm mt-5">
-                    <h4 class="header-text">What is This</h4>
-                    <p class="free-text">
-                        <i> This is my personal website, I call this as "Aravind On Software".
-                            it's a collection of superficial piecemeal knowledge of my own on Technology,
-                            Programming, Process, Patterns, Platforms, Paradigms, Frameworks and bit of Philosophy.
-                            Most of them are devoted to Software Developers.
-                        </i>
-                    </p>
+    <!-- Navigation Bar -->
+    <nav class="navbar is-custom is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/" style="font-weight: 700; font-size: 1.3rem; color: var(--dark-green);">
+                    <i class="fas fa-code" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                    Aravind On Software
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="mainNavbar" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="/">
+                        <i class="fas fa-home" style="margin-right: 0.5rem;"></i>
+                        Home
+                    </a>
+                    <a class="navbar-item" href="/about.html">
+                        <i class="fas fa-user" style="margin-right: 0.5rem;"></i>
+                        About
+                    </a>
+                    <a class="navbar-item" href="/resume.html">
+                        <i class="fas fa-file-alt" style="margin-right: 0.5rem;"></i>
+                        Resume
+                    </a>
+                    <a class="navbar-item" href="/aravind-on-software.html">
+                        <i class="fas fa-book-open" style="margin-right: 0.5rem;"></i>
+                        Story
+                    </a>
+                    <a class="navbar-item" href="/search.html">
+                        <i class="fas fa-search" style="margin-right: 0.5rem;"></i>
+                        Search
+                    </a>
+                    
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-small" href="https://github.com/aravind666" target="_blank" style="background: transparent; border: none;">
+                                <i class="fab fa-github" style="font-size: 1.3rem; color: var(--text-dark);"></i>
+                            </a>
+                            <a class="button is-small" href="https://www.linkedin.com/in/aravindudayashankara" target="_blank" style="background: transparent; border: none;">
+                                <i class="fab fa-linkedin" style="font-size: 1.3rem; color: #0077b5;"></i>
+                            </a>
+                            <a class="button is-small" href="mailto:hirearavindhu@gmail.com" style="background: transparent; border: none;">
+                                <i class="fas fa-envelope" style="font-size: 1.3rem; color: var(--nature-green);"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container-fluid contact-me d-flex justify-content-center">
-                <a class="page-link kesari" target="_blank" href="https://stackexchange.com/users/1067259"><img
-                        src="https://stackexchange.com/users/flair/1067259.png" width="208" height="58"
-                        alt="profile for aravind.udayashankara on Stack Exchange, a network of free, community-driven Q&amp;A sites"
-                        title="profile for aravind.udayashankara on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
-                <a class="page-link kesari" target="_blank" href="https://www.linkedin.com/in/aravindudayashankara"><i
-                        class="el el-linkedin el-3x"></i></a>
-                <a class="page-link kesari" target="_blank" href="https://github.com/aravind666"><i
-                        class="el el-github el-3x"></i></a>
-                <a class="page-link kesari" target="_blank" href="mailto:aravind.udayashankara@gmail.com"><i
-                        class="el el-envelope el-3x"></i></a>
-            </div>
         </div>
-        <div class="navbar shadow-sm navbar-light">
-            <a href="/" class="navbar-brand align-items-center flex-row justify-content-start">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
-                </svg>
-                <strong> &nbsp; Aravind On Software</strong>
-            </a>
-            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/software.html">Software Development</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/impigrity.html">Impigrity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/management.html">Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cerberus.html">Cerberus</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/aravind-on-software.html">Story</a>
-                    </li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0" action="/search.html" method="get">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-                                name="query" id="search-box">
-                            <button class="btn btn-secondary my-2 my-sm-0 mr-4" type="submit"><i
-                                    class="el el-search"></i></button>
-                        </form>
-                    </li>
+    </nav>
 
-                    <li class="nav-item">
-                        <button class="btn navbar-toggler-right glowing-btn" type="button" data-toggle="collapse"
-                            data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
-                            aria-label="Know who am I">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div style="height: 52px;"></div>
+
+    <!-- Main Content Container -->
+    <main>
+

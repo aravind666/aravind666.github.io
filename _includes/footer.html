@@ -1,56 +1,134 @@
-<footer class="py-3 gandha container-fluid d-flex justify-content-between fixed-bottom">
-    <div class="pl-3 mt-1">
-        <span class="text-muted">&copy; 2023 - 2024 by Aravind H U</span>
-    </div>
-    <div class="pl-3 mt-1">
-        <span class="kesari-link mr-3" data-toggle="modal" data-target="#disclaimer-modal-lg">Disclaimer</span>
-        <div class="el el-arrow-up el-1x move-to-top rounded-circle mr-3" title="Move to top">
-        </div>
-    </div>
+    </main>
 
-</footer>
-<div class="modal fade" id="disclaimer-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Disclaimer</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+    <!-- Footer -->
+    <footer class="footer is-custom">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p style="margin-bottom: 0.5rem;">
+                        <strong style="color: var(--soft-cream);">Aravind On Software</strong>
+                    </p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">
+                        &copy; 2014 - {{ 'now' | date: "%Y" }} by Aravind H U
+                    </p>
+                    <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.5rem;">
+                        Built with <i class="fas fa-heart" style="color: var(--gentle-pink);"></i> using Jekyll & Bulma
+                    </p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/aravind666" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aravindudayashankara" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://stackexchange.com/users/1067259" target="_blank" title="Stack Exchange">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>
+                    <a href="mailto:hirearavindhu@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div>
+                    <button class="button is-small is-light" onclick="document.getElementById('disclaimerModal').classList.add('is-active')">
+                        <span class="icon is-small">
+                            <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span>Disclaimer</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Disclaimer Modal -->
+    <div class="modal" id="disclaimerModal">
+        <div class="modal-background" onclick="document.getElementById('disclaimerModal').classList.remove('is-active')"></div>
+        <div class="modal-card">
+            <header class="modal-card-head" style="background: linear-gradient(135deg, var(--nature-green) 0%, var(--dark-green) 100%);">
+                <p class="modal-card-title" style="color: white;">
+                    <i class="fas fa-info-circle" style="margin-right: 0.5rem;"></i>
+                    Disclaimer
+                </p>
+                <button class="delete" aria-label="close" onclick="document.getElementById('disclaimerModal').classList.remove('is-active')"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="content">
+                    <p>
+                        I hope that you won't object if I occasionally use contractions and the less formal
+                        "you" instead of "one" in my posts presented here. That makes writing it easier for me and ensures a
+                        less formal atmosphere.
+                    </p>
+
+                    <p>
+                        I attempt to post articles here as carefully as possible, but I cannot guarantee
+                        absolute freedom from errors in general at this time. Please bear with me. If you would like to help
+                        me please <a href="mailto:hirearavindhu@gmail.com" style="color: var(--nature-green);">contact me</a>
+                        <i class="fas fa-envelope" style="color: var(--nature-green);"></i>
+                    </p>
+
+                    <p>
+                        The information contained in this website is for general information purposes only.
+                        I try to keep the information up to date and correct, I make no representations or warranties of any
+                        kind, express or implied, about the completeness, accuracy, reliability, suitability or availability
+                        with respect to the website or the information, products, services, or related graphics contained on
+                        the website for any purpose.
+                    </p>
+                    
+                    <p>
+                        Any reliance you place on such information is therefore strictly at your own risk.
+                    </p>
+                </div>
+            </section>
+            <footer class="modal-card-foot" style="background-color: var(--soft-cream);">
+                <button class="button is-custom-green" onclick="document.getElementById('disclaimerModal').classList.remove('is-active')">
+                    Got it!
                 </button>
-            </div>
-            <div class="modal-body">
-                <p class="lead"> I hope that you won’t object if I occasionally use contractions and the less formal
-                    “you” instead of “one” in my posts presented here. That makes writing it easier for me and ensures a
-                    less
-                    formal atmosphere. </p>
-
-                <p class="lead">
-                    I attempt to post articles here as carefully as possible, but I cannot guarantee
-                    absolute freedom from errors in general at this time. Please bear with me. If you would like to help
-                    me please <a target="_blank" href="mailto:aravind.udayashankara@gmail.com">contact me </a><i
-                        class="el el-envelope"></i>
-                </p>
-
-                <p class="lead"> The information contained in this website is for general information purposes only.
-                    I try to keep the information up to date and correct, I make no representations or warranties of any
-                    kind, express or implied, about the completeness, accuracy, reliability, suitability or availability
-                    with respect to the website or the information, products, services, or related graphics contained on
-                    the website for any purpose.
-                </p>
-                <p class="lead">
-                    Any reliance you place on such information is therefore strictly at your own risk.
-                </p>
-            </div>
+            </footer>
         </div>
     </div>
-</div>
 
-<script src="/assets/js/jquery-3.5.1.min.js"></script>
-<script src="/assets/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/lunr.min.js"></script>
-<script src="/assets/js/site.js"></script>
+    <script>
+    // Page Loader - hide on page load
+    window.addEventListener('load', function() {
+        const loader = document.getElementById('pageLoader');
+        if (loader) {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 300);
+        }
+    });
+
+    // Mobile navbar toggle
+    document.addEventListener('DOMContentLoaded', () => {
+        const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        
+        if (navbarBurgers.length > 0) {
+            navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const targetElement = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    targetElement.classList.toggle('is-active');
+                });
+            });
+        }
+        
+        // KaTeX Auto-render for Math Equations
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '\\(', right: '\\)', display: false}
+            ],
+            throwOnError: false
+        });
+    });
+    </script>
 
 </body>
-
 </html>

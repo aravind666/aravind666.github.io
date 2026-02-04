@@ -1,22 +1,216 @@
 ---
 layout: default
-title: "Aravind On Software By Aravind HU - Search here"
+title: "Search - Aravind On Software"
 author: "Aravind HU"
-type: "catalog"
-description: "Myself Aravind HU (ARAVIND UDAYASHANKARA, aravindhu) and Autodidactist and a Software Developer, 'Aravind On Software'
-collection of superficial piecemeal knowledge of my own on Technology ."
+description: "Search all posts and insights on Platform Engineering, Developer Experience, and Engineering Leadership"
 ---
 
-<div class="mb-4 ml-2 mt-4 mr-2">
-    <div class="col">
-        <div class="no-gutters border rounded mb-4 shadow-sm h-md-250">
-            <div class="p-4">
-                <h3 class="p-2 border-bottom">Search Results</h3>
-                <ol id="search-results"></ol>
+<div class="section">
+    <div class="container">
+        
+        <!-- Search Header -->
+        <div class="has-text-centered" style="margin-bottom: 3rem;">
+            <h1 class="title is-2" style="color: var(--dark-green); margin-bottom: 1rem;">
+                <i class="fas fa-search" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                Search Posts
+            </h1>
+            <p class="subtitle is-5" style="color: var(--text-dark); max-width: 600px; margin: 0 auto;">
+                Find insights across all topics
+            </p>
+        </div>
+        
+        <!-- Search Box -->
+        <div class="box" style="max-width: 800px; margin: 0 auto 3rem; background: white; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <input class="input is-medium" type="text" id="searchInput" placeholder="Type keywords to search..." autofocus>
+                </div>
+                <div class="control">
+                    <button class="button is-custom-green is-medium" onclick="performSearch()">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </div>
+            <p class="help" style="margin-top: 0.5rem;">
+                <i class="fas fa-lightbulb" style="color: var(--nature-green); margin-right: 0.3rem;"></i>
+                Try: "platform engineering", "CI/CD", "backstage", "developer experience"
+            </p>
+        </div>
+        
+        <!-- Results Count -->
+        <div id="resultsCount" style="max-width: 800px; margin: 0 auto 1.5rem; display: none;">
+            <p class="has-text-centered" style="color: var(--text-dark); font-weight: 600;">
+                <span id="countText"></span>
+            </p>
+        </div>
+        
+        <!-- Search Results -->
+        <div id="searchResults" style="max-width: 800px; margin: 0 auto;">
+            <!-- Results will be inserted here -->
+        </div>
+        
+        <!-- No Results Message -->
+        <div id="noResults" style="display: none; max-width: 600px; margin: 3rem auto; text-align: center;">
+            <div class="box" style="background: var(--soft-cream); border: 2px dashed var(--nature-green);">
+                <span class="icon is-large" style="color: var(--nature-green);">
+                    <i class="fas fa-search fa-3x"></i>
+                </span>
+                <p class="title is-5" style="margin-top: 1rem; color: var(--dark-green);">No posts found</p>
+                <p class="subtitle is-6" style="color: var(--text-dark);">
+                    Try different keywords or browse all posts on the <a href="/" style="color: var(--nature-green); font-weight: 600;">homepage</a>
+                </p>
             </div>
         </div>
+        
     </div>
 </div>
-<div class="container">
-    <div class="col"></div>
-</div>
+
+<script>
+// All posts data for search
+const allPosts = [
+    {% for post in site.posts %}
+    {
+        title: {{ post.title | jsonify }},
+        url: {{ post.url | jsonify }},
+        date: {{ post.date | date: "%B %d, %Y" | jsonify }},
+        category: {{ post.categories | first | jsonify }},
+        excerpt: {{ post.excerpt | strip_html | truncatewords: 50 | jsonify }},
+        content: {{ post.content | strip_html | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+];
+
+// Search input handler
+document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        performSearch();
+    }
+});
+
+// Also search as user types (debounced)
+let searchTimeout;
+document.getElementById('searchInput').addEventListener('input', function() {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(performSearch, 300);
+});
+
+function performSearch() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+    const resultsContainer = document.getElementById('searchResults');
+    const noResults = document.getElementById('noResults');
+    const resultsCount = document.getElementById('resultsCount');
+    const countText = document.getElementById('countText');
+    
+    if (!searchTerm) {
+        resultsContainer.innerHTML = '';
+        noResults.style.display = 'none';
+        resultsCount.style.display = 'none';
+        return;
+    }
+    
+    // Search through posts
+    const results = allPosts.filter(post => {
+        return post.title.toLowerCase().includes(searchTerm) ||
+               post.content.toLowerCase().includes(searchTerm) ||
+               post.category.toLowerCase().includes(searchTerm) ||
+               post.excerpt.toLowerCase().includes(searchTerm);
+    });
+    
+    // Display results
+    if (results.length > 0) {
+        noResults.style.display = 'none';
+        resultsCount.style.display = 'block';
+        countText.textContent = `Found ${results.length} post${results.length !== 1 ? 's' : ''}`;
+        
+        let html = '';
+        results.forEach(post => {
+            const categoryIcon = getCategoryIcon(post.category);
+            const categoryColor = getCategoryColor(post.category);
+            
+            html += `
+                <article class="box" style="margin-bottom: 1.5rem; transition: all 0.3s ease; border-left: 4px solid ${categoryColor};">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
+                        <h3 class="title is-5" style="margin-bottom: 0.5rem;">
+                            <a href="${post.url}" style="color: var(--dark-green); text-decoration: none;">
+                                ${post.title}
+                            </a>
+                        </h3>
+                        <span class="tag" style="background-color: ${categoryColor}; color: white; flex-shrink: 0; margin-left: 1rem;">
+                            <i class="${categoryIcon}" style="margin-right: 0.3rem;"></i>
+                            ${getCategoryDisplayName(post.category)}
+                        </span>
+                    </div>
+                    <p class="subtitle is-6" style="color: var(--text-dark); opacity: 0.7; margin-bottom: 1rem;">
+                        <i class="far fa-calendar-alt"></i> ${post.date}
+                    </p>
+                    <p style="color: var(--text-dark); margin-bottom: 1rem;">
+                        ${post.excerpt}
+                    </p>
+                    <a href="${post.url}" class="button is-custom-green is-small">
+                        <span>Read More</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </article>
+            `;
+        });
+        
+        resultsContainer.innerHTML = html;
+    } else {
+        resultsContainer.innerHTML = '';
+        resultsCount.style.display = 'none';
+        noResults.style.display = 'block';
+    }
+}
+
+function getCategoryIcon(category) {
+    const icons = {
+        'Software Development': 'fas fa-layer-group',
+        'Management': 'fas fa-users-cog',
+        'Cerberus': 'fas fa-shield-alt',
+        'The Impigrity Catalog': 'fas fa-rocket'
+    };
+    return icons[category] || 'fas fa-file-alt';
+}
+
+function getCategoryColor(category) {
+    const colors = {
+        'Software Development': 'var(--nature-green)',
+        'Management': 'var(--gentle-pink)',
+        'Cerberus': 'var(--dark-green)',
+        'The Impigrity Catalog': 'var(--serene-blue)'
+    };
+    return colors[category] || 'var(--nature-green)';
+}
+
+function getCategoryDisplayName(category) {
+    const names = {
+        'Software Development': 'Platform',
+        'Management': 'Leadership',
+        'Cerberus': 'Quality',
+        'The Impigrity Catalog': 'DevOps'
+    };
+    return names[category] || category;
+}
+
+// Check for query parameter on page load
+window.addEventListener('load', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    if (query) {
+        document.getElementById('searchInput').value = query;
+        performSearch();
+    }
+});
+</script>
+
+<style>
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+</style>

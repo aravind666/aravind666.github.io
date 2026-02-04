@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .axis-line { stroke: #333; stroke-width: 3; }
+      .grid-line { stroke: #ccc; stroke-width: 1; }
+      .approach-box { stroke: #2C5F8D; stroke-width: 2; }
+      .best-approach { fill: #50C878; }
+      .moderate-approach { fill: #FFD700; }
+      .poor-approach { fill: #FF6B6B; }
+      .approach-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; text-anchor: middle; }
+      .approach-desc { font-family: Arial, sans-serif; font-size: 11px; fill: #555; text-anchor: middle; }
+      .axis-label { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="300" y="35" class="title">Blake-Mouton Conflict Resolution Approaches</text>
+  
+  <!-- Grid -->
+  <line x1="100" y1="500" x2="550" y2="500" class="axis-line"/>
+  <line x1="100" y1="100" x2="100" y2="500" class="axis-line"/>
+  
+  <!-- Axis labels -->
+  <text x="325" y="540" class="axis-label" style="text-anchor: middle;">Concern for Results →</text>
+  <text x="40" y="300" class="axis-label" style="text-anchor: middle; writing-mode: tb;">← Concern for Relationships</text>
+  
+  <!-- Grid lines -->
+  <line x1="100" y1="300" x2="550" y2="300" class="grid-line"/>
+  <line x1="325" y1="100" x2="325" y2="500" class="grid-line"/>
+  
+  <!-- Withdrawal (Low, Low) -->
+  <rect x="120" y="380" width="160" height="80" class="approach-box poor-approach" rx="8"/>
+  <text x="200" y="410" class="approach-text">Withdrawal</text>
+  <text x="200" y="428" class="approach-desc">Avoid the conflict</text>
+  <text x="200" y="443" class="approach-desc">Low engagement</text>
+  
+  <!-- Smoothing (High Relationship, Low Result) -->
+  <rect x="120" y="140" width="160" height="80" class="approach-box moderate-approach" rx="8"/>
+  <text x="200" y="170" class="approach-text">Smoothing</text>
+  <text x="200" y="188" class="approach-desc">Minimize differences</text>
+  <text x="200" y="203" class="approach-desc">Harmony over results</text>
+  
+  <!-- Compromising (Medium, Medium) -->
+  <rect x="245" y="260" width="160" height="80" class="approach-box moderate-approach" rx="8"/>
+  <text x="325" y="290" class="approach-text">Compromising</text>
+  <text x="325" y="308" class="approach-desc">Trade-offs</text>
+  <text x="325" y="323" class="approach-desc">Partial satisfaction</text>
+  
+  <!-- Forcing (Low Relationship, High Result) -->
+  <rect x="370" y="380" width="160" height="80" class="approach-box poor-approach" rx="8"/>
+  <text x="450" y="410" class="approach-text">Forcing</text>
+  <text x="450" y="428" class="approach-desc">Win-lose mentality</text>
+  <text x="450" y="443" class="approach-desc">Creates resentment</text>
+  
+  <!-- Confronting/Problem-Solving (High, High) -->
+  <rect x="370" y="140" width="160" height="80" class="approach-box best-approach" rx="8"/>
+  <text x="450" y="165" class="approach-text">Confronting</text>
+  <text x="450" y="183" class="approach-text" style="font-size: 12px;">(Problem-Solving)</text>
+  <text x="450" y="201" class="approach-desc">Empathy + clarity</text>
+  <text x="450" y="213" class="approach-desc">✓ Most effective</text>
+  
+  <!-- Legend -->
+  <rect x="180" y="555" width="20" height="15" class="best-approach" stroke="#2C5F8D" stroke-width="1"/>
+  <text x="205" y="567" style="font-family: Arial, sans-serif; font-size: 12px; fill: #333;">Most Effective</text>
+  
+  <rect x="300" y="555" width="20" height="15" class="moderate-approach" stroke="#2C5F8D" stroke-width="1"/>
+  <text x="325" y="567" style="font-family: Arial, sans-serif; font-size: 12px; fill: #333;">Moderate</text>
+  
+  <rect x="400" y="555" width="20" height="15" class="poor-approach" stroke="#2C5F8D" stroke-width="1"/>
+  <text x="425" y="567" style="font-family: Arial, sans-serif; font-size: 12px; fill: #333;">Less Effective</text>
+</svg>

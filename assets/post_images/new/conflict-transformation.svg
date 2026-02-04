@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 400">
+  <defs>
+    <style>
+      .friction-box { fill: #FF6B6B; stroke: #C92A2A; stroke-width: 3; }
+      .progress-box { fill: #50C878; stroke: #2C7A4E; stroke-width: 3; }
+      .transform-arrow { fill: none; stroke: #4A90E2; stroke-width: 3; marker-end: url(#transform-arrowhead); }
+      .benefit { fill: #E8F4F8; stroke: #4A90E2; stroke-width: 2; }
+      .box-text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .benefit-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .leader-text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+    </style>
+    <marker id="transform-arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#4A90E2" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="325" y="35" class="title">Transforming Friction into Progress</text>
+  
+  <!-- Friction box (left) -->
+  <rect x="50" y="120" width="180" height="100" class="friction-box" rx="10"/>
+  <text x="140" y="155" class="box-text">FRICTION</text>
+  <text x="140" y="180" class="box-text" style="font-size: 13px;">Disagreement</text>
+  <text x="140" y="200" class="box-text" style="font-size: 13px;">Tension</text>
+  
+  <!-- Transform arrow with leadership badge -->
+  <path d="M 240 170 L 370 170" class="transform-arrow"/>
+  
+  <!-- Leadership badge -->
+  <rect x="270" y="130" width="110" height="30" fill="#4A90E2" stroke="#2C5F8D" stroke-width="2" rx="15"/>
+  <text x="325" y="151" class="leader-text" style="font-weight: bold; fill: white; font-size: 15px;">Leadership</text>
+  
+  <!-- Progress box (right) -->
+  <rect x="380" y="120" width="180" height="100" class="progress-box" rx="10"/>
+  <text x="470" y="155" class="box-text">PROGRESS</text>
+  <text x="470" y="180" class="box-text" style="font-size: 13px;">Alignment</text>
+  <text x="470" y="200" class="box-text" style="font-size: 13px;">Growth</text>
+  
+  <!-- Benefits below -->
+  <text x="325" y="270" style="font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #2C3E50; text-anchor: middle;">
+    When Conflict is Channeled Effectively:
+  </text>
+  
+  <!-- Benefit 1 -->
+  <rect x="80" y="290" width="160" height="45" class="benefit" rx="5"/>
+  <text x="160" y="310" class="benefit-text">Sharpens</text>
+  <text x="160" y="327" class="benefit-text">Decisions</text>
+  
+  <!-- Benefit 2 -->
+  <rect x="260" y="290" width="160" height="45" class="benefit" rx="5"/>
+  <text x="340" y="310" class="benefit-text">Strengthens</text>
+  <text x="340" y="327" class="benefit-text">Collaboration</text>
+  
+  <!-- Benefit 3 -->
+  <rect x="440" y="290" width="160" height="45" class="benefit" rx="5"/>
+  <text x="520" y="310" class="benefit-text">Improves</text>
+  <text x="520" y="327" class="benefit-text">Outcomes</text>
+  
+  <!-- Bottom insight -->
+  <rect x="100" y="360" width="450" height="30" fill="#FFF3CD" stroke="#FFC107" stroke-width="2" rx="5"/>
+  <text x="325" y="380" style="font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #856404; text-anchor: middle;">
+    Strong leaders don't eliminate conflict—they channel it
+  </text>
+</svg>
