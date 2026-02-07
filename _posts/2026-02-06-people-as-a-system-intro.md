@@ -63,7 +63,7 @@ In engineering, we don’t demand:
 We design around them.
 
 
-<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
 graph TB
     A[Traditional Management] -->|Treats People As| B[Resources to Optimize]
     A -->|Treats People As| C[Variables to Control]
@@ -83,11 +83,17 @@ graph TB
     
     I -->|Results In| K[Resilient,<br/>Adaptive<br/>Teams]
     
-    style A fill:#fee,stroke:#c33,stroke-width:2px
-    style E fill:#efe,stroke:#3c3,stroke-width:3px
-    style I fill:#e7f3ff,stroke:#3b82f6,stroke-width:2px
-    style K fill:#d1fae5,stroke:#10b981,stroke-width:2px
-    style J fill:#fecaca,stroke:#dc2626,stroke-width:2px
+    style A fill:#fee,stroke:#c33,stroke-width:2px,font-size:16px
+    style E fill:#efe,stroke:#3c3,stroke-width:3px,font-size:16px
+    style I fill:#e7f3ff,stroke:#3b82f6,stroke-width:2px,font-size:15px
+    style K fill:#d1fae5,stroke:#10b981,stroke-width:2px,font-size:15px
+    style J fill:#fecaca,stroke:#dc2626,stroke-width:2px,font-size:15px
+    style B font-size:14px
+    style C font-size:14px
+    style D font-size:14px
+    style F font-size:14px
+    style G font-size:14px
+    style H font-size:14px
 </div>
 
 PaaS applies the same discipline to leadership.
@@ -203,7 +209,7 @@ When outcomes are clear, people self-organize.
 When constraints are sane, creativity emerges.
 
 
-<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 3rem auto; max-width: 100%;">
 flowchart LR
     A[Clear Outcomes] --> B{Team Autonomy}
     B --> C[Self-Organization]
@@ -223,12 +229,18 @@ flowchart LR
     J --> L
     K --> L
     
-    style A fill:#d1fae5,stroke:#10b981,stroke-width:2px
-    style F fill:#a7f3d0,stroke:#059669,stroke-width:2px
-    style G fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style L fill:#fecaca,stroke:#991b1b,stroke-width:2px
-    style B fill:#e0e7ff,stroke:#4f46e5,stroke-width:2px
-    style H fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+    style A fill:#d1fae5,stroke:#10b981,stroke-width:2px,font-size:15px
+    style F fill:#a7f3d0,stroke:#059669,stroke-width:2px,font-size:15px
+    style G fill:#fee2e2,stroke:#dc2626,stroke-width:2px,font-size:15px
+    style L fill:#fecaca,stroke:#991b1b,stroke-width:2px,font-size:15px
+    style B fill:#e0e7ff,stroke:#4f46e5,stroke-width:2px,font-size:14px
+    style H fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,font-size:14px
+    style C font-size:14px
+    style D font-size:14px
+    style E font-size:14px
+    style I font-size:14px
+    style J font-size:14px
+    style K font-size:14px
 </div>
 
 ---
