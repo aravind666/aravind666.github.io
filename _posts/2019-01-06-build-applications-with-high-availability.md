@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building Highly Available Systems: Beyond Uptime Percentages"
-category: "Distributed Systems"
+category: "Software Development"
 ---
 
 High availability is often reduced to a number.

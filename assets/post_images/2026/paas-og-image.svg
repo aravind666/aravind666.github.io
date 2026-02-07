@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffcf0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fff9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d8a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3fb848;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Geometric Pattern Background -->
+  <g opacity="0.08">
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#3fb848" stroke-width="2"/>
+    <circle cx="1100" cy="530" r="80" fill="none" stroke="#2d8a3e" stroke-width="2"/>
+    <rect x="900" y="50" width="100" height="100" fill="none" stroke="#3fb848" stroke-width="2" transform="rotate(45 950 100)"/>
+    <polygon points="200,500 250,550 200,600 150,550" fill="none" stroke="#2d8a3e" stroke-width="2"/>
+  </g>
+  
+  <!-- Main Content Box -->
+  <rect x="100" y="120" width="1000" height="400" rx="20" fill="#ffffff" opacity="0.95" filter="url(#shadow)"/>
+  
+  <!-- Title -->
+  <text x="600" y="240" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="64" font-weight="800" fill="#2b2d42">
+    People as a System
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="310" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="400" fill="#3a3d4a">
+    A Systems Thinking Approach to Leadership
+  </text>
+  
+  <!-- PaaS Acronym Highlight -->
+  <g transform="translate(420, 360)">
+    <rect x="0" y="0" width="360" height="80" rx="40" fill="url(#greenGrad)"/>
+    <text x="180" y="55" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff">
+      PaaS Framework
+    </text>
+  </g>
+  
+  <!-- Icons representing the concept -->
+  <g transform="translate(240, 480)">
+    <!-- People Team -->
+    <circle cx="-12" cy="-5" r="12" fill="#3fb848"/>
+    <circle cx="-12" cy="-15" r="5" fill="#f8fff9"/>
+    <circle cx="12" cy="-5" r="12" fill="#2d8a3e"/>
+    <circle cx="12" cy="-15" r="5" fill="#f8fff9"/>
+    <circle cx="0" cy="8" r="12" fill="#3fb848"/>
+    <circle cx="0" cy="-2" r="5" fill="#f8fff9"/>
+  </g>
+  <g transform="translate(420, 480)">
+    <!-- System Architecture - Layered blocks -->
+    <rect x="-18" y="-12" width="36" height="8" rx="2" fill="#3fb848" opacity="0.8"/>
+    <rect x="-15" y="-3" width="30" height="8" rx="2" fill="#2d8a3e" opacity="0.9"/>
+    <rect x="-12" y="6" width="24" height="8" rx="2" fill="#3fb848"/>
+  </g>
+  <g transform="translate(600, 480)">
+    <!-- Outcomes - Target with arrow hitting center -->
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#3fb848" stroke-width="2" opacity="0.5"/>
+    <circle cx="0" cy="0" r="11" fill="none" stroke="#2d8a3e" stroke-width="2" opacity="0.7"/>
+    <circle cx="0" cy="0" r="5" fill="#3fb848"/>
+    <path d="M -20,-20 L -3,-3" stroke="#2d8a3e" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="-3,-3 -8,-1 -5,-6" fill="#2d8a3e"/>
+  </g>
+  <g transform="translate(780, 480)">
+    <!-- Design/Architecture - Puzzle pieces fitting -->
+    <path d="M -10,-10 L -10,0 Q -10,5 -5,5 L 5,5 L 5,-10 Z" fill="#3fb848" opacity="0.8"/>
+    <path d="M 5,-10 L 15,-10 L 15,5 L 5,5 Q 5,0 5,-5 Z" fill="#2d8a3e" opacity="0.8"/>
+    <circle cx="-2.5" cy="5" r="2.5" fill="#f8fff9"/>
+  </g>
+  <g transform="translate(960, 480)">
+    <!-- Growth/Emergence - Branching tree -->
+    <path d="M 0,15 L 0,0 M 0,0 L -12,-12 M 0,0 L 12,-12" stroke="#2d8a3e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-12" cy="-12" r="4" fill="#3fb848"/>
+    <circle cx="12" cy="-12" r="4" fill="#3fb848"/>
+    <circle cx="0" cy="15" r="3" fill="#2d8a3e"/>
+  </g>
+  
+  <!-- Category label -->
+  <text x="600" y="580" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#6b6d7a">
+    Leadership & Engineering
+  </text>
+</svg>

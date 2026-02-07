@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Test Coverage vs Mutation Testing vs Property-Based Testing: Choosing the Right Signal"
-category: "Software Development"
+category: "Engineering Quality"
 description: "From an engineering transformation perspective, test coverage, mutation testing, and property-based testing are not competing techniques. They provide different quality signals, and understanding those signals is a leadership decision."
 ---
 

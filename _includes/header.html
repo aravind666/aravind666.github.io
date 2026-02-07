@@ -21,11 +21,22 @@
     
     {% if page.image %}
     <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
     {%- else -%}
     <meta property="og:image" content="{{ site.url }}/assets/post_images/AOS-og-linkedin.png" />
+    <meta name="twitter:image" content="{{ site.url }}/assets/post_images/AOS-og-linkedin.png" />
     {%- endif -%}
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}" />
+    {% elsif page.title %}
+    <meta name="twitter:description" content="{{ page.title }}" />
+    {% endif %}
     
     {%- if page.type == 'catalog' -%}
     {% assign category = site.categories["Software Development"] %}

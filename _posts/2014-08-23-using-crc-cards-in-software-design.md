@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accelerating Domain-Driven Design: The Strategic Use of CRC Cards"
-category: Software Development
+category: "Software Development"
 description: "Mastering system design requires more than just modeling; it requires orchestrating collaborative sessions that transform complex requirements into streamlined architectures."
 ---
 

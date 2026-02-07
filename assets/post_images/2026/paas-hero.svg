@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffcf0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fff9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d8a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3fb848;stop-opacity:1" />
+    </linearGradient>
+    <filter id="softShadow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.06">
+    <line x1="0" y1="150" x2="1200" y2="150" stroke="#3fb848" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#3fb848" stroke-width="1"/>
+    <line x1="0" y1="450" x2="1200" y2="450" stroke="#3fb848" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="600" stroke="#2d8a3e" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="#2d8a3e" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="600" stroke="#3fb848" stroke-width="1"/>
+  </g>
+  
+  <!-- Title Section -->
+  <text x="600" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="56" font-weight="700" fill="#2b2d42">
+    People as a System
+  </text>
+  
+  <text x="600" y="145" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="26" font-weight="400" fill="#3a3d4a">
+    A Systems Thinking Approach to Leadership
+  </text>
+  
+  <!-- Left Side: Traditional Management (Problem) -->
+  <g transform="translate(150, 250)">
+    <text x="100" y="0" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#8a5a44" opacity="0.7">
+      Traditional Approach
+    </text>
+    
+    <!-- Hierarchical Structure -->
+    <g transform="translate(100, 40)">
+      <rect x="-60" y="0" width="120" height="30" rx="5" fill="#d4a574" opacity="0.4"/>
+      <text x="0" y="20" text-anchor="middle" font-family="system-ui" font-size="12" fill="#5a4a3a">Control</text>
+      
+      <line x1="-30" y1="30" x2="-30" y2="50" stroke="#8a5a44" stroke-width="2" opacity="0.5"/>
+      <line x1="30" y1="30" x2="30" y2="50" stroke="#8a5a44" stroke-width="2" opacity="0.5"/>
+      
+      <rect x="-80" y="50" width="50" height="25" rx="4" fill="#d4a574" opacity="0.3"/>
+      <rect x="-25" y="50" width="50" height="25" rx="4" fill="#d4a574" opacity="0.3"/>
+      <rect x="30" y="50" width="50" height="25" rx="4" fill="#d4a574" opacity="0.3"/>
+      
+      <!-- X marks showing problems -->
+      <g transform="translate(-55, 90)">
+        <path d="M -8,-8 L 8,8 M -8,8 L 8,-8" stroke="#c45a5a" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(0, 90)">
+        <path d="M -8,-8 L 8,8 M -8,8 L 8,-8" stroke="#c45a5a" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(55, 90)">
+        <path d="M -8,-8 L 8,8 M -8,8 L 8,-8" stroke="#c45a5a" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Center: Transformation Arrow -->
+  <g transform="translate(500, 350)">
+    <path d="M 0,0 L 180,0" stroke="url(#greenGradient)" stroke-width="4" opacity="0.7" marker-end="url(#arrowhead)" stroke-linecap="round"/>
+    <text x="90" y="-15" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="600" fill="#3fb848">
+      Design Shift
+    </text>
+  </g>
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="11" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#3fb848"/>
+    </marker>
+  </defs>
+  
+  <!-- Right Side: PaaS Approach (Solution) -->
+  <g transform="translate(850, 250)">
+    <text x="100" y="0" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#2d8a3e">
+      PaaS Approach
+    </text>
+    
+    <!-- Networked System -->
+    <g transform="translate(100, 70)">
+      <!-- People nodes -->
+      <g transform="translate(-50, -20)">
+        <circle cx="0" cy="0" r="18" fill="#3fb848" opacity="0.8"/>
+        <circle cx="0" cy="-8" r="7" fill="#f8fff9"/>
+      </g>
+      <g transform="translate(50, -20)">
+        <circle cx="0" cy="0" r="18" fill="#2d8a3e" opacity="0.8"/>
+        <circle cx="0" cy="-8" r="7" fill="#f8fff9"/>
+      </g>
+      <g transform="translate(-50, 50)">
+        <circle cx="0" cy="0" r="18" fill="#3fb848" opacity="0.8"/>
+        <circle cx="0" cy="-8" r="7" fill="#f8fff9"/>
+      </g>
+      <g transform="translate(50, 50)">
+        <circle cx="0" cy="0" r="18" fill="#2d8a3e" opacity="0.8"/>
+        <circle cx="0" cy="-8" r="7" fill="#f8fff9"/>
+      </g>
+      <g transform="translate(0, 15)">
+        <circle cx="0" cy="0" r="18" fill="#3fb848" opacity="0.9"/>
+        <circle cx="0" cy="-8" r="7" fill="#f8fff9"/>
+      </g>
+      
+      <!-- Connections showing emergence -->
+      <line x1="-50" y1="-20" x2="0" y2="15" stroke="#3fb848" stroke-width="2" opacity="0.4"/>
+      <line x1="50" y1="-20" x2="0" y2="15" stroke="#2d8a3e" stroke-width="2" opacity="0.4"/>
+      <line x1="-50" y1="50" x2="0" y2="15" stroke="#3fb848" stroke-width="2" opacity="0.4"/>
+      <line x1="50" y1="50" x2="0" y2="15" stroke="#2d8a3e" stroke-width="2" opacity="0.4"/>
+      <line x1="-50" y1="-20" x2="50" y2="-20" stroke="#3fb848" stroke-width="1.5" opacity="0.3" stroke-dasharray="3,3"/>
+      <line x1="-50" y1="50" x2="50" y2="50" stroke="#2d8a3e" stroke-width="1.5" opacity="0.3" stroke-dasharray="3,3"/>
+      
+      <!-- Check marks showing success -->
+      <g transform="translate(0, 95)">
+        <path d="M -12,0 L -5,10 L 12,-10" stroke="#3fb848" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Bottom: Key Concepts -->
+  <g transform="translate(200, 530)">
+    <circle cx="0" cy="0" r="5" fill="#3fb848"/>
+    <text x="15" y="5" font-family="system-ui" font-size="14" fill="#5a5a5a">Outcomes Over Control</text>
+  </g>
+  <g transform="translate(500, 530)">
+    <circle cx="0" cy="0" r="5" fill="#2d8a3e"/>
+    <text x="15" y="5" font-family="system-ui" font-size="14" fill="#5a5a5a">Design Around Strengths</text>
+  </g>
+  <g transform="translate(850, 530)">
+    <circle cx="0" cy="0" r="5" fill="#3fb848"/>
+    <text x="15" y="5" font-family="system-ui" font-size="14" fill="#5a5a5a">Systems Thinking</text>
+  </g>
+  
+  <!-- PaaS Badge -->
+  <g transform="translate(550, 480)">
+    <rect x="0" y="0" width="100" height="35" rx="17" fill="url(#greenGradient)" opacity="0.9"/>
+    <text x="50" y="23" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">
+      PaaS
+    </text>
+  </g>
+</svg>

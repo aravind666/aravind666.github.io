@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mutation Testing: A Platform Lens on Test Effectiveness"
-category: "Software Engineering"
+category: "Engineering Quality"
 ---
 
 In mature engineering organizations, test coverage eventually stops being a meaningful signal.

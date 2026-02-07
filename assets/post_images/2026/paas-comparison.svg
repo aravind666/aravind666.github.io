@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fcc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#efe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cfc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#1e293b">
+    Traditional Management vs PaaS
+  </text>
+  
+  <!-- Dividing Line -->
+  <line x1="450" y1="70" x2="450" y2="480" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Left Column: Traditional -->
+  <g transform="translate(50, 90)">
+    <!-- Header -->
+    <rect x="0" y="0" width="350" height="50" rx="8" fill="#fee2e2" filter="url(#cardShadow)"/>
+    <text x="175" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#991b1b">
+      Traditional Management
+    </text>
+    
+    <!-- Card 1: Control -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="350" height="80" rx="8" fill="url(#redGrad)" filter="url(#cardShadow)"/>
+      <text x="20" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#7f1d1d">
+        Control-Driven
+      </text>
+      <text x="20" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#991b1b">
+        • Micromanage processes
+      </text>
+      <text x="20" y="68" font-family="system-ui, sans-serif" font-size="13" fill="#991b1b">
+        • Top-down decisions
+      </text>
+    </g>
+    
+    <!-- Card 2: Fix Weaknesses -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="350" height="80" rx="8" fill="url(#redGrad)" filter="url(#cardShadow)"/>
+      <text x="20" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#7f1d1d">
+        Fix Weaknesses
+      </text>
+      <text x="20" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#991b1b">
+        • Force people to change
+      </text>
+      <text x="20" y="68" font-family="system-ui, sans-serif" font-size="13" fill="#991b1b">
+        • Standardize behavior
+      </text>
+    </g>
+    
+    <!-- Card 3: Linear Thinking -->
+    <g transform="translate(0, 250)">
+      <rect x="0" y="0" width="350" height="80" rx="8" fill="url(#redGrad)" filter="url(#cardShadow)"/>
+      <text x="20" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#7f1d1d">
+        Linear Thinking
+      </text>
+      <text x="20" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#991b1b">
+        • More effort = Better results
+      </text>
+      <text x="20" y="68" font-family="system-ui, sans-serif" font-size="13" fill="#991b1b">
+        • Ignore system dynamics
+      </text>
+    </g>
+  </g>
+  
+  <!-- Right Column: PaaS -->
+  <g transform="translate(500, 90)">
+    <!-- Header -->
+    <rect x="0" y="0" width="350" height="50" rx="8" fill="#d1fae5" filter="url(#cardShadow)"/>
+    <text x="175" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#065f46">
+      PaaS Approach
+    </text>
+    
+    <!-- Card 1: Outcomes -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="350" height="80" rx="8" fill="url(#greenGrad)" filter="url(#cardShadow)"/>
+      <text x="20" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#065f46">
+        Outcome-Driven
+      </text>
+      <text x="20" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#047857">
+        • Clear goals, flexible paths
+      </text>
+      <text x="20" y="68" font-family="system-ui, sans-serif" font-size="13" fill="#047857">
+        • Team autonomy
+      </text>
+    </g>
+    
+    <!-- Card 2: Design Around Strengths -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="350" height="80" rx="8" fill="url(#greenGrad)" filter="url(#cardShadow)"/>
+      <text x="20" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#065f46">
+        Design Around Strengths
+      </text>
+      <text x="20" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#047857">
+        • Align roles with talents
+      </text>
+      <text x="20" y="68" font-family="system-ui, sans-serif" font-size="13" fill="#047857">
+        • Leverage natural patterns
+      </text>
+    </g>
+    
+    <!-- Card 3: Systems Thinking -->
+    <g transform="translate(0, 250)">
+      <rect x="0" y="0" width="350" height="80" rx="8" fill="url(#greenGrad)" filter="url(#cardShadow)"/>
+      <text x="20" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#065f46">
+        Systems Thinking
+      </text>
+      <text x="20" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#047857">
+        • Understand dynamics
+      </text>
+      <text x="20" y="68" font-family="system-ui, sans-serif" font-size="13" fill="#047857">
+        • Design for emergence
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom insight -->
+  <g transform="translate(450, 460)">
+    <text x="0" y="0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-style="italic" fill="#64748b">
+      Leadership doesn't need more inspiration — it needs better systems
+    </text>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Managing Conflicts for Better Collaboration"
-category: "People Leadership"
+category: "Leadership & Engineering"
 author: "Aravind HU"
 description: "Conflict is inevitable. How leaders diagnose and resolve it determines team health."
 keywords: "conflict management, leadership, collaboration"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Scalability in Software: Designing for Growth Without Guesswork"
-category: "Software Architecture"
+category: "Software Development"
 ---
 
 Scalability is one of the most misunderstood concepts in software engineering.

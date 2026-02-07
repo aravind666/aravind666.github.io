@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Measure… Measure… Measure…"
-category: "Platform engineering"
+category: "Leadership & Engineering"
 author: "Aravind HU"
 description: "What you choose to measure shapes behavior—and not always in the way you expect."
 keywords: "metrics, Goodhart’s Law, leadership, engineering productivity"

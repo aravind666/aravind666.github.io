@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "360 Degree Retrospections"
-category: "Management"
+category: "Leadership & Engineering"
 author: "Aravind HU"
 description: "How structured, multi-directional feedback strengthens trust, reflection, and team maturity."
 keywords: "360 degree feedback, retrospectives, continuous improvement, leadership"
