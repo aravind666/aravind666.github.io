@@ -63,7 +63,7 @@ In engineering, we don’t demand:
 We design around them.
 
 
-<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 3rem 0; transform: scale(1.05); transform-origin: center;">
 graph TB
     A[Traditional Management] -->|Treats People As| B[Resources to Optimize]
     A -->|Treats People As| C[Variables to Control]
@@ -209,7 +209,7 @@ When outcomes are clear, people self-organize.
 When constraints are sane, creativity emerges.
 
 
-<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 3rem auto; max-width: 100%;">
+<div class="mermaid" style="background: #f8fafc; padding: 2rem; border-radius: 8px; margin: 3rem auto; max-width: 100%; transform: scale(1.05); transform-origin: center;">
 flowchart LR
     A[Clear Outcomes] --> B{Team Autonomy}
     B --> C[Self-Organization]
