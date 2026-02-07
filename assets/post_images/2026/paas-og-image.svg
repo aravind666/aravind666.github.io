@@ -39,7 +39,7 @@
   
   <!-- PaaS Acronym Highlight -->
   <g transform="translate(420, 360)">
-    <rect x="0" y="0" width="360" height="80" rx="40" fill="url(#greenGrad)"/>
+    <rect x="0" y="0" width="360" height="80" rx="40" fill="#3fb848" filter="url(#shadow)"/>
     <text x="180" y="55" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="42" font-weight="700" fill="#ffffff">
       PaaS Framework
     </text>
@@ -85,6 +85,6 @@
   
   <!-- Category label -->
   <text x="600" y="580" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#6b6d7a">
-    Leadership & Engineering
+    Leadership &amp; Engineering
   </text>
 </svg>
