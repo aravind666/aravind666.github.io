@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Options… Options… Options…"
-category: "Leadership & Engineering"
+category: "Leadership and Engineering"
 author: "Aravind HU"
 description: "More choice feels empowering—until it slows everything down."
 keywords: "Hick’s Law, decision making, UX, simplicity"

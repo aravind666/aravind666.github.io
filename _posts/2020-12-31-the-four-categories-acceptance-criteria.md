@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Four Categories of Acceptance Criteria: Reducing Uncertainty Before Design Begins"
-category: "Leadership & Engineering"
+category: "Leadership and Engineering"
 author: "Aravind HU"
 description: "Clear acceptance criteria are not a documentation exercise. They are a mechanism to reduce uncertainty, align intent, and enable effective design decisions."
 keywords: "Acceptance criteria, Agile, Stories, Epics, Engineering Quality"

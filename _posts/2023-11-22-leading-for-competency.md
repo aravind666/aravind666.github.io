@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Leading for Competence: The Discipline of Getting Things Done"
-category: "Leadership & Engineering"
+category: "Leadership and Engineering"
 author: "Aravind HU"
 image: "/assets/post_images/Leading-for-competency.png"
 description: "How effective leaders adapt behavior based on competence and commitment to consistently deliver outcomes"

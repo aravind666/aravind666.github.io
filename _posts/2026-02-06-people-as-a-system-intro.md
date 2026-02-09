@@ -1,9 +1,17 @@
 ---
 layout: post
 title: "People as a System (PaaS): A Systems Thinking Approach to Leadership "
-category: "Leadership & Engineering"
+category: "Leadership and Engineering"
 description: "A systems-thinking approach to leadership, where people are designed for outcomes, not controlled by processes."
 image: /assets/post_images/2026/paas-og-image.png
+tags:
+  - People as a System
+  - PaaS
+  - Systems Thinking
+  - Leadership
+  - Engineering Leadership
+  - Organizational Design
+  - Platform Thinking
 ---
 
 In software, we learned an important lesson the hard way:  

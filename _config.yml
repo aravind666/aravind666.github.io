@@ -20,3 +20,8 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+# Feed settings
+feed:
+  posts_limit: 50
+  excerpt_only: false

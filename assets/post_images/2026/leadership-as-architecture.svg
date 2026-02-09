@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg3)"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#2d3561" font-size="30" font-family="system-ui, sans-serif" font-weight="700">
+    Leadership as Architecture
+  </text>
+  
+  <!-- Four components in a clean 2x2 grid -->
+  
+  <!-- Top Left: Decision Surfaces -->
+  <rect x="80" y="100" width="300" height="180" rx="8" fill="#e7f5ff" stroke="#5c7cfa" stroke-width="3"/>
+  <text x="230" y="140" text-anchor="middle" fill="#2d3561" font-size="20" font-family="system-ui, sans-serif" font-weight="700">
+    Decision Surfaces
+  </text>
+  <text x="230" y="170" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Who decides what?
+  </text>
+  <text x="230" y="195" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Clear authority boundaries
+  </text>
+  <text x="230" y="220" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Minimize bottlenecks
+  </text>
+  <text x="230" y="245" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Enable autonomy
+  </text>
+  
+  <!-- Top Right: Feedback Mechanisms -->
+  <rect x="420" y="100" width="300" height="180" rx="8" fill="#d3f9f5" stroke="#4ecdc4" stroke-width="3"/>
+  <text x="570" y="140" text-anchor="middle" fill="#2d3561" font-size="20" font-family="system-ui, sans-serif" font-weight="700">
+    Feedback Mechanisms
+  </text>
+  <text x="570" y="170" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Fast loops, not slow reports
+  </text>
+  <text x="570" y="195" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Visible outcomes
+  </text>
+  <text x="570" y="220" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Metrics that matter
+  </text>
+  <text x="570" y="245" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Self-correction enabled
+  </text>
+  
+  <!-- Bottom Left: Ownership Boundaries -->
+  <rect x="80" y="310" width="300" height="180" rx="8" fill="#fff3bf" stroke="#fab005" stroke-width="3"/>
+  <text x="230" y="350" text-anchor="middle" fill="#2d3561" font-size="20" font-family="system-ui, sans-serif" font-weight="700">
+    Ownership Boundaries
+  </text>
+  <text x="230" y="380" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Clear responsibility zones
+  </text>
+  <text x="230" y="405" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Avoid shared ownership
+  </text>
+  <text x="230" y="430" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Accountability is explicit
+  </text>
+  <text x="230" y="455" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • End-to-end thinking
+  </text>
+  
+  <!-- Bottom Right: Escalation Paths -->
+  <rect x="420" y="310" width="300" height="180" rx="8" fill="#ffe3e3" stroke="#ff6b6b" stroke-width="3"/>
+  <text x="570" y="350" text-anchor="middle" fill="#2d3561" font-size="20" font-family="system-ui, sans-serif" font-weight="700">
+    Escalation Paths
+  </text>
+  <text x="570" y="380" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • When to escalate is clear
+  </text>
+  <text x="570" y="405" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Not a daily occurrence
+  </text>
+  <text x="570" y="430" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • Exception handling
+  </text>
+  <text x="570" y="455" text-anchor="middle" fill="#495057" font-size="14" font-family="system-ui, sans-serif">
+    • System failure modes
+  </text>
+  
+  <!-- Bottom insight -->
+  <rect x="80" y="520" width="640" height="60" rx="8" fill="#fff" stroke="#4ecdc4" stroke-width="3"/>
+  <text x="400" y="545" text-anchor="middle" fill="#2d3561" font-size="16" font-family="system-ui, sans-serif" font-weight="700">
+    The Question:
+  </text>
+  <text x="400" y="568" text-anchor="middle" fill="#495057" font-size="15" font-family="system-ui, sans-serif">
+    Does my system make the right behavior the easiest behavior?
+  </text>
+</svg>
