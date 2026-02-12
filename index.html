@@ -42,10 +42,17 @@ description: "Platform Engineering & Developer Experience insights by Aravind HU
                     </div>
                 </div>
                 
-                {% if post.excerpt %}
+                {% assign excerpt_text = post.excerpt | strip_html | strip %}
+                {% if excerpt_text != "" %}
                 <div class="post-card-body">
                     <p class="post-card-excerpt">
-                        {{ post.excerpt | strip_html | truncatewords: 30 }}
+                        {{ excerpt_text | truncatewords: 30 }}
+                    </p>
+                </div>
+                {% elsif post.description %}
+                <div class="post-card-body">
+                    <p class="post-card-excerpt">
+                        {{ post.description }}
                     </p>
                 </div>
                 {% endif %}

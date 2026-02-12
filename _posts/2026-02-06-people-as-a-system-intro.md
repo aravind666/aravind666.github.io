@@ -14,6 +14,11 @@ tags:
   - Platform Thinking
 ---
 
+
+
+![People as a System: A Systems Thinking Approach to Leadership](/assets/post_images/2026/paas-og-image-bc.png)
+
+
 In software, we learned an important lesson the hard way:  
 complex systems don’t fail because of bad components — they fail because of poor design.
 

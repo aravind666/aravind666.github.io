@@ -3,7 +3,7 @@ layout: post
 title: "People as a System (PaaS) #2: Outcomes Over Control"
 category: "Leadership and Engineering"
 description: "Why control does not scale in leadership—and how outcome-driven system design enables autonomy, reliability, and ownership in teams."
-image: /assets/post_images/2026/paas-2-hero.svg
+image: /assets/post_images/2026/PAAS_outcome_over-control.png
 tags:
   - People as a System
   - PaaS
@@ -13,6 +13,8 @@ tags:
   - Organizational Design
   - Platform Thinking
 ---
+
+![People as a System: Outcomes Over Control](/assets/post_images/2026/PAAS_outcome_over-control.png)
 
 One of the earliest scaling problems every engineering organization encounters is not technical.  
 It’s behavioral.
