@@ -1,26 +1,31 @@
 ---
 layout: default
-title: "About Aravind HU - Platform Engineering & Developer Experience Leader"
+title: "About Aravind HU - Exploring the Future of Software Engineering"
 author: "Aravind HU"
-description: "Learn about Aravind HU's experience in platform engineering, developer experience, and engineering leadership across regulated healthcare platforms and enterprise systems."
+description: "Aravind HU explores how software engineering evolves: evolutionary architecture, platform engineering, developer experience, and agentic AI. Senior Software Architect at Philips, building internal developer platforms for regulated healthcare."
 ---
+
+{% assign self_driving_post = site.posts | where_exp: "post", "post.path contains 'the-self-driving-repository'" | first %}
 
 <section class="section" style="padding-top: 2rem;">
     <div class="container">
-        
+
         <!-- Hero Introduction -->
         <div class="box" style="background: linear-gradient(135deg, var(--nature-green) 0%, var(--dark-green) 100%); border: none; margin-bottom: 3rem; position: relative; overflow: hidden;">
             <div style="position: relative; z-index: 2;">
                 <div class="columns is-vcentered">
                     <div class="column is-8">
+                        <p style="color: var(--soft-cream); font-size: 1.05rem; margin-bottom: 0.75rem; letter-spacing: 0.05em;">
+                            Hello &#128075; I'm Aravind HU
+                        </p>
                         <h1 class="title is-1" style="color: white; margin-bottom: 1rem;">
-                            Hi, I'm Aravind HU
+                            Exploring the Future of Software Engineering
                         </h1>
                         <p class="subtitle is-4" style="color: var(--soft-cream); margin-bottom: 1.5rem;">
-                            Platform Engineering & Developer Experience Leader
+                            Evolutionary Architecture &bull; Platform Engineering &bull; Agentic AI
                         </p>
                         <p style="color: var(--soft-cream); font-size: 1.1rem; line-height: 1.7;">
-                            I transform engineering platforms into systems that teams trust and businesses scale on—without compromising security, compliance, or velocity.
+                            I've been building software since <strong style="color: white;">2009</strong>&mdash;but my real passion isn't just building software. It's understanding <strong style="color: white;">how software engineering itself evolves</strong>.
                         </p>
                     </div>
                     <div class="column is-4 has-text-centered">
@@ -34,32 +39,32 @@ description: "Learn about Aravind HU's experience in platform engineering, devel
             <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); z-index: 1;"></div>
         </div>
 
-        <!-- Impact Metrics - Creative Display -->
+        <!-- Snapshot -->
         <div class="columns is-multiline" style="margin-bottom: 3rem;">
             <div class="column is-4">
                 <div class="box" style="background: white; border-left: 4px solid var(--light-green); height: 100%; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div class="has-text-centered" style="padding: 1rem;">
                         <div style="font-size: 3rem; color: var(--nature-green); font-weight: 800; margin-bottom: 0.5rem;">
-                            <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>2x
+                            <i class="fas fa-code" style="margin-right: 0.5rem;"></i>2009
                         </div>
-                        <p style="font-size: 1.1rem; color: var(--dark-green); font-weight: 600; margin-bottom: 0.5rem;">Velocity Increase</p>
-                        <p style="font-size: 0.9rem; color: var(--text-light);">Halved release cycles while elevating reliability through shift-left practices</p>
+                        <p style="font-size: 1.1rem; color: var(--dark-green); font-weight: 600; margin-bottom: 0.5rem;">Building Software Since</p>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">From application code to the platforms and systems that produce it</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="column is-4">
                 <div class="box" style="background: white; border-left: 4px solid var(--nature-green); height: 100%; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div class="has-text-centered" style="padding: 1rem;">
                         <div style="font-size: 3rem; color: var(--nature-green); font-weight: 800; margin-bottom: 0.5rem;">
-                            <i class="fas fa-users" style="margin-right: 0.5rem;"></i>15+
+                            <i class="fas fa-users" style="margin-right: 0.5rem;"></i>17+
                         </div>
-                        <p style="font-size: 1.1rem; color: var(--dark-green); font-weight: 600; margin-bottom: 0.5rem;">Years Leading Teams</p>
-                        <p style="font-size: 0.9rem; color: var(--text-light);">Healthcare, Construction, SaaS—architecting platforms that scale</p>
+                        <p style="font-size: 1.1rem; color: var(--dark-green); font-weight: 600; margin-bottom: 0.5rem;">Years of Experience</p>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Healthcare, construction, SaaS&mdash;architecting platforms that scale</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="column is-4">
                 <div class="box" style="background: white; border-left: 4px solid var(--dark-green); height: 100%; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div class="has-text-centered" style="padding: 1rem;">
@@ -67,63 +72,343 @@ description: "Learn about Aravind HU's experience in platform engineering, devel
                             <i class="fas fa-file-alt" style="margin-right: 0.5rem;"></i>{{ site.posts.size }}
                         </div>
                         <p style="font-size: 1.1rem; color: var(--dark-green); font-weight: 600; margin-bottom: 0.5rem;">Insights Shared</p>
-                        <p style="font-size: 0.9rem; color: var(--text-light);">Real-world lessons on platform strategy & developer experience</p>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Real-world lessons on architecture, platforms & developer experience</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- The Model -->
+        <div class="box" style="background: white; padding: 2.5rem; margin-bottom: 3rem;">
+            <h2 class="title is-3" style="color: var(--dark-green); margin-bottom: 0.75rem; border-bottom: 3px solid var(--nature-green); padding-bottom: 0.5rem;">
+                <i class="fas fa-project-diagram" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                How I See the Engineering System
+            </h2>
+            <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.05rem;">
+                Everything I work on sits somewhere on this map. The business pulls architecture; architecture shapes the platform; the platform shapes what engineers can actually do.
+            </p>
+            <pre class="ascii-diagram">
+                    ┌──────────────────────────────┐
+                    │    Business &amp; Customer       │
+                    └──────────────┬───────────────┘
+                                   │
+                                   ▼
+                   ┌────────────────────────────────┐
+                   │   Evolutionary Architecture    │
+                   └───────────────┬────────────────┘
+                                   │
+          ┌────────────────────────┼────────────────────────┐
+          ▼                        ▼                        ▼
+ ┌─────────────────┐      ┌─────────────────┐      ┌─────────────────┐
+ │ Platform        │      │ Developer       │      │ Engineering     │
+ │ Engineering     │      │ Experience      │      │ Effectiveness   │
+ └────────┬────────┘      └────────┬────────┘      └────────┬────────┘
+          │                        │                        │
+          └──────────────┬─────────┴─────────────┬──────────┘
+                         ▼                       ▼
+              ┌─────────────────────────────────────────────┐
+              │      AI-Native Engineering Platform         │
+              │   Agentic Workflows • Intelligent Systems   │
+              └──────────────────────┬──────────────────────┘
+                                     ▼
+                      Better Software. Better Teams.
+</pre>
+        </div>
+
+        <!-- What I'm Exploring -->
+        <div class="box" style="background: linear-gradient(135deg, var(--soft-cream) 0%, white 100%); padding: 2.5rem; margin-bottom: 3rem; border-left: 4px solid var(--nature-green);">
+            <h2 class="title is-4" style="color: var(--dark-green); margin-bottom: 1.5rem;">
+                <i class="fas fa-compass" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                What I'm Exploring
+            </h2>
+            <div class="tags">
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#129504; Agentic AI for Software Engineering</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#9881;&#65039; Intelligent Internal Developer Platforms</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#127959; Evolutionary Architecture</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#9729;&#65039; Cloud Native Platforms</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#128640; Platform Engineering</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#127753; Engineering Effectiveness</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#129302; AI-native Engineering Workflows</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#128218; Engineering Knowledge Systems</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#128260; Continuous Architecture</span>
+                <span class="tag is-medium" style="background: white; color: var(--dark-green); border: 1px solid var(--light-green); margin: 0.25rem;">&#129513; Developer Experience</span>
             </div>
         </div>
 
         <!-- Main Content -->
         <div class="columns">
             <div class="column is-8">
-                <div class="box" style="background: white; padding: 2.5rem;">
+
+                <!-- The thread: Agentic AI at Philips -->
+                <div class="box" style="background: white; padding: 2.5rem; margin-bottom: 2rem;">
                     <h2 class="title is-3" style="color: var(--dark-green); margin-bottom: 2rem; border-bottom: 3px solid var(--nature-green); padding-bottom: 0.5rem;">
-                        The Problem I Solve
+                        <i class="fas fa-robot" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                        The Thread I'm Following: Agentic AI in Engineering
                     </h2>
-                    
+
                     <div class="content" style="font-size: 1.05rem; line-height: 1.8;">
                         <p style="margin-bottom: 1.5rem;">
-                            If your engineering organization is shipping faster but <strong style="color: var(--dark-green);">feeling slower</strong>—fragile releases, overburdened teams, inconsistent quality, constant pressure from security and compliance—the problem isn't your people.
+                            My journey moved through evolutionary architecture, cloud native systems, platform engineering and internal developer platforms into <strong style="color: var(--dark-green);">AI-native software engineering</strong>. <strong style="color: var(--dark-green);">Developer experience and engineering effectiveness</strong> are not stops along that route&mdash;they are the lens I judge all of it through, and still the thing I research most.
                         </p>
-                        
+
                         <p style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--soft-cream); border-left: 4px solid var(--nature-green); border-radius: 0 8px 8px 0;">
-                            <strong style="color: var(--dark-green);">It's the platform and operating model they're delivering on.</strong>
+                            <strong style="color: var(--dark-green);">Today I'm exploring how Agentic AI becomes part of engineering itself.</strong> Not simply writing code&mdash;but helping engineers design, build, test, secure, deploy and evolve software.
                         </p>
-                        
+
                         <p style="margin-bottom: 1.5rem;">
-                            Most organizations fall into two traps: they accelerate delivery without fixing foundational platform gaps, or they deploy tools without changing how engineers actually work. The result? Burnout, rework, and systems that don't scale when stakes rise.
+                            At <strong style="color: var(--dark-green);">Philips</strong> I've been a Senior Software Architect since <strong>2019</strong>, working on healthcare platforms and digital solutions from Bengaluru, India. That tenure is where the thread actually plays out&mdash;in a regulated environment, where anything you automate still has to be defensible. It has moved in three stages:
                         </p>
-                        
-                        <h3 style="color: var(--nature-green); margin-top: 2rem; margin-bottom: 1rem;">
-                            <i class="fas fa-check-circle"></i> What I've Delivered
+
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1.25rem; padding-left: 2.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; top: 0; color: var(--nature-green); font-weight: 800;">01</span>
+                                <strong>AI-assisted development.</strong> Driving adoption of <strong>Claude</strong> and <strong>GitHub Copilot</strong> across teams&mdash;a practical productivity multiplier, and the first honest look at what engineers will and won't delegate.
+                            </li>
+                            <li style="margin-bottom: 1.25rem; padding-left: 2.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; top: 0; color: var(--nature-green); font-weight: 800;">02</span>
+                                <strong>AI-native platform thinking.</strong> Asking what an internal developer platform should become when AI is not a plugin but a participant&mdash;and what the golden paths need to look like for it.
+                            </li>
+                            <li style="margin-bottom: 1.25rem; padding-left: 2.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; top: 0; color: var(--nature-green); font-weight: 800;">03</span>
+                                <strong>Agentic workflows, AI harness engineering &amp; RAG.</strong> Where I am now, and hands-on for the <strong>last couple of years</strong>&mdash;building the harness around the model rather than just prompting it: tool boundaries, context strategy, evaluation and guardrails. Alongside that, <strong>RAG systems</strong> so engineering knowledge stays retrievable instead of re-derived, by engineers and agents alike.
+                            </li>
+                        </ul>
+
+                        <p style="margin-bottom: 1.5rem; padding: 1.25rem 1.5rem; background: var(--soft-cream); border-left: 4px solid var(--light-green); border-radius: 0 8px 8px 0; color: var(--text-dark);">
+                            <i class="fas fa-flask" style="color: var(--nature-green); margin-right: 0.5rem;"></i>
+                            <strong>Deliberately multi-model.</strong> I work across <strong>Claude</strong>, <strong>GitHub Copilot</strong>, <strong>Antigravity</strong> and local runtimes like <strong>Jan&nbsp;AI</strong>. Harnesses outlive models, so the useful skill is building one that isn't captive to a single vendor&mdash;and knowing when the answer is a local model rather than a hosted API.
+                        </p>
+
+                        <h3 style="color: var(--nature-green); margin-top: 2.5rem; margin-bottom: 1rem;">
+                            <i class="fas fa-check-circle"></i> The Foundation It's Built On
                         </h3>
-                        
+
+                        <p style="margin-bottom: 1.5rem; color: var(--text-light);">
+                            None of the AI work is interesting without a platform underneath it. What I've delivered:
+                        </p>
+
                         <ul style="list-style: none; padding: 0;">
                             <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
                                 <i class="fas fa-layer-group" style="position: absolute; left: 0; color: var(--nature-green);"></i>
-                                <strong>Internal Developer Platforms</strong> at Philips—standardized, automated build/deploy workflows using Backstage
+                                <strong>Internal Developer Platform</strong> at Philips&mdash;standardized, automated build and deploy workflows built on Backstage
                             </li>
                             <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
                                 <i class="fas fa-code-branch" style="position: absolute; left: 0; color: var(--nature-green);"></i>
-                                <strong>InnerSource Models</strong> that amplified reuse and reinforced shared ownership across teams
+                                <strong>InnerSource practices</strong> institutionalized&mdash;amplifying reuse and reinforcing shared ownership across teams
                             </li>
                             <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
                                 <i class="fas fa-shield-alt" style="position: absolute; left: 0; color: var(--nature-green);"></i>
-                                <strong>Shift-Left Quality</strong> practices that halved release cycles while improving reliability
-                            </li>
-                            <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
-                                <i class="fas fa-robot" style="position: absolute; left: 0; color: var(--nature-green);"></i>
-                                <strong>AI-Assisted Development</strong> through GitHub Copilot integration—practical productivity multiplier
+                                <strong>Shift-left quality</strong> practices that nearly halved release cycles while improving reliability
                             </li>
                             <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
                                 <i class="fas fa-route" style="position: absolute; left: 0; color: var(--nature-green);"></i>
-                                <strong>Golden Paths</strong> that enable self-service without compromising governance
+                                <strong>Golden paths</strong> that enable self-service without compromising governance or compliance
                             </li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Reference implementation -->
+                <div class="box" style="background: white; padding: 2.5rem; margin-bottom: 2rem; border-left: 4px solid var(--dark-green);">
+                    <h2 class="title is-4" style="color: var(--dark-green); margin-bottom: 1rem;">
+                        <i class="fas fa-flask" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                        Reference Implementation: A Self-Driving Repository
+                    </h2>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                        I'd rather build the idea than describe it. So the agentic thread has a public artifact&mdash;a .NET 10 repository where the only human input is a GitHub issue.
+                    </p>
+                    <div class="content" style="font-size: 1.02rem; line-height: 1.8;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-vial" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                Agents write the failing test, implement it, review the pull request, and merge it&mdash;no human reads the diff.
+                            </li>
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-gavel" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                CI <strong>mechanically verifies test-first development</strong>: it checks out the test commit and requires the suite to fail there. A claim of TDD costs nothing; a red commit doesn't.
+                            </li>
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-lock" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                Agents cannot edit the gates that judge them&mdash;which is what makes merging without review defensible at all.
+                            </li>
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-book-open" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                A Karpathy-style <strong>LLM Wiki</strong> knowledge layer that is maintained after every merge, not regenerated on demand&mdash;knowledge should compound.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttons" style="margin-top: 1.5rem;">
+                        <a href="https://github.com/aravind666/calculator-with-llm-wiki" target="_blank" rel="noopener" class="button is-custom-green">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>calculator-with-llm-wiki</span>
+                        </a>
+                        {% if self_driving_post %}
+                        <a href="{{ self_driving_post.url | prepend: site.baseurl }}" class="button is-light" style="border: 2px solid var(--nature-green); color: var(--dark-green);">
+                            <span class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </span>
+                            <span>Read: {{ self_driving_post.title }}</span>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Developer Experience -->
+                <div class="box" style="background: white; padding: 2.5rem; margin-bottom: 2rem; border-left: 4px solid var(--light-green);">
+                    <h2 class="title is-4" style="color: var(--dark-green); margin-bottom: 1rem;">
+                        <i class="fas fa-puzzle-piece" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                        The Lens: Developer Experience
+                    </h2>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                        Platforms and AI are means. Developer experience is how I decide whether either one actually worked&mdash;and it is the area I research most consistently.
+                    </p>
+                    <div class="content" style="font-size: 1.02rem; line-height: 1.8;">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-brain" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                <strong>Cognitive load is the real cost.</strong> Most "productivity" problems are load problems wearing a disguise&mdash;too much to hold in your head to make one safe change.
+                            </li>
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-sync-alt" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                <strong>Feedback loop length beats tool count.</strong> How long until an engineer finds out they were wrong is the number I keep coming back to.
+                            </li>
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-chart-line" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                <strong>Measuring DevEx without gaming it.</strong> Reduce it to velocity and you get velocity. The interesting research is in measures that survive being targets.
+                            </li>
+                            <li style="margin-bottom: 0.85rem; padding-left: 2rem; position: relative;">
+                                <i class="fas fa-robot" style="position: absolute; left: 0; color: var(--nature-green);"></i>
+                                <strong>And now: experience for a non-human user.</strong> Agents read your docs, your golden paths and your error messages too&mdash;and they are far less forgiving of ambiguity than engineers are.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Current Research -->
+                <div class="box" style="background: linear-gradient(135deg, var(--dark-green) 0%, var(--nature-green) 100%); padding: 2.5rem; margin-bottom: 2rem; border: none;">
+                    <h2 class="title is-3" style="color: white; margin-bottom: 0.75rem;">
+                        <i class="fas fa-question-circle" style="margin-right: 0.5rem; color: var(--soft-cream);"></i>
+                        Current Research
+                    </h2>
+                    <p style="color: var(--soft-cream); margin-bottom: 2rem; font-size: 1.05rem;">
+                        The questions I'm actively working on. I don't have finished answers to any of them yet&mdash;that's rather the point.
+                    </p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1.25rem; padding: 1rem 1.25rem; background: rgba(255,255,255,0.14); border-radius: 8px; color: white; font-size: 1.05rem; line-height: 1.6;">
+                            How do engineering organizations evolve in the age of AI?
+                        </li>
+                        <li style="margin-bottom: 1.25rem; padding: 1rem 1.25rem; background: rgba(255,255,255,0.14); border-radius: 8px; color: white; font-size: 1.05rem; line-height: 1.6;">
+                            What should Internal Developer Platforms look like when AI agents become first-class users?
+                        </li>
+                        <li style="margin-bottom: 1.25rem; padding: 1rem 1.25rem; background: rgba(255,255,255,0.14); border-radius: 8px; color: white; font-size: 1.05rem; line-height: 1.6;">
+                            Can platforms actively guide engineering decisions rather than simply automate tasks?
+                        </li>
+                        <li style="margin-bottom: 1.25rem; padding: 1rem 1.25rem; background: rgba(255,255,255,0.14); border-radius: 8px; color: white; font-size: 1.05rem; line-height: 1.6;">
+                            How does Evolutionary Architecture change when software is built collaboratively by humans and AI?
+                        </li>
+                        <li style="margin-bottom: 1.25rem; padding: 1rem 1.25rem; background: rgba(255,255,255,0.14); border-radius: 8px; color: white; font-size: 1.05rem; line-height: 1.6;">
+                            What does developer experience mean when some of your developers are agents&mdash;and how do you measure it without reducing it to velocity?
+                        </li>
+                        <li style="padding: 1rem 1.25rem; background: rgba(255,255,255,0.14); border-radius: 8px; color: white; font-size: 1.05rem; line-height: 1.6;">
+                            What does an Engineering System look like in 2030?
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Areas of Interest -->
+                <div class="box" style="background: white; padding: 2.5rem; margin-bottom: 2rem;">
+                    <h2 class="title is-3" style="color: var(--dark-green); margin-bottom: 2rem; border-bottom: 3px solid var(--nature-green); padding-bottom: 0.5rem;">
+                        <i class="fas fa-sitemap" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                        Areas of Interest
+                    </h2>
+                    <div class="columns is-multiline">
+                        <div class="column is-3">
+                            <div style="background: var(--soft-cream); border-top: 3px solid var(--light-green); border-radius: 8px; padding: 1.5rem; height: 100%;">
+                                <h3 class="title is-6" style="color: var(--dark-green); margin-bottom: 1rem;">
+                                    <i class="fas fa-drafting-compass" style="margin-right: 0.4rem; color: var(--nature-green);"></i>
+                                    Architecture
+                                </h3>
+                                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; color: var(--text-dark);">
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Evolutionary Design</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Distributed Systems</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Domain Driven Design</li>
+                                    <li><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Cloud Native</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div style="background: var(--soft-cream); border-top: 3px solid var(--nature-green); border-radius: 8px; padding: 1.5rem; height: 100%;">
+                                <h3 class="title is-6" style="color: var(--dark-green); margin-bottom: 1rem;">
+                                    <i class="fas fa-layer-group" style="margin-right: 0.4rem; color: var(--nature-green);"></i>
+                                    Platform Engineering
+                                </h3>
+                                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; color: var(--text-dark);">
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Internal Developer Platforms</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Golden Paths</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Self-Service</li>
+                                    <li><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Engineering Platforms</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div style="background: var(--soft-cream); border-top: 3px solid var(--dark-green); border-radius: 8px; padding: 1.5rem; height: 100%;">
+                                <h3 class="title is-6" style="color: var(--dark-green); margin-bottom: 1rem;">
+                                    <i class="fas fa-robot" style="margin-right: 0.4rem; color: var(--nature-green);"></i>
+                                    Artificial Intelligence
+                                </h3>
+                                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; color: var(--text-dark);">
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Agentic AI</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>AI-native Engineering</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Intelligent Workflows</li>
+                                    <li><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Engineering Knowledge</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div style="background: var(--soft-cream); border-top: 3px solid var(--light-green); border-radius: 8px; padding: 1.5rem; height: 100%;">
+                                <h3 class="title is-6" style="color: var(--dark-green); margin-bottom: 1rem;">
+                                    <i class="fas fa-puzzle-piece" style="margin-right: 0.4rem; color: var(--nature-green);"></i>
+                                    Developer Experience
+                                </h3>
+                                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; color: var(--text-dark);">
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Cognitive Load</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Feedback Loops</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Engineering Effectiveness</li>
+                                    <li><i class="fas fa-angle-right" style="color: var(--nature-green); margin-right: 0.5rem;"></i>Measuring DevEx</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Philosophy -->
+                <div class="box" style="background: white; padding: 2.5rem;">
+                    <h2 class="title is-3" style="color: var(--dark-green); margin-bottom: 2rem; border-bottom: 3px solid var(--nature-green); padding-bottom: 0.5rem;">
+                        <i class="fas fa-lightbulb" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                        Philosophy
+                    </h2>
+                    <ul style="list-style: none; padding: 0; font-size: 1.1rem; line-height: 1.6;">
+                        <li style="margin-bottom: 1rem; padding: 0.9rem 1.25rem; background: var(--soft-cream); border-left: 4px solid var(--nature-green); border-radius: 0 8px 8px 0; color: var(--text-dark);">
+                            Technology changes. <strong style="color: var(--dark-green);">Engineering principles endure.</strong>
+                        </li>
+                        <li style="margin-bottom: 1rem; padding: 0.9rem 1.25rem; background: var(--soft-cream); border-left: 4px solid var(--nature-green); border-radius: 0 8px 8px 0; color: var(--text-dark);">
+                            Platforms should <strong style="color: var(--dark-green);">reduce cognitive load</strong>.
+                        </li>
+                        <li style="margin-bottom: 1rem; padding: 0.9rem 1.25rem; background: var(--soft-cream); border-left: 4px solid var(--nature-green); border-radius: 0 8px 8px 0; color: var(--text-dark);">
+                            Architecture should <strong style="color: var(--dark-green);">evolve continuously</strong>.
+                        </li>
+                        <li style="margin-bottom: 1rem; padding: 0.9rem 1.25rem; background: var(--soft-cream); border-left: 4px solid var(--nature-green); border-radius: 0 8px 8px 0; color: var(--text-dark);">
+                            AI should <strong style="color: var(--dark-green);">augment engineers</strong>&mdash;not replace them.
+                        </li>
+                        <li style="padding: 0.9rem 1.25rem; background: var(--soft-cream); border-left: 4px solid var(--nature-green); border-radius: 0 8px 8px 0; color: var(--text-dark);">
+                            The best engineering organizations <strong style="color: var(--dark-green);">continuously improve the systems that build software</strong>.
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
+
             <div class="column is-4">
                 <!-- Skills & Expertise -->
                 <div class="box" style="background: white; padding: 2rem; margin-bottom: 2rem;">
@@ -132,31 +417,53 @@ description: "Learn about Aravind HU's experience in platform engineering, devel
                         Core Expertise
                     </h3>
                     <div class="tags">
-                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">Platform Engineering</span>
-                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">Backstage</span>
-                        <span class="tag" style="background: var(--dark-green); color: white; margin: 0.25rem;">InnerSource</span>
-                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">DevEx</span>
-                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">CI/CD</span>
+                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">Agentic AI</span>
+                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">AI Harness Engineering</span>
+                        <span class="tag" style="background: var(--dark-green); color: white; margin: 0.25rem;">RAG Systems</span>
+                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">AI-Native Engineering</span>
+                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">Evolutionary Architecture</span>
+                        <span class="tag" style="background: var(--dark-green); color: white; margin: 0.25rem;">Platform Engineering</span>
+                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">Developer Experience</span>
+                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">Internal Developer Platforms</span>
+                        <span class="tag" style="background: var(--dark-green); color: white; margin: 0.25rem;">Engineering Effectiveness</span>
+                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">Backstage</span>
+                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">InnerSource</span>
                         <span class="tag" style="background: var(--dark-green); color: white; margin: 0.25rem;">Cloud Native</span>
-                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">Microservices</span>
-                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">GitHub Copilot</span>
-                        <span class="tag" style="background: var(--dark-green); color: white; margin: 0.25rem;">Compliance</span>
+                        <span class="tag" style="background: var(--light-green); color: white; margin: 0.25rem;">Golden Paths</span>
+                        <span class="tag" style="background: var(--nature-green); color: white; margin: 0.25rem;">CI/CD</span>
                     </div>
                 </div>
-                
+
                 <!-- Current Role -->
-                <div class="box" style="background: linear-gradient(135deg, var(--soft-cream) 0%, white 100%); padding: 2rem; border-left: 4px solid var(--nature-green);">
+                <div class="box" style="background: linear-gradient(135deg, var(--soft-cream) 0%, white 100%); padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--nature-green);">
                     <h3 class="title is-5" style="color: var(--dark-green); margin-bottom: 1rem;">
                         <i class="fas fa-briefcase" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
                         Currently
                     </h3>
-                    <p style="font-weight: 600; color: var(--dark-green); margin-bottom: 0.5rem;">Platform Engineering Leader</p>
-                    <p style="color: var(--text-dark); margin-bottom: 1rem;">Philips Healthcare</p>
+                    <p style="font-weight: 600; color: var(--dark-green); margin-bottom: 0.25rem;">Senior Software Architect</p>
+                    <p style="color: var(--text-dark); margin-bottom: 0.25rem;">Philips &middot; 2019 &ndash; Present</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">Healthcare Platforms &amp; Digital Solutions &middot; Bengaluru, India</p>
                     <p style="font-size: 0.95rem; color: var(--text-light);">
-                        Architecting internal developer platforms for regulated healthcare environments—balancing velocity with compliance.
+                        Architecting internal developer platforms for regulated healthcare environments&mdash;and exploring what those platforms become when AI agents are first-class users.
                     </p>
                 </div>
-                
+
+                <!-- Where to find me -->
+                <div class="box" style="background: white; padding: 2rem; margin-bottom: 2rem;">
+                    <h3 class="title is-5" style="color: var(--dark-green); margin-bottom: 1.5rem;">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: var(--nature-green);"></i>
+                        You'll Usually Find Me
+                    </h3>
+                    <ul style="list-style: none; padding: 0; font-size: 0.98rem; line-height: 1.6; color: var(--text-dark);">
+                        <li style="margin-bottom: 0.75rem;">&#128161; Building engineering platforms</li>
+                        <li style="margin-bottom: 0.75rem;">&#129302; Experimenting with Agentic AI</li>
+                        <li style="margin-bottom: 0.75rem;">&#128221; Writing about software engineering</li>
+                        <li style="margin-bottom: 0.75rem;">&#127908; Speaking at engineering communities</li>
+                        <li style="margin-bottom: 0.75rem;">&#129514; Building reference implementations</li>
+                        <li>&#128214; Learning something new every week</li>
+                    </ul>
+                </div>
+
                 <!-- Connect -->
                 <div class="box" style="background: white; padding: 2rem; text-align: center;">
                     <h3 class="title is-5" style="color: var(--dark-green); margin-bottom: 1.5rem;">
@@ -164,21 +471,21 @@ description: "Learn about Aravind HU's experience in platform engineering, devel
                         Let's Connect
                     </h3>
                     <p style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 0.95rem;">
-                        Open to thoughtful conversations on platform strategy, developer experience, or scaling delivery in regulated environments.
+                        Open to thoughtful conversations on evolutionary architecture, platform engineering, agentic AI, or scaling delivery in regulated environments.
                     </p>
-                    <a href="mailto:hirearavindhu@gmail.com" class="button is-custom-green is-medium" style="margin-bottom: 1rem; width: 100%;">
+                    <a href="mailto:aravind.udayashankara@gmail.com" class="button is-custom-green is-medium" style="margin-bottom: 1rem; width: 100%;">
                         <span class="icon">
                             <i class="fas fa-envelope"></i>
                         </span>
                         <span>Email Me</span>
                     </a>
                     <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
-                        <a href="https://github.com/aravind666" target="_blank" class="button is-light" style="border: 2px solid var(--nature-green);">
+                        <a href="https://github.com/aravind666" target="_blank" rel="noopener" class="button is-light" style="border: 2px solid var(--nature-green);">
                             <span class="icon">
                                 <i class="fab fa-github"></i>
                             </span>
                         </a>
-                        <a href="https://www.linkedin.com/in/aravindudayashankara" target="_blank" class="button is-light" style="border: 2px solid var(--nature-green);">
+                        <a href="https://www.linkedin.com/in/aravindudayashankara" target="_blank" rel="noopener" class="button is-light" style="border: 2px solid var(--nature-green);">
                             <span class="icon">
                                 <i class="fab fa-linkedin"></i>
                             </span>
@@ -187,7 +494,14 @@ description: "Learn about Aravind HU's experience in platform engineering, devel
                 </div>
             </div>
         </div>
-        
+
+        <!-- Closing -->
+        <div class="box has-text-centered" style="background: var(--soft-cream); border-left: 4px solid var(--nature-green); margin-top: 3rem; padding: 2rem;">
+            <p style="font-size: 1.35rem; color: var(--dark-green); font-style: italic; font-weight: 600; margin: 0;">
+                Exploring the Future of Software Engineering.
+            </p>
+        </div>
+
     </div>
 </section>
 
@@ -195,5 +509,28 @@ description: "Learn about Aravind HU's experience in platform engineering, devel
 .box:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(63, 184, 72, 0.2) !important;
+}
+
+.ascii-diagram {
+    background: var(--soft-cream);
+    border: 2px solid var(--nature-green);
+    border-radius: 8px;
+    color: var(--dark-green);
+    font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+    padding: 1.5rem;
+    margin: 0;
+    overflow-x: auto;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (max-width: 768px) {
+    .ascii-diagram {
+        font-size: 0.68rem;
+        padding: 1rem;
+    }
 }
 </style>

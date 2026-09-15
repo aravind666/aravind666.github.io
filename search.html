@@ -2,7 +2,7 @@
 layout: default
 title: "Search - Aravind On Software"
 author: "Aravind HU"
-description: "Search all posts and insights on Platform Engineering, Developer Experience, and Engineering Leadership"
+description: "Search all posts and insights on Evolutionary Architecture, Platform Engineering, Agentic AI, Developer Experience, and Engineering Leadership"
 ---
 
 <div class="section">
@@ -167,21 +167,24 @@ function performSearch() {
     }
 }
 
+// Keys must match the `category:` front matter of the posts exactly — they are
+// compared against `post.categories | first`. Anything unmatched falls through
+// to the defaults below rather than rendering an unstyled badge.
 function getCategoryIcon(category) {
     const icons = {
         'Software Development': 'fas fa-layer-group',
-        'Management': 'fas fa-users-cog',
-        'Cerberus': 'fas fa-shield-alt',
+        'Leadership and Engineering': 'fas fa-users-cog',
+        'Engineering Quality': 'fas fa-shield-alt',
         'The Impigrity Catalog': 'fas fa-rocket'
     };
-    return icons[category] || 'fas fa-file-alt';
+    return icons[category] || 'fas fa-tag';
 }
 
 function getCategoryColor(category) {
     const colors = {
-        'Software Development': 'var(--nature-green)',
-        'Management': 'var(--gentle-pink)',
-        'Cerberus': 'var(--dark-green)',
+        'Software Development': 'var(--light-green)',
+        'Leadership and Engineering': 'var(--gentle-pink)',
+        'Engineering Quality': 'var(--nature-green)',
         'The Impigrity Catalog': 'var(--serene-blue)'
     };
     return colors[category] || 'var(--nature-green)';
@@ -189,9 +192,9 @@ function getCategoryColor(category) {
 
 function getCategoryDisplayName(category) {
     const names = {
-        'Software Development': 'Platform',
-        'Management': 'Leadership',
-        'Cerberus': 'Quality',
+        'Software Development': 'Platform Engineering',
+        'Leadership and Engineering': 'Leadership & Engineering',
+        'Engineering Quality': 'Engineering Quality',
         'The Impigrity Catalog': 'DevOps'
     };
     return names[category] || category;

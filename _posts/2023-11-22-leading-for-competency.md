@@ -12,7 +12,7 @@ keywords: "Leadership, Competence-based leadership, Engineering leadership, Situ
     <img src="/assets/post_images/Leading-for-competency.png" class="figure-img img-fluid rounded img-thumbnail" alt="Leading For Competence - Getting Things Done">
 </figure>
 
-After more than **15+ years leading software, platform, and engineering teams**, one leadership principle has consistently separated high-performing organizations from the rest:
+After more than **17+ years leading software, platform, and engineering teams**, one leadership principle has consistently separated high-performing organizations from the rest:
 
 > **Leadership is ultimately measured by what gets done.**
 
